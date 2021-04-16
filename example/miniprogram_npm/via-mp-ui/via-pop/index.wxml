@@ -1,7 +1,0 @@
-<view class="pop-view content-{{direction}}" wx:if="{{modalShow}}" style="z-index:{{zIndex}};">
-	<view class="pop-mask-view" animation="{{opacityAnimation}}" catchtouchmove="forbidMove" catch:tap="closeTap"></view>
-	<view class="pop-content pop-view-{{direction}}" animation="{{contentAnimation}}" style="{{contentStyle}}">
-		<slot/>
-	</view>
-</view>
-

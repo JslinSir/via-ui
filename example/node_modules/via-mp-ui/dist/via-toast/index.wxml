@@ -1,7 +1,0 @@
-<view class="modal"  wx:if="{{toastShow}}">
-	<view class="toast" style="opacity: {{opacity}};">
-		<via-icon wx:if="{{toastIcon}}" size="48" name="{{toastIcon}}" />
-		<text>{{content}}</text>
-	</view>
-</view>
-

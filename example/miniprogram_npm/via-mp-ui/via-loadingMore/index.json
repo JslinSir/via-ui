@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "via-loading":"../via-loading/index"
-  }
-  
-}

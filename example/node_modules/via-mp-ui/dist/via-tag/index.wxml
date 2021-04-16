@@ -1,4 +1,0 @@
-<view class="via-tags class-tags" style="font-size:{{fontSize?fontSize:''}}rpx;color:{{fontColor}};background:{{bgColor}}; border-radius{{radius}};border-color:{{borderColor}};" bind:tap="handleClick">
-    <block wx:if="{{text}}">{{text}}</block>
-    <slot wx:else />
-</view>

@@ -1,9 +1,0 @@
-<block wx:if="{{status}}">
-    <view class="ball-box" style="{{startPosition}};{{styleX}}" >
-	<view class="ball" style="{{styleY}}">
-		<slot/>
-	</view>
-</view>
-</block>
-
-

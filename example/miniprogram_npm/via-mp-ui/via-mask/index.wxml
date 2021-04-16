@@ -1,6 +1,0 @@
-<view catch:touchmove="forbidMove" bind:tap="handleClose" wx:if="{{visible}}">
-	<view class="via-mask-view" style="z-index:{{zIndex}};">
-		<slot/>
-	</view>
-</view>
-

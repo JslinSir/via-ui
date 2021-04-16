@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "via-icon":"../via-icon/index",
-    "via-animotion-transition":"../via-animotion-transition/index"
-  }
-}

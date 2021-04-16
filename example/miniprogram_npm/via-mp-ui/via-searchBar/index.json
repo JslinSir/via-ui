@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "via-icon":"../via-icon/index",
-    "via-carouselText":"../via-carouselText/index"
-  }
-}

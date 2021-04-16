@@ -37,7 +37,7 @@
 			</view>
       	<view class="intro-cotent-row" data-url="" bind:tap="handleCopyLink">
 				<image class="link-icon" src="../img/doc.png" />
-				<text class="link">https://www.npmjs.com/package/via-mp-ui</text>
+				<text class="link">https://jslinsir.github.io/via-ui-doc/</text>
 			</view>
 		</view>
 	</via-card>

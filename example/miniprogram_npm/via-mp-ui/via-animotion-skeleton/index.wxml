@@ -1,4 +1,0 @@
-<view class="skeletbg skeletactive class-skeleton-view">
-	<slot/>
-</view>
-

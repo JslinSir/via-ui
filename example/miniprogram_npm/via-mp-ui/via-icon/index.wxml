@@ -1,7 +1,0 @@
-<block wx:if="{{src}}">
-	<image style="width:{{size}}rpx;height:{{size}}rpx;"  src="{{src}}"/>
-</block>
-<block wx:else>
-	<view class="iconfont icon{{name}}" style="font-size:{{size}}rpx;color:{{color}};" />
-</block>
-

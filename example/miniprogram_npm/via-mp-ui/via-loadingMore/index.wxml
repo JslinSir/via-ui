@@ -1,5 +1,0 @@
-<view class="loading-more">
-  <via-loading size="28" loading="{{loading}}"/>
-  <slot ></slot>
-  <text class="loading-more-text">{{noMore?noMoreText:loadingText}}</text>
-</view>
