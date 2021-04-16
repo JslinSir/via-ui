@@ -7,12 +7,13 @@
 /_book
 /doc/_book
 /doc/node_modules
+/doc/.DS_Store
 # misc 
 .DS_Store
 
 #example
 /example/miniprogram_npm
 /example/node_modules
-
+/example/.DS_Store
 
 npm-debug.log*
