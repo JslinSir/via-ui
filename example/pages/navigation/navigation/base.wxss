@@ -1,0 +1,14 @@
+.change{
+    width: 100%;
+    height: 300rpx;
+    background-color: #091B4B;
+    border-radius: 20rpx;
+    margin-bottom: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    flex-wrap: wrap;
+    padding: 30rpx;
+}

@@ -1,0 +1,176 @@
+<view class="header-title-cneter">Transition</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein">
+		<via-transition wx:if="{{show}}">
+
+			<view class="block">淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从底部淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein2">
+		<via-transition transition="fadeinFromBottom" wx:if="{{show2}}">
+
+			<view class="block">从底部淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从顶部淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein3">
+		<via-transition transition="fadeinFromTop" wx:if="{{show3}}">
+
+			<view class="block">从顶部淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从左边淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein4">
+		<via-transition transition="fadeinFromLeft" wx:if="{{show4}}">
+
+			<view class="block">从左边淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从右边淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein5">
+		<via-transition transition="fadeinFromRight" wx:if="{{show5}}">
+
+			<view class="block">从右边淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		缩放淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein6">
+		<via-transition transition="fadeinScale" wx:if="{{show6}}">
+
+			<view class="block">缩放淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		上下摆动淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein7">
+		<via-transition transition="fadeinSwingY" wx:if="{{show7}}">
+
+			<view class="block">上下摆动淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从左边开始 左右摆动淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein8">
+		<via-transition transition="fadeinSwingLeftX" wx:if="{{show8}}">
+
+			<view class="block">左右摆动淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从右边开始 左右摆动淡入过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein8">
+		<via-transition transition="fadeinSwingRightX" wx:if="{{show8}}">
+
+			<view class="block">左右摆动淡入</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	   旋转180
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein8">
+		<via-transition transition="rotate180" wx:if="{{show8}}">
+
+			<view class="block">旋转180</view>
+
+		</via-transition>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	  旋转360
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadein8">
+		<via-transition transition="rotate360" wx:if="{{show8}}">
+
+			<view class="block">旋转360</view>
+
+		</via-transition>
+	</view>
+</view>
+
+
+
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		淡出过度
+	</view>
+	<view class="intro-cotent" bind:tap="handleClickFadeOut">
+		<via-transition transition="{{transition}}">
+
+			<view class="block">淡出</view>
+
+		</via-transition>
+	</view>
+</view>
+

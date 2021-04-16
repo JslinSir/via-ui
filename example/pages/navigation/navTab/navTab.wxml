@@ -1,0 +1,48 @@
+<view class="header-title-cneter">NavTab</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-navTab tab="{{tabs}}"  type="icon" isNav="{{false}}"/>
+	</view>
+</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		关闭动画，设置颜色
+	</view>
+	<view class="intro-cotent">
+		<via-navTab tab="{{tabs}}" animotion="{{false}}"  color="#000" activeColor="red" type="icon"  fontColor="#ccc" fontSelectColor="red"  isNav="{{false}}" />
+	</view>
+</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		带 红点
+	</view>
+	<view class="intro-cotent">
+		<via-navTab tab="{{tabs2}}" type="icon"  isNav="{{false}}"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		显示消息值
+	</view>
+	<view class="intro-cotent">
+		<via-navTab tab="{{tabs3}}" type="icon"  isNav="{{false}}"/>
+	</view>
+</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义图片icon
+	</view>
+	<view class="intro-cotent">
+		<via-navTab tab="{{tabs4}}" type="img"  isNav="{{false}}"/>
+	</view>
+</view>
+<via-navTab tab="{{tabs}}"  type="icon"/>

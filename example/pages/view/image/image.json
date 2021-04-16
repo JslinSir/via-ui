@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "via UI",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#091B4B",
+  "usingComponents": {
+    "via-image": "via-mp-ui/via-image/index"
+  }
+}

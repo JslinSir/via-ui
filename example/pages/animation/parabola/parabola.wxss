@@ -1,0 +1,24 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20rpx;
+
+}
+
+.fuirt {
+    margin-right: 20rpx;
+}
+
+
+.cart-position-right {
+    position: fixed;
+    right: 60rpx;
+    bottom: 120rpx;
+}
+
+ 
+
+
+ 
+

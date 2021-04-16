@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 88rpx;
+    padding: 0 30rpx;
+    font-size: 28rpx;
+    background-color: #fff;
+  }
+  
+  .bg {
+    box-sizing: border-box;
+    padding: 4rpx 10rpx;
+    height: 60rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 8rpx;
+  }
+  
+  .bg-oval {
+    border-radius: 40rpx;
+  }
+  
+  .icon-search {
+    width: 36rpx;
+    height: 36rpx;
+    margin: 0 10rpx;
+  }
+  
+  .icon-clear {
+    padding: 16rpx;
+  }
+  .carousel-view{
+    margin-top: 10rpx;
+    width: 100%;
+  }
+  
+  .input {
+    height: 60rpx;
+    line-height: 60rpx;
+    flex: 1;
+  }
+  
+  .btn-cancel {
+    padding: 10rpx 0 10rpx 24rpx;
+  }
+  .scroll-text{
+    color: #ccc !important;
+  }
+  

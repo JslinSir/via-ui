@@ -1,0 +1,250 @@
+/* page {
+  background: #fff;
+} */
+
+.flex,
+.flex-row,
+.flex-column,
+.flex-center-xy,
+.flex-center-between,
+.flex-top-between {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-left {
+  justify-content: flex-start;
+}
+.flex-center,
+.flex-center-xy {
+  justify-content: center;
+}
+.flex-right {
+  justify-content: flex-end;
+}
+.flex-space-between,
+.flex-center-between,
+.flex-top-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+.flex-top,
+.flex-top-between {
+  align-items: flex-start;
+}
+.flex-middle,
+.flex-center-xy,
+.flex-center-between {
+  align-items: center;
+}
+.flex-bottom {
+  align-items: flex-end;
+}
+.flex-stretch {
+  align-items: stretch;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-full {
+  flex: 1;
+}
+.triangle-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid #999;
+}
+.triangle-bottom {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #999;
+}
+.arrow-bottom {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 0 solid #cecece;
+  border-width: 2px 2px 0 0;
+  border-radius: 1px;
+  transform: translate(5px, -2px) rotate(135deg);
+}
+.arrow-top {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 0 solid #cecece;
+  border-width: 2px 2px 0 0;
+  border-radius: 1px;
+  transform: translate(5px, 0) rotate(-45deg);
+}
+.arrow-select {
+  border-color: #0188ff;
+}
+.rich-editor {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.ql-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 10px 10px 80px 10px;
+  border: 1px solid #ececec;
+}
+.toolbar {
+  box-sizing: border-box;
+  padding: 0 6px;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: none;
+  border-right: none;
+  background: #f6f6f6;
+}
+.icon-group {
+  position: relative;
+  width: 100%;
+}
+.edit-icon {
+  width: 22px;
+  height: 22px;
+  margin: 6px;
+}
+.draw-panel {
+  position: absolute;
+  top: -60px;
+  left: 6px;
+  padding: 8px 10px;
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+.draw-panel__show {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+.draw-panel__hide {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+.panel-body {
+  position: relative;
+}
+.panel-triangle {
+  position: absolute;
+  bottom: -13px;
+  left: 32px;
+  border-top: 5px solid #f6f6f6;
+}
+.panel-item {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.panel-item:last-child {
+  margin-right: 0;
+}
+.editor-check {
+  width: 16px;
+  height: 16px;
+}
+.editor-check__show {
+  opacity: 1;
+}
+.editor-check__hide {
+  opacity: 0;
+}
+
+.wechat-sdk-error-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  height: 70vh;
+  color:#999;
+}
+
+.operation-group {
+  padding: 6px 12px;
+}
+
+.operation-group-picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.icon_camera_css {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+ 
+
+.editor-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left:0;
+  opacity:1;
+  bottom: 10rpx;
+  width: 100vw;
+  animation:fadein .3s ease-in-out;
+}
+.cancel-btn{
+  background-color: #fff !important;
+  border: 1rpx solid #fafafa;
+  color: #323232 !important;
+}
+.save-btn{
+  margin-left: 20rpx;
+  border:1rpx solid transparent;
+}
+ 
+@keyframes fadein {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0
+  }
+  20% {
+    opcity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}

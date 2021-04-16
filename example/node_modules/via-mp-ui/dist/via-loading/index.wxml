@@ -1,0 +1,10 @@
+ 
+<!-- 完整loading 高亮 -->
+<block wx:if="{{type==='default'}}">
+ <view wx:if="{{loading}}" class="via-loading" style="width:{{size}}rpx;height:{{size}}rpx;border:4rpx solid {{bgColor}};border-color:{{bgColor}};border-bottom-color:transparent;animation-duration:{{duration}}s;" />
+</block>
+<!-- 残缺 高亮 -->
+<block wx:if="{{type==='light'}}">
+	<view wx:if="{{loading}}" class="via-loading" style="width:{{size}}rpx;height:{{size}}rpx;border:4rpx solid {{bgColor}};border-bottom-color:{{lightColor}};animation-duration:{{duration}}s;" />
+</block>
+

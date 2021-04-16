@@ -1,0 +1,16 @@
+.scrol-text {
+  display: inline-block;
+}
+ 
+.swiper-container {
+  display: inline-block;
+  min-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+ 
+}
+.hotItem {
+  font-size: 24rpx;
+  color: #323232;
+  font-weight: bold;
+}

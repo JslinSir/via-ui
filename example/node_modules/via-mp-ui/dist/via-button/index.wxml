@@ -1,0 +1,26 @@
+<via-touchOpacity opacity="{{touchOpacity}}">
+	<view
+	 id="btn_id_components"
+	 bind:tap="handleBtnClick"
+	 class="btn-content class-button {{status === 'disabled'?'btn-disabled':''}} class-button-disabled"
+	 style="{{styleName}};opacity:{{status === 'loading'?0.6:1}};width:{{width?width:''}}rpx;height:{{height?height:''}}rpx;background:{{btnColor?btnColor:''}};font-size:{{textSize?textSize:''}}rpx;border-radius:{{radius?radius:''}}rpx;color:{{textColor?textColor:''}};"
+	 data-status="{{status}}"
+	>
+		<view class="btn-loading" wx:if="{{status === 'loading'}}">
+			<loading
+			 size="{{iconSize}}"
+			 bgColor="{{iconColor}}"
+			 loading
+			/>
+		</view>
+    	<view class="btn-loading" wx:else>
+        <block wx:if="{{iconName || iconSrc}}">
+           <via-icon name="{{iconName}}" src="{{iconSrc}}" size="{{iconSize}}" color="{{iconColor}}" />
+        </block>
+		</view>
+		<text wx:if="{{text}}">{{text}}</text>
+		<slot wx:else />
+
+	</view>
+</via-touchOpacity>
+

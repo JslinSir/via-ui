@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "via UI",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#091B4B",
+  "usingComponents": {
+    "via-countDown":"via-mp-ui/via-countDown/index"
+  }
+}

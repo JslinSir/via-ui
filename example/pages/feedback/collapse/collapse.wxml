@@ -1,0 +1,82 @@
+<view class="header-title-cneter">Collapse</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-collapse title="优惠券规则">
+			<view slot="content">
+				<view>1.满100立减5元</view>
+				<view>2.满200立减10元</view>
+				<view>3.满300立减20元</view>
+			</view>
+		</via-collapse>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		显示title 超过一行自动截取
+	</view>
+	<view class="intro-cotent">
+		<via-collapse title="促销活动说明：只是用于后海门店活动时间：2020-10-24">
+			<view slot="content">
+				<view>1.满100立减5元</view>
+				<view>2.满200立减10元</view>
+				<view>3.满300立减20元</view>
+			</view>
+		</via-collapse>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		默认展开
+	</view>
+	<view class="intro-cotent">
+		<via-collapse title="优惠券规则" open>
+			<view slot="content">
+				<view>1.满100立减5元</view>
+				<view>2.满200立减10元</view>
+				<view>3.满300立减20元</view>
+			</view>
+		</via-collapse>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义插槽样式
+	</view>
+	<view class="intro-cotent">
+		<via-collapse title="促销活动说明：只是用于后海门店活动时间：2020-10-24">
+			<view slot="content" class="self-content">
+				<view>1.满100立减5元</view>
+				<view>2.满200立减10元</view>
+				<view>3.满300立减20元</view>
+			</view>
+		</via-collapse>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义容器样式
+	</view>
+	<view class="intro-cotent">
+		<via-collapse title="优惠券规则" class-collapse-head="head" class-collapse-head-title="title">
+			<view slot="content" class="self-content">
+				<view>1.满100立减5元</view>
+				<view>2.满200立减10元</view>
+				<view>3.满300立减20元</view>
+			</view>
+		</via-collapse>
+	</view>
+</view>
+

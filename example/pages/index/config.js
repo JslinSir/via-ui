@@ -1,0 +1,35 @@
+export const config = [
+
+    {
+        name:'基础组件',
+        router:'/pages/base/index/index',
+    },
+    {
+        name:'视图组件',
+        router:'/pages/view/index/index',
+    },
+    {
+        name:'布局组件',
+        router:'/pages/layout/index/index',
+    },
+    {
+        name:'表单组件',
+        router:'/pages/form/index/index',
+    },
+    {
+        name:'导航组件',
+        router:'/pages/navigation/index/index',
+    },
+    {
+        name:'操作反馈',
+        router:'/pages/feedback/index/index',
+    },
+    {
+        name:'动画组件',
+        router:'/pages/animation/index/index',
+    },
+    {
+        name:'业务组件',
+        router:'/pages/business/index/index',
+    },
+]

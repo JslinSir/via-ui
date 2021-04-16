@@ -1,0 +1,76 @@
+<view class="header-title-cneter">Tab</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-tab tabs="{{tabs1}}" selectColor="#0188FF"/>
+	</view>
+</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		最小宽度150，超过5个可滑动
+	</view>
+	<view class="intro-cotent">
+		<via-tab tabs="{{tabs2}}" selectColor="#0188FF" bind:onChange="handleChange" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		设置选中颜色 selectColor:'#FF5100'
+	</view>
+	<view class="intro-cotent">
+		<via-tab tabs="{{tabs2}}" selectColor="#FF5100" bind:onChange="handleChange" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		设置底部线条 class-line
+	</view>
+	<view class="intro-cotent">
+		<via-tab
+		 tabs="{{tabs1}}"
+		 selectColor="#FF5100"
+		 class-line="bottom-line"
+		 bind:onChange="handleChange"
+		/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		设置选中的tab activeTab 1
+	</view>
+	<view class="intro-cotent">
+		<via-tab
+		 tabs="{{tabs1}}"
+		 selectColor="#333"
+		 activeTab="1"
+		 class-line="bottom-line"
+		 bind:onChange="handleChange"
+		/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义高亮 tab class-active-tab
+	</view>
+	<view class="intro-cotent">
+		<via-tab
+		 tabs="{{tabs1}}"
+		 class-line="bottom-line-self"
+		 class-active-tab="active-tab"
+		 bind:onChange="handleChange"
+		/>
+	</view>
+</view>
+

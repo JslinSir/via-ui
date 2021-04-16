@@ -1,0 +1,14 @@
+<view class="header-title-cneter">SectionList</view>
+<view class="intro" style="padding:0">
+    <view class="intro-titel" style="padding-left:30rpx">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent" style="padding:0">
+        <via-sectionList  scrollHeight="{{scrollHeight}}"  dataSource="{{dataSource}}"/>
+    </view>
+</view>
+
+ 
+ 
+ 

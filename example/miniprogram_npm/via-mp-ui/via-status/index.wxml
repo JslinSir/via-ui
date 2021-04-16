@@ -1,0 +1,24 @@
+<view class="via-status-view {{full?'via-status-full':''}}" style="z-index:{{zIndex}};">
+	<view class="via-status-view" style="transform:{{full?'translateY(-50%)':'none'}};">
+		<image class="via-status-icon" src="{{_.getImgSrc(src,errorType)}}" />
+		<view class="error-text" style="transform:{{full?'translateY(-50%)':'none'}};">{{errorText}}</view>
+	</view>
+
+	<!-- 可以 自定义图片  文案  在此 -->
+	<slot/>
+</view>
+<wxs module="_">
+	function getImgSrc(src,errorType){
+	var imgsrc = ''
+	if(src){
+	imgsrc = src
+	}else{
+	imgsrc = 'img/'+errorType+'.png'
+	}
+	return imgsrc
+	}
+	module.exports = {
+	getImgSrc : getImgSrc,
+	}
+</wxs>
+

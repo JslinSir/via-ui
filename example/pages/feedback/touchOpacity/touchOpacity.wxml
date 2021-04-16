@@ -1,0 +1,27 @@
+<view class="header-title-cneter">TouchableOpacity</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-touchableOpacity>
+			点我 不透明 默认0.6
+		</via-touchableOpacity>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义不透明度
+	</view>
+	<view class="intro-cotent">
+
+		<via-touchableOpacity opacity="0.1">
+			点我 不透明 度为0.1
+		</via-touchableOpacity>
+	</view>
+</view>
+

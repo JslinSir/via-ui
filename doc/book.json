@@ -1,0 +1,31 @@
+{
+    "plugins":["-sharing","-search","search-plus","github","github-buttons","expandable-chapters-small","hide-element"],
+    "pluginsConfig":{
+        "github": {
+            "url": "https://github.com/JslinSir/via-ui.git"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "JslinSir",
+                "repo": "via-ui",
+                "type": "star",
+                "size": "big",
+                "count": true
+            }]
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        }
+       
+    },
+    "title":"Via UI",
+    "description":"一个简单 易用 组件丰富的小程序原色组件库",
+    "author":"JsLin",
+    "language":"zh-hans",
+    "links": {
+        "sidebar": {
+            "GitHub": "https://github.com/JslinSir",
+            "个人博客": "http://www.jslin.site"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<view class="{{isNav?'navtabBox footer-padding-bottom':'just-tab-use'}}" style="background-color:{{bgColor}};">
+	<block wx:for="{{tab}}" wx:key="unique">
+		<view
+		 class="navTabItem"
+		 style="width:{{100/tab.length}}%;height:{{height}}rpx;"
+		 data-name="{{item.name}}"
+		 data-index="{{index}}"
+		 bindtap="handleTabClick"
+		>
+			<view class="icon {{tabIndex==index && animotion?'anomotion':''}}">
+				<via-icon
+				 name="{{type==='icon'?tabIndex==index?item.iconSelect:item.icon:''}}"
+				 src="{{type==='img'?tabIndex==index?item.iconSelect:item.icon:''}}"
+				 color="{{tabIndex==index?activeColor:color}}"
+				 size="{{iconSize}}"
+				/>
+				<view wx:if="{{item.val!=undefined }}" class="{{item.val ? 'val' :'dot'}}">{{item.val}}</view>
+			</view>
+			<view class="navTabText {{tabIndex==index && animotion ?'anomotion':''}}" style="color:{{tabIndex==index?fontSelectColor:fontColor}}">{{item.name}}</view>
+
+		</view>
+	</block>
+</view>
+

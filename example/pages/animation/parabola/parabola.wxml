@@ -1,0 +1,41 @@
+<view class="header-title-cneter">Parabola</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<block wx:for="{{fruit}}" wx:key="unique">
+			<view class="item" bind:tap="handleClick" data-index="{{index}}"  id="button{{index}}">
+				<text class="fuirt">{{item}}</text>
+				<via-button
+				 width="80"
+				 height="40"
+				 radius="10"
+				 textSize="24"
+				 text="添加"
+				/>
+			</view>
+		</block>
+
+	</view>
+</view>
+
+<view class="cart-position-right">
+	<via-icon color="red" size="60" name="cart"  id="cardID"/>
+</view>
+
+<!-- 抛物线动画 -->
+<via-animotion-parabola  id="parabolaAnimotion"   >
+  <text style="width:60rpx;height:60rpx;">{{curent}}</text>
+</via-animotion-parabola>
+ 
+
+
+ 
+
+
+
+
+

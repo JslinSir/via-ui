@@ -1,0 +1,143 @@
+.via-switchBox {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 28rpx;
+    color: #323232;
+    background: #f6f6f6;
+    border-radius: 10rpx;
+    line-height: 60rpx;
+    padding: 4rpx;
+}
+
+.via-switchItem {
+    width: 150rpx;
+    line-height: 52rpx;
+    text-align: center;
+}
+
+.via-switchSelect0 {
+    border-radius: 10rpx;
+    background-color: #fff;
+    animation: via-changeToLeft 0.3s ease-in-out 1;
+
+}
+
+.via-switchSelect1 {
+    border-radius: 10rpx;
+    background-color: #fff;
+    animation: via-changeToRight 0.3s ease-in-out 1;
+
+}
+
+
+@keyframes via-changeToRight {
+    0% {
+        opacity: 0.8;
+        transform: translateX(-100%)
+    }
+
+    50% {
+        opcity: 0.5;
+        transform: translateX(-50%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes via-changeToLeft {
+    0% {
+        opacity: 0.8;
+        transform: translateX(100%)
+    }
+
+    50% {
+        opcity: 0.9;
+        transform: translateX(50%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
+.via-switchRadioBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100rpx;
+    height: 60rpx;
+    border-radius: 60rpx;
+    border: 1rpx solid #f6f6f6;
+    background-color: palegreen;
+}
+
+
+
+.via-radio {
+    height: 56rpx;
+    width: 56rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1rpx solid #f6f6f6;
+    animation: via-changeLeftOpacity 0.3s linear 1;
+}
+
+.via-radio-select {
+    height: 56rpx;
+    width: 56rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1rpx solid #f6f6f6;
+    animation: via-changeRightOpacity 0.3s linear 1;
+
+}
+
+@keyframes via-changeRightOpacity {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+
+    50% {
+        opcity: 0;
+        transform: translateX(-50%)
+    }
+
+    70%{
+         transform: translateX(0) 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes via-changeLeftOpacity {
+    0% {
+        opacity: 0;
+        transform: translateX(100%)
+    }
+
+    50% {
+        opcity: 1;
+        transform: translateX(50%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+.via-jcstart{
+    justify-content: flex-start; 
+}
+.via-jcend{
+    justify-content: flex-end; 
+}

@@ -1,0 +1,24 @@
+
+.picker-view-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.item-box {
+    width: 100vw;
+    height: 80%;
+    text-align: center;
+  }
+  
+  .item{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    font-size: 15px;
+    color: #000;
+  }

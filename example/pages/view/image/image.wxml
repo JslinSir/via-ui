@@ -1,0 +1,51 @@
+<view class="header-title-cneter">Image</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+        <via-image  src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png" class-image="img-style" />
+    </view>
+</view>
+ 
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+         懒加载，带 懒加载默认图
+    </view>
+    <view class="intro-cotent">
+        <via-image 
+        lazyLoad 
+        loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png"
+        src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png"
+        class-image="img-style" />
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+          加载失败
+    </view>
+    <view class="intro-cotent">
+        <via-image 
+        lazyLoad 
+        loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png"
+        src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85fxxxx.png"
+        class-image="img-style" />
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+          开启预览
+    </view>
+    <view class="intro-cotent">
+        <via-image 
+        preView
+        src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png"
+        class-image="img-style" />
+    </view>
+</view>

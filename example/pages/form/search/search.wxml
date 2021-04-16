@@ -1,0 +1,46 @@
+<view class="header-title-cneter">SearchBar</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-searchBar  bind:onClickSearchText="handleClickSearchText"/>
+
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		禁用
+	</view>
+	<view class="intro-cotent">
+		<via-searchBar  placeholder="请输入会员名称"  disabled/>
+
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		搜索词滚动
+	</view>
+	<view class="intro-cotent">
+		<via-searchBar  searchText="" carousel carouselText="{{carouselText}}"/>
+
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义
+	</view>
+	<view class="intro-cotent">
+		<via-searchBar placeholder="请输入" value="{{value}}" width="400" searchText="取消" bind:onChange="handleChange"/>
+
+	</view>
+</view>

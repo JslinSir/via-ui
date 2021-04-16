@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "via-card":"via-mp-ui/via-card/index"
+  }
+}

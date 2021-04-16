@@ -1,0 +1,4 @@
+<view class="via-block via-transition-{{transition}}">
+	<slot/>
+</view>
+

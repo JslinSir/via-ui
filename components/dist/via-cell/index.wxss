@@ -1,0 +1,38 @@
+.via-ui-cell-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24rpx;
+    background-color: #fff;
+    height: 88rpx;
+    border-radius: 10rpx;
+}
+
+.via-ui-cell-left-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.via-ui-left-icon {
+    margin-right: 20rpx;
+}
+
+.via-ui-cell-left-text {
+    font-size: 28rpx;
+    color: #323232;
+}
+
+.via-ui-cell-right-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.via-ui-cell-right-text {
+    font-size: 28rpx;
+    color: #A3A3A3;
+}

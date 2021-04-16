@@ -1,0 +1,34 @@
+<view class="header-title-cneter">TimeLine</view>
+<view class="intro"  >
+    <view class="intro-titel"  >
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+        <via-timeLine  dataSource="{{dataSource}}"/>
+    </view>
+</view>
+
+
+<view class="intro"  >
+    <view class="intro-titel"  >
+        <view class="title-radio" />
+        设置选中 current
+    </view>
+    <view class="intro-cotent">
+        <via-timeLine  dataSource="{{dataSource}}" current="2"/>
+    </view>
+</view>
+
+
+<view class="intro"  >
+    <view class="intro-titel"  >
+        <view class="title-radio" />
+        自定义选中色
+    </view>
+    <view class="intro-cotent">
+        <via-timeLine  dataSource="{{dataSource}}" current="2" activeColor="#0188FF"  activeBorderColor="#e8f3fe"/>
+    </view>
+</view>
+
+ 

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "via-icon":"../via-icon/index",
+    "via-touchableOpacity":"../via-touchableOpacity/index"
+  }
+}

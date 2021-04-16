@@ -1,0 +1,8 @@
+<view class="radio" style="width:{{radioSize}}rpx;height:{{radioSize}}rpx;" wx:if="{{!action}}" bindtap="handleClick" />
+<block wx:else>
+  <via-animotion-transition transition="fadeinScale">
+    <view class="action" style="width:{{radioSize+4}}rpx;height:{{radioSize+4}}rpx;background:{{actionColor}};">
+      <via-icon size="{{0.8*radioSize}}" name="check" color="#fff" bindtap="handleClick" />
+    </view>
+  </via-animotion-transition>
+</block>

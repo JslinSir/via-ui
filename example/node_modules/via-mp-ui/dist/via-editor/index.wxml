@@ -1,0 +1,54 @@
+<!-- 版本可用 -->
+<block wx:if="{{weChatSdkCanUse}}">
+  <view class="rich-editor" style="height:{{editorHeight}}px;">
+    <editor 
+      class="ql-container" 
+      id="editor" 
+      placeholder="{{placeholder}}" 
+      bindstatuschange="onStatusChange" 
+      bindready="onEditorReady" 
+      cursor-spacing="{{50}}"
+      bindblur="handleBlur"
+      bindinput="handleInput"
+      bindfocus="handleEditorFocus"
+    >
+    </editor>
+  </view>
+  <view class="toolbar" style="bottom: {{isIOS ? keyboardHeight : 0}}px;" hidden="{{keyboardHeight > 0 ? false : true}}">
+    <view class="icon-group flex-center-between">
+      <view class="flex flex-middle" catchtouchend="format">
+        <image class="edit-icon" catchtouchend="insertImage" src="./icon/icon_editor_photo.png"></image>
+        <image class="edit-icon" hidden="{{!formats.color}}" catchtouchend="toggleDrawPanel" src="./icon/icon_editor_color_pre.png" style="background: {{formats.color ? formats.color : 'none'}}"></image>
+        <image class="edit-icon" hidden="{{formats.color}}" catchtouchend="toggleDrawPanel" src="./icon/icon_editor_color_def.png" style="background: {{formats.color ? formats.color : 'none'}}"></image>
+        <image class="edit-icon" src="{{formats.bold ? './icon/icon_editor_bold_pre.png' : './icon/icon_editor_bold_def.png'}}" data-name="bold"></image>
+      </view>
+      <view class="flex flex-middle">
+        <image class="edit-icon" src="./icon/icon_editor_keyboard.png"></image>
+      </view>
+      <view class="draw-panel draw-panel {{showDrawPanel ? 'draw-panel__show' : 'draw-panel__hide'}}">
+        <view class="flex panel-body" catchtouchend="format">
+          <view class="triangle-bottom panel-triangle"></view>
+          <view class="panel-item flex flex-center-xy" wx:for="{{colors}}" wx:key="index" wx:for-item="item" data-name="color" data-value="{{item}}" style="background: {{item}};">
+            <image class="editor-check {{formats.color == item ? 'editor-check__show' : 'editor-check__hide'}}" data-name="color" data-value="{{item}}" src="./icon/icon_editor_check.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view  class="editor-bottom"  wx:if="{{bottomBtnShow}}">
+     <slot  wx:if="{{bottomSlot}}"></slot>
+     <block wx:else>
+      <via-button width="340" class-button="cancel-btn" text="取消" bind:onClick="cancel"/>
+      <via-button width="340" text="完成" bind:onClick="saveEditor" class-button="save-btn"/>
+     </block>
+  
+  </view>
+
+</block>
+<!-- 版本不可用 -->
+<block wx:else>
+	<view class="wechat-sdk-error-info">客户端版本过低，编辑器无法使用，请更新最新客户端</view>
+</block>	
+
+<clipImage id="clipImage" />

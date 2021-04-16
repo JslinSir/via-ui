@@ -1,0 +1,13 @@
+
+<view class="header-title-cneter">DatePicker</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+    	<via-editor  placeholder="请输入..." bind:save="handleSave"  />
+
+	</view>
+</view>

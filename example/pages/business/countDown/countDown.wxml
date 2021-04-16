@@ -1,0 +1,45 @@
+<view class="header-title-cneter">CountDown</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法 date=2022-01-01
+	</view>
+	<view class="intro-cotent">
+     <via-countDown  date="2022-01-01"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		更换单位 hu=":" mu=":" su=""
+	</view>
+	<view class="intro-cotent">
+     <via-countDown  date="2022-04-15" hu=":" mu=":" su=""/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义
+	</view>
+	<view class="intro-cotent">
+     <via-countDown  class-time-style="class-time-style" class-u-style="class-u-style" date="2022-01-01" hu=":" mu=":" su=""/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义
+	</view>
+	<view class="intro-cotent">
+        <view class="self-view-time">
+            <text class="self-text">距结束仅剩</text>
+              <via-countDown class-day-style="day-style"  class-time-style="class-time-style2" class-u-style="class-u-style2" date="2022-01-01" hu=":" mu=":" su=""/>
+        </view>
+   
+	</view>
+</view>

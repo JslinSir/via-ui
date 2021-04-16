@@ -1,0 +1,22 @@
+
+
+<view class="header-title-cneter">CarouselText</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+       <via-carouselText speed="3" text="恭喜你获得了VIP权利，尊享VIP权利"/>
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        竖向滚动
+    </view>
+    <view class="intro-cotent">
+       <via-carouselText speed="3" text="{{text}}" direction="column"/>
+    </view>
+</view>

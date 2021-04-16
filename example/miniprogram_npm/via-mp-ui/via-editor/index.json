@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "via-button":"../via-button/index"
+  }
+}

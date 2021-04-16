@@ -1,0 +1,29 @@
+<view class="header-title-cneter">ActionSheet</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法 alert
+	</view>
+	<view class="intro-cotent">
+		<via-button  bindtap="handleClick">显示 action Sheet</via-button>
+	</view>
+</view>
+
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义
+	</view>
+	<view class="intro-cotent">
+		<via-button  bindtap="handleClick2">自定义 action Sheet</via-button>
+	</view>
+</view>
+
+
+<via-actionSheet id="actionSheet"  actionData="{{actionData}}" bind:onClick="handleActionClick" bind:onClose="handleClose"/>
+
+
+<via-actionSheet title="请选择" actionStatus="{{actionStatus}}" cancelTextColor="#aaa" textColor="#FF2332" actionData="{{actionData2}}" bind:onClick="handleActionClick2" bind:onClose="handleClose2"/>

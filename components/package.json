@@ -1,0 +1,27 @@
+{
+  "name": "via-mp-ui",
+  "version": "0.0.3",
+  "miniprogram": "dist",
+  "description": "一个简单 易用的小程序原生组件库 Via UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JslinSir/via-ui.git"
+  },
+  "keywords": [
+    "via-ui",
+    "via",
+    "ui",
+    "via-mp-components",
+    "mp-conmponents"
+  ],
+  "author": "JsLin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JslinSir/via-ui/issues"
+  },
+  "homepage": "https://github.com/JslinSir/via-ui#readme"
+}

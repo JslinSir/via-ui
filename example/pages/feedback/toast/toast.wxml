@@ -1,0 +1,38 @@
+<view class="header-title-cneter">Toast</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="toast">toast</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		success
+	</view>
+	<view class="intro-cotent">
+
+		<via-button  bind:onClick="success">success</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		error
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="error">error</via-button>
+	</view>
+</view>
+
+ 
+
+<via-toast id="toast" />
+

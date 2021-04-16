@@ -1,0 +1,59 @@
+<view class="header-title-cneter">Pop</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button text="默认底部弹出" data-direction="bottom" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从上弹出
+	</view>
+	<view class="intro-cotent">
+		<via-button text="从上弹出" data-direction="top" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从左弹出
+	</view>
+	<view class="intro-cotent">
+		<via-button text="从左弹出" data-direction="left" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从右弹出
+	</view>
+	<view class="intro-cotent">
+		<via-button text="从右弹出" data-direction="right" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从中间弹出
+	</view>
+	<view class="intro-cotent">
+		<via-button text="从中间弹出" data-direction="center" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+ 
+
+<via-pop id="pop" direction="{{direction}}">
+	<view class="pop-view">
+		<via-brand/>
+	</view>
+	</via-pop>
+

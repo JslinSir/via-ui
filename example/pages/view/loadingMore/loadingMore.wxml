@@ -1,0 +1,44 @@
+<view class="header-title-cneter">LoadingMore</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+        <via-loadingMore  />
+    </view>
+</view>
+
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        自定义文案
+    </view>
+    <view class="intro-cotent">
+        <via-loadingMore  loadingText="客官别急，努力加载中..."/>
+    </view>
+</view>
+
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        loading:false noMore:true 没有更多
+    </view>
+    <view class="intro-cotent">
+        <via-loadingMore noMore  loading="{{false}}"  />
+    </view>
+</view>
+ 
+
+ <view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        noMore:true  自定义文案
+    </view>
+    <view class="intro-cotent">
+        <via-loadingMore noMore  loading="{{false}}"   noMoreText="- 我是有底线的 -"/>
+    </view>
+</view>
+ 

@@ -1,0 +1,13 @@
+<image
+ bindtap="handlePreview"
+ class="class-image"
+ src="{{src}}"
+ style="{{style}}"
+ mode="{{mode}}"
+ webp="{{webp}}"
+ show-menu-by-longpress="{{showMenuByLongpress}}"
+ lazy-load="{{lazyLoad}}"
+ binderror="handleImgLoadError"
+ bindload="handleLoadSuccess"
+/>
+

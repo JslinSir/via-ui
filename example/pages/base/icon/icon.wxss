@@ -1,0 +1,30 @@
+/* example/pages/base/icon/index.wxss */
+.cotent-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-show-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30rpx;
+}
+.icon-show-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180rpx;
+    height: 180rpx;
+}
+.icon-name{
+    font-size: 24rpx;
+    color:#ccc;
+    margin-top: 8rpx;
+}

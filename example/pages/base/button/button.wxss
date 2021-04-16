@@ -1,0 +1,11 @@
+page{
+    background-color: #fff;
+}
+
+.style-btn{
+    background: #FF5100 !important;
+    font-size: 28rpx  !important;
+    color: #fff  !important;
+    height: 80rpx  !important;
+   border-radius: 10rpx !important;
+}

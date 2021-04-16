@@ -1,0 +1,15 @@
+<view class="header-title">业务</view>
+
+<view class="components-content">
+	<view
+	 class="components-content-item"
+	 wx:for="{{config}}"
+	 wx:key="unique"
+	 data-nav="{{item.nav}}"
+	 bind:tap="handleJunmp"
+	>
+		<via-cell leftText="{{item.name}}" />
+	</view>
+
+</view>
+
