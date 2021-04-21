@@ -13,7 +13,7 @@
   color: #fff;
   border: 1rpx solid transparent;
   transform: scale(1);
-  background-color: #343c5c;
+  background-color: #0a1d66;
   box-sizing: border-box;
 }
 

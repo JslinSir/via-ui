@@ -14,7 +14,7 @@ Component({
     },
     lightColor:{ //高亮色
       type:String,
-      value:'#343c5c'
+      value:'#0a1d66'
     },
     bgColor:{ //圆的背景色
       type:String,
@@ -24,10 +24,14 @@ Component({
       type:Number,
       value:0.6
     },
-    type:{
+    type:{//default light move
       type:String,
       value:'default'
-    }
+    },
+    theme:{ //如果样式为微信下拉刷新loading 两种主题 black,white
+      type:String,
+      value:'black'
+    },
   },
   
   attached(){

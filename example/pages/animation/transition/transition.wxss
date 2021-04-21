@@ -4,7 +4,7 @@
     line-height: 200rpx;
     text-align: center;
     border-radius: 20rpx;
-    background-color: #091B4B;
+    background-color: #0a1d66;
     color:#fff;
 }
 

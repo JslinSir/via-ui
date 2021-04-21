@@ -26,8 +26,6 @@
     transition: all 0.2s linear;
 }
 
-.toast-icon {
-    width: 48rpx;
-    height: 48rpx;
-    margin-bottom: 20rpx;
+.toast-text-top {
+    margin-top: 20rpx;
 }

@@ -1,0 +1,75 @@
+<view class="header-title-cneter">Message</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="message">基本用法</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 成功提示
+	</view>
+	<view class="intro-cotent">
+
+		<via-button  bind:onClick="success">成功提示</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 错误提示
+	</view>
+	<view class="intro-cotent">
+
+		<via-button  bind:onClick="error">错误提示</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		警告提示
+	</view>
+	<view class="intro-cotent">
+
+		<via-button  bind:onClick="warn">警告提示</via-button>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		加载提示
+	</view>
+	<view class="intro-cotent">
+
+		<via-button  bind:onClick="loading">加载提示</via-button>
+	</view>
+</view>
+
+ 
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	  自定义message时长
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="slotTime">自定义message时长</via-button>
+	</view>
+</view>
+ 
+
+<via-message id="message"  bind:onClose="handleClose"/>
+ 
+

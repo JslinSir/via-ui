@@ -30,8 +30,8 @@
 					 wx:for="{{configData}}"
 					 wx:key="unique"
 					>
-						<view class="color-squre c{{index}}" />
-						<view>{{item.name}}</view>
+						<image class="color-squre" src="./img/{{item.icon}}.png"></image>
+						<view class="icon-name">{{item.name}}</view>
 					</view>
 				</view>
 			</view>
@@ -55,5 +55,5 @@
 	</view>
 </via-ad>
 
-<via-navTab tab="{{tabs}}" curentTab="{{curentIndex}}" bind:onChange="handleTabChange" />
+<via-navTab tab="{{tabs}}" curentTab="{{curentIndex}}"  bind:onChange="handleTabChange" />
 

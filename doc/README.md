@@ -17,13 +17,12 @@
 
 ### 规范
  * 适配：尺寸统一使用：rpx
- * 组件的 triggerEvent 统一 on开头 如：onCLick
+ * 组件的 triggerEvent 统一 on开头 如：onClick
  * 组件的外部样式 externalClasses  统一 class开头  如：class-xxxx 
  * 关于遮罩层级的一个说明：导航 层级为9  mask 层级要>= 10  
 
 
-### 版本
- ----    0.0.2  调整目录结构
+ 
 ### 安装
 1. ``` npm install via-mp-ui```
 2. 在微信开发者工具选择 构建npm 
@@ -36,8 +35,9 @@
   
 
 ### 仓库地址
-git：` https://github.com/JslinSir/via-ui `
-npm：`https://www.npmjs.com/package/via-mp-ui`
+* git：` https://github.com/JslinSir/via-ui `
+* npm：`https://www.npmjs.com/package/via-mp-ui`
+* doc: `https://jslinsir.github.io/via-ui-doc/`
 
 ### Via UI 由来
 Via 在英文单词里的意思是 "经过" 我想汉语 “征途” 更适合它<br>

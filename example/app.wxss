@@ -6,7 +6,7 @@ page{
 
 /* components index */
 .header-title{
-    background-color: #091B4B;
+    background-color: #0a1d66;
     font-size: 32rpx;
     color: #fff;
     height: 80rpx;
@@ -33,7 +33,7 @@ page{
     align-items: center;
     justify-content: center;
     font-size: 32rpx;
-    color: #091B4B;
+    color: #0a1d66;
     position: relative;
     padding-top: 30rpx;
     margin-bottom: 30rpx;
@@ -58,13 +58,13 @@ page{
       flex-direction: row;
       align-items: center;
       font-size: 32rpx;
-      color:#091B4B;
+      color:#0a1d66;
   }
   .title-radio{
       margin-right: 10rpx;
       width: 16rpx;
       height: 16rpx;
-      border:4rpx solid #091B4B;
+      border:4rpx solid #0a1d66;
       border-radius: 50%;
   }
   

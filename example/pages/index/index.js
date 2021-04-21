@@ -25,7 +25,7 @@ Page({
       {
           name:'组件库',
           icon:'home',
-          iconSelect:'homefill',
+          iconSelect:'homefill'
       },
      
       {
@@ -82,5 +82,20 @@ Page({
   },
 
   handleToComponentsIndex(e) { wx.navigateTo({ url: e.currentTarget.dataset.router }) },
+
+  onShareAppMessage(){
+    return {
+      title: 'Via UI 一个简单易用UI组件库',
+      path:'/pages/index/index',
+      imageUrl:'../../img/share.png'
+    }
+  },
+  onShareTimeline(){
+    return {
+      title: 'Via UI 一个简单易用UI组件库',
+      path:'/pages/index/index',
+      imageUrl:'../../img/share.png'
+    }
+  },
 
 })

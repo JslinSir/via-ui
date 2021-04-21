@@ -5,7 +5,7 @@
         基本用法
     </view>
     <view class="intro-cotent">
-        <via-image  src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png" class-image="img-style" />
+        <via-image  src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" class-image="img-style" />
     </view>
 </view>
  
@@ -18,7 +18,7 @@
         <via-image 
         lazyLoad 
         loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png"
-        src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png"
+        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
         class-image="img-style" />
     </view>
 </view>
@@ -31,8 +31,7 @@
     <view class="intro-cotent">
         <via-image 
         lazyLoad 
-        loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png"
-        src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85fxxxx.png"
+        loadingImg="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
         class-image="img-style" />
     </view>
 </view>
@@ -45,7 +44,7 @@
     <view class="intro-cotent">
         <via-image 
         preView
-        src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png"
+        src="https://6a73-jslin-fwqc3-1302163217.tcb.qcloud.la/callme.jpg?sign=3f7e4a504d064919abd3a936f22db39b&t=1618484689"
         class-image="img-style" />
     </view>
 </view>

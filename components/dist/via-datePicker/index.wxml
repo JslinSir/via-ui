@@ -9,7 +9,7 @@
  confirmColor="{{confirmColor}}"
  confirm
  title="{{title}}"
- bind:confirm="handleConfirm"
+ bind:onConfirm="handleConfirm"
  class-header-title="class-header-title"
 >
 

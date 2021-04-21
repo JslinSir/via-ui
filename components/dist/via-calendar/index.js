@@ -34,7 +34,7 @@
      },
      confirmColor: {
        type: String,
-       value: '#1976D2'
+       value: '#0a1d66'
      },
      clickConfirmAutoClose: { //点击确定 是否自动关闭 弹窗
        type: Boolean,

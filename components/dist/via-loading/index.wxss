@@ -15,3 +15,58 @@
     transform-origin: center;
   }
 }
+
+
+.indicator {
+display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dot {
+  display: inline-block;
+  width: 12rpx;
+  height: 12rpx;
+  margin: 0 6rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+
+@keyframes dotsloading-black {
+  0% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: #fff;
+  }
+
+  51% {
+    background-color: #ccc;
+  }
+
+  100% {
+    background-color: #ccc; 
+  }
+}
+
+@keyframes dotsloading-white {
+  0% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: #fff;
+  }
+
+  51% {
+    background-color: #ccc;
+  }
+
+  100% {
+    background-color: #ccc;
+  }
+}

@@ -27,15 +27,15 @@
 <view class="intro">
 	<via-card title="仓库地址">
 		<view class="intro-cotent">
-			<view class="intro-cotent-row" data-url="ghttps://github.com/JslinSir/via-ui" bind:tap="handleCopyLink">
+			<view class="intro-cotent-row" data-url="https://github.com/JslinSir/via-ui" bind:tap="handleCopyLink">
 				<image class="link-icon" src="../img/github.png" />
-				<text class="link">ghttps://github.com/JslinSir/via-ui</text>
+				<text class="link">https://github.com/JslinSir/via-ui</text>
 			</view>
 			<view class="intro-cotent-row" data-url="https://www.npmjs.com/package/via-mp-ui" bind:tap="handleCopyLink">
 				<image class="link-icon" src="../img/npm.png" />
 				<text class="link">https://www.npmjs.com/package/via-mp-ui</text>
 			</view>
-      	<view class="intro-cotent-row" data-url="" bind:tap="handleCopyLink">
+      	<view class="intro-cotent-row" data-url="https://jslinsir.github.io/via-ui-doc/" bind:tap="handleCopyLink">
 				<image class="link-icon" src="../img/doc.png" />
 				<text class="link">https://jslinsir.github.io/via-ui-doc/</text>
 			</view>
@@ -47,7 +47,7 @@
 	<via-card title="规范">
 		<view class="intro-cotent">
 			<text>适配：尺寸统一使用：rpx。</text>
-			<text>组件的 triggerEvent 统一 on开头 如：onCLick。</text>
+			<text>组件的 triggerEvent 统一 on开头 如：onClick。</text>
 			<text>组件的外部样式 externalClasses  统一 class开头  如：class-xxxx 。</text>
 			<text>关于遮罩层级的一个说明：导航 层级为9  mask 层级要>= 10 。</text>
 		</view>

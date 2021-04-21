@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "via UI",
   "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#091B4B",
+  "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
     "via-status": "via-mp-ui/via-status/index",
     "via-cell": "via-mp-ui/via-cell/index"

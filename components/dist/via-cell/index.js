@@ -6,7 +6,7 @@ Component({
   properties: {
     height: {
       type: Number,
-      value: 88
+      value: 120
     },
     width: {
       type: Number,

@@ -23,6 +23,16 @@
 <view class="intro">
 	<view class="intro-titel">
 		<view class="title-radio" />
+		微信下拉刷新移动样式loading
+	</view>
+	<view class="intro-cotent">
+		<via-loading type="move"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
 		自定义颜色
 	</view>
 	<view class="intro-cotent">

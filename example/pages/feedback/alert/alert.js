@@ -10,7 +10,7 @@ Page({
     this.modal = this.selectComponent('#alert')
   },
   alertIsArray() {
-    const content = ['周一 09:00', '周一 09:00', '周一 09:00']
+    const content = ['周一 09:00', '周二 09:00', '周三 09:00']
     this.modal.alert({title: '我是标题', okText: '我知道了', content, style: "line-height: 60rpx;text-align: center"})
   },
   alert() {

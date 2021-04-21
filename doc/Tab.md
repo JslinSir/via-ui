@@ -31,7 +31,7 @@
 | --- | --- | --- | --- | --- |
 | tabs | tab数据源 | Array | [ ] | {title,key} |
 | selectColor | 选中色 | String | '' |   |
-| activeTab | 当前激活Tab索引 | Number| 0 |  | 
+| activeTab | 当前激活Tab索引 | Number| 0 |  | |
  
 
 ### 外部样式类

@@ -61,14 +61,14 @@
 .active{
   border-radius: 50%;
   color:#fff;
-  background-color: #0188FF;
+  background-color: #0a1d66;
 }
 .active-default{
   border-radius: 50%;
-  border:1rpx solid #0188FF;
+  border:1rpx solid #0a1d66;
 }
 .active-row{
-  background-color: #0188FF;
+  background-color: #0a1d66;
 }
 .active-row:first-child{
   border-top-left-radius: 50%;
@@ -80,7 +80,7 @@
 }
 .calendar-select{
   position: absolute;
-  background-color: #091B4B;
+  background-color: #0a1d66;
   width: 48rpx;
   height: 48rpx;
   line-height: 48rpx;
@@ -112,7 +112,7 @@
 .tips{
   position: absolute;
   margin-top: 4rpx;
-  color: #0188FF;
+  color: #0a1d66;
   font-size: 20rpx;
   bottom:-15rpx;
 }

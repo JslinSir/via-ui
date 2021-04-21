@@ -1,0 +1,53 @@
+ 
+
+.message-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 100rpx;
+  left: 0;
+  right: 0; 
+  z-index: 8;
+  opacity:0;
+}
+
+.message{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+  max-width: 600rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #323232;
+  border-radius: 20rpx;
+  padding: 0 24rpx;
+  background-color: #fff;
+  box-shadow: 0 8rpx 12rpx rgb(0, 0, 0 / 15%);
+}
+
+.content{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ 
+.icon-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+}
+
+.mgl10{
+  margin-left: 10rpx;
+}
+ 
+
+ 

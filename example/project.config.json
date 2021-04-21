@@ -23,7 +23,7 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -41,7 +41,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.15.0",
-  "appid": "wx39ff6e4320fe4a6c",
+  "appid": "wx362314b4bb8a81fc",
   "projectname": "via-mp-components",
   "debugOptions": {
     "hidedInDevtools": []

@@ -85,6 +85,7 @@
   100% {
     transform: scale(1);
   }
+
 }
 
 @supports (bottom: constant(safe-area-inset-bottom)) {

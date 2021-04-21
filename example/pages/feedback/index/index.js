@@ -10,6 +10,10 @@ const config = [
     nav: '../toast/toast'
   },
   {
+    name: 'Message 消息提示',
+    nav: '../message/message'
+  },
+  {
     name: 'Alert 对话框',
     nav: '../alert/alert'
   },

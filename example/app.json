@@ -46,7 +46,9 @@
     "pages/feedback/toast/toast",
     "pages/layout/card/card",
     "pages/navigation/navigation/navigation",
-    "pages/navigation/navigation/base"
+    "pages/navigation/navigation/base",
+    "pages/feedback/message/message",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -55,7 +57,8 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
-    "via-icon": "via-mp-ui/via-icon/index"
+    "via-icon": "via-mp-ui/via-icon/index",
+    "via-loading": "via-mp-ui/via-loading/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

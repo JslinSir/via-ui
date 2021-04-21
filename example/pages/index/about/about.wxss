@@ -5,7 +5,7 @@
   justify-content: center;
   font-size: 36rpx;
   color: #fff;
-  background-color: #091B4B;
+  background-color: #0a1d66;
   height: 120rpx;
   padding: 30rpx 24rpx;
   border-bottom-left-radius: 30rpx;
@@ -30,7 +30,7 @@
 
 .title{
   font-size: 36rpx;
-  color:#091B4B
+  color:#0a1d66
 }
 .des{
   margin-top: 20rpx;

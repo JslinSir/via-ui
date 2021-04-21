@@ -13,7 +13,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #091B4B;
+    background-color: #0a1d66;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +37,6 @@
     background-color: #fff;
 }
 .logo-text{
-    color: #091B4B;
+    color: #0a1d66;
     font-size: 36rpx;
 }

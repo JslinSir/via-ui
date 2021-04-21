@@ -34,6 +34,7 @@
 ## 操作反馈  
   * [TouchableOpacity 按压态](TouchableOpacity.md)
   * [Toast 吐司](Toast.md)
+  * [Message 消息](Message.md)
   * [Alert 对话框](Alert.md)
   * [Mask 遮罩](Mask.md)
   * [Pop 弹出层](Pop.md)

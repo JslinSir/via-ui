@@ -35,7 +35,7 @@ Component({
 
     height: {// 按钮高度
       type: Number,
-      value: 86,
+      value: 88,
     },
     
     radius: { //按钮 圆角
@@ -45,7 +45,7 @@ Component({
 
     btnColor:{ //按钮背景色
       type: String,
-      value: '343c5c'
+      value: '#0a1d66'
     },
 
     styleName: { //按钮样式的字符串形式

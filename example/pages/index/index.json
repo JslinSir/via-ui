@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "via UI",
-  "navigationBarBackgroundColor": "#091B4B",
+  "navigationBarBackgroundColor": "#0a1d66",
   "navigationBarTextStyle": "white",
   "usingComponents": {
     "via-navTab":"via-mp-ui/via-navTab/index",

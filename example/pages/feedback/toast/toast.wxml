@@ -25,6 +25,17 @@
 <view class="intro">
 	<view class="intro-titel">
 		<view class="title-radio" />
+		warn
+	</view>
+	<view class="intro-cotent">
+
+		<via-button  bind:onClick="warn">warn</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
 		error
 	</view>
 	<view class="intro-cotent">
@@ -32,7 +43,52 @@
 	</view>
 </view>
 
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		loading
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="loading">loading</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		loading type of move
+	</view>
+	<view class="intro-cotent">
+		<via-button bind:onClick="loadingMove">loading type of move</via-button>
+	
+		
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	  自定义slot
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="toastSlot">自定义slot</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	  自定义toast时长
+	</view>
+	<view class="intro-cotent">
+		<via-button  bind:onClick="toastSlotTime">自定义toast时长</via-button>
+	</view>
+</view>
  
 
-<via-toast id="toast" />
+<via-toast id="toast"  />
+<via-toast id="toastLoadingMove" loadingType="move" />
+<via-toast id="toastSlot" loadingType="move" >
+ <view class="toast-brand">Via UI</view>
+</via-toast>
 

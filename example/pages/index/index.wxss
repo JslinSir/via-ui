@@ -13,7 +13,7 @@ page{
   justify-content: center;
   font-size: 36rpx;
   color: #fff;
-  background-color: #091B4B;
+  background-color: #0a1d66; 
   height: 120rpx;
   padding: 30rpx 24rpx;
   border-bottom-left-radius: 30rpx;
@@ -61,33 +61,13 @@ page{
 .color-squre{
    width: 60rpx;
    height: 60rpx;
-   border-radius: 20rpx;
    margin-bottom: 20rpx;
 }
-.c0{
-  background-color: #F2D6CE;
+.icon-name{
+  font-size: 28rpx;
+  color: #666;
 }
-.c1{
-  background-color: #E86684;
-}
-.c2{
-  background-color: #EDBB70;
-}
-.c3{
-  background-color: #D17BC1;
-}
-.c4{
-  background-color: #F0E478;
-}
-.c5{
-  background-color: #D9EDD8;
-}
-.c6{
-  background-color: #4EB9BD;
-}
-.c7{
-  background-color: #7579e7;
-}
+
 .scroll-contain {
   width: 100%;
   height: 100%;
@@ -114,7 +94,7 @@ page{
 }
 
 .freshloading {
-  background: linear-gradient(90deg, #091B4B 25%, red 37%, green 63%);
+  background: linear-gradient(90deg, #0a1d66 25%, red 37%, green 63%);
   background-size: 400% 100%;
   font-size: 32rpx;
   -webkit-background-clip: text;
@@ -146,7 +126,7 @@ page{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #091B4B;
+  background-color: #0a1d66;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,6 +150,6 @@ page{
   background-color: #fff;
 }
 .logo-text{
-  color: #091B4B;
+  color: #0a1d66;
   font-size: 36rpx;
 }

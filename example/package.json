@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "via-mp-ui": "0.0.3"
+    "via-mp-ui": "0.0.5"
   }
 }

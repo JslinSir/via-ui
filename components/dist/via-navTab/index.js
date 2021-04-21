@@ -40,7 +40,7 @@ Component({
     },
     activeColor:{
       type: String,
-      value: '#343c5c',
+      value: '#0a1d66',
     },
     fontSize:{
       type: Number,

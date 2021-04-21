@@ -19,7 +19,10 @@ Component({
    */
   methods: {
     handleCopyLink(e){
-      wx.setClipboardData({ data:e.currentTarget.dataset.url })
+      // wx.navigateTo({
+      //   url: `/pages/webview/webview?src=${e.currentTarget.dataset.url }`,
+      // })
+       wx.setClipboardData({ data:e.currentTarget.dataset.url })
     },
     handePreview(){
       wx.previewImage({
