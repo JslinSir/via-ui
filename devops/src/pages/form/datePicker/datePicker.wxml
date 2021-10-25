@@ -1,0 +1,32 @@
+
+<view class="header-title-cneter">DatePicker</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+	   <view  style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+    	<via-button text="显示日期选择器"   bind:onClick="handleBtnClick" />
+
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义 范围 颜色等
+	</view>
+	<view class="intro-cotent">
+ 
+    	<via-button text="自定义"   bind:onClick="handleBtnClick2" />
+
+	</view>
+</view>
+
+
+	<via-datePicker id="datepicker1"  bind:onChange="handleChange" value="{{selectValue}}"  bind:onConfirm="handleConfirm"  />
+
+	<via-datePicker id="datepicker2" beginRange="3" endRange="2"  title="请选择日期" class-header-title="title" confirmColor="red" cancelColor="#999" />

@@ -1,0 +1,58 @@
+@import "../style/animate.scss";
+
+.via-block{
+  display: inline-block;
+}
+.via-transition-fadein {
+  animation: via-fade-in .3s ease-in-out;
+}
+
+
+.via-transition-fadeout {
+  animation: via-fade-out .3s ease-in-out;
+}
+
+.via-transition-fadeinFromBottom {
+  animation: via-fade-in-from-bottom .3s ease-in-out;
+}
+
+.via-transition-fadeinFromTop {
+  animation: via-fade-in-from-top .3s ease-in-out;
+}
+
+.via-transition-fadeinFromLeft {
+  animation: via-fade-in-from-left .3s ease-in-out;
+}
+
+
+.via-transition-fadeinFromRight {
+  animation: via-fade-in-from-right .3s ease-in-out;
+}
+
+.via-transition-fadeinScale {
+  animation: fade-in-scale .3s ease-in-out;
+}
+
+.via-transition-fadeinSwingY {
+  animation: fade-in-swing-y .3s ease-in-out;
+}
+.via-transition-fadeinSwingRightX {
+  animation: fade-in-swing-right-x .3s ease-in-out;
+}
+
+.via-transition-fadeinSwingLeftX {
+  animation: fade-in-swing-left-x .3s ease-in-out;
+}
+
+.via-transition-rotate180 {
+  animation: rotate-180 .3s ease-in-out;
+}
+
+.via-transition-rotate360 {
+  animation: rotate-360 .3s ease-in-out;
+}
+
+
+
+
+

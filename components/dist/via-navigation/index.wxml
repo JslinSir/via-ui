@@ -1,38 +1,34 @@
 <view class="mp-navigation-view">
-  <!-- 占用高度 -->
+  
   <view wx:if="{{placeholder}}" class="mp-navigation-placeholder" style="width: 100%;height: calc({{menuTop + menuHeight}}px + 12rpx);"/>
 
-  <!-- 背景 -->
+  
   <view class="mp-navigation-bg" style="width: 100%;height: calc({{menuTop + menuHeight}}px + 12rpx);opacity:{{opacity}};background-color: {{bg}}"/>
 
-  <!-- 导航内容 -->
+  
   <view class="mp-navigation" style="padding-top: calc({{menuTop}}px);">
     <view class="mp-navigation-main" style="height: {{menuHeight}}px;padding-bottom: 12rpx">
-      <!-- 导航图标 -->
+      
       <view class="mp-navigation-nav-back-view {{backHome && round ?'mp-navigation-round' :''}}" catchtap="navigateBack" wx:if="{{showIcon}}">
-        <view class="mp-navigation-{{backHome? 'home': 'default'}}-icon " >
+        <view class="mp-navigation-{{backHome? 'home': 'default'}}-icon">
           <block wx:if="{{backHome}}">
-            <via-icon  name="home" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
+            <via-icon name="home" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
           </block>
           <block wx:else>
-             <via-icon  name="back" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
+             <via-icon name="back" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
           </block>
           
         </view>
         <view class="mp-navigation-line"></view>
       </view>
-      <!-- 标题 -->
+      
       <view class="mp-navigation-title" style="opacity:{{opacity}};color:{{titleColor}};font-size:{{titleSize}};">
         {{title}}<slot/>
       </view>
     </view>
   </view>
 
-  <view 
-    class="mp-navigation-tip" 
-    wx:if="{{tip}}" 
-    style="top: calc({{menuTop + menuHeight}}px + 24rpx);"
-  >
+  <view class="mp-navigation-tip" wx:if="{{tip}}" style="top: calc({{menuTop + menuHeight}}px + 24rpx);">
     <view class="mp-navigation-tip-triangle"></view>
     <view class="mp-navigation-tip-content">
       <view class="mp-navigation-tip-content-left">

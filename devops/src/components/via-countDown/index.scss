@@ -1,0 +1,21 @@
+.count-down-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .count-text {
+        font-size: 28rpx;
+        color: #FE473C;
+    }
+    .u-style{
+        color: #FE473C;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+
+

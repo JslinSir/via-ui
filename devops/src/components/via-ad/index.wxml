@@ -1,0 +1,24 @@
+<block wx:if="{{type==='modal'}}">
+	<via-mask id="mask" visible="{{visible}}" clickClose="{{clickClose}}">
+		<via-animotion-transition transition="fadeinSwingY">
+			<view class="ad-view">
+				<view class="ad-content class-ad-content">
+					<slot/>
+					<view class="close-icon top-close-icon" bind:tap="hide" wx:if="{{actionPosition=='top'}}">
+						<via-icon name="{{iconName}}" color="#fff" size="60" />
+					</view>
+				</view>
+				<view class="close-icon" bind:tap="hide" wx:if="{{actionPosition=='bottom'}}">
+					<via-icon name="{{iconName}}" color="#fff" size="60" />
+				</view>
+			</view>
+		</via-animotion-transition>
+	</via-mask>
+</block>
+<block wx:if="{{type==='full' && visible}}">
+	<view class="full-cotent">
+		<slot/>
+	</view>
+    <view class="close-btn" style="{{actionPosition}}:60rpx;" catch:tap="handleClose">{{countDown}}s跳过</view>
+</block>
+

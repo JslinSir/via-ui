@@ -1,0 +1,42 @@
+.via-ui-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24rpx;
+    background-color: #fff;
+    height: 88rpx;
+    border-radius: 10rpx;
+    &-left-view {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        &-left-icon{
+            margin-right: 20rpx;
+           }
+           &-left-text{
+            font-size: 28rpx;
+            color: #323232;
+           }
+    }
+    &-right-view{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        &-right-text{
+            font-size: 28rpx;
+            color: #A3A3A3;
+        }
+    }
+  
+}
+
+  
+ 
+
+ 
+ 
+
+ 

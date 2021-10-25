@@ -15,7 +15,6 @@
     var component = ins.selectComponent("#" + curentid + "")
     component.setStyle({
       "opacity": 1,
-
     })
 
 
@@ -27,7 +26,6 @@
   };
 
 </wxs>
-<view bindtap="handleClick" id="id_touchableOpacity" data-opacity="{{opacity}}" bind:touchstart="{{touch.touchStart}}"
-  bind:touchend="{{touch.touchEnd}}">
-  <slot />
+<view bindtap="handleClick" id="id_touchableOpacity" data-opacity="{{opacity}}" bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}">
+  <slot/>
 </view>

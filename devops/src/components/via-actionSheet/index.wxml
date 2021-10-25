@@ -1,0 +1,8 @@
+<via-pop id="popIDAction"  maskClose="{{maskClose}}" show="{{actionShow}}" zIndex="{{zIndex}}" direction="bottom">
+  <view class="bottom-action phox-bottom ">
+    <view class="action-title class-action-title" wx:if="{{title}}">{{title}}</view>
+      <view bindtap="handleItemClick" class="action-item" style="font-size:{{textSize}}rpx;color:{{textColor}};" wx:for="{{actionData}}" wx:key="unique" data-index="{{index}}">{{item.name}}</view>
+      <view class="line-seat"></view>
+      <view bindtap="handleCancel" class="action-item" style="color:{{cancelTextColor}};font-size:{{cancelTextSize}}rpx;height:{{lineHeight}}rpx;">{{cancelText}}</view>
+  </view>
+</via-pop>

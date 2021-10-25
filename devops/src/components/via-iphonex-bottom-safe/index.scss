@@ -1,0 +1,16 @@
+
+.iphone-x-bottom-view{
+    width: 100vw;
+}
+
+@supports (bottom: constant(safe-area-inset-bottom)) {
+    .iphone-x-bottom{
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }
+  
+  @supports (bottom: env(safe-area-inset-bottom)) {
+    .iphone-x-bottom {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }

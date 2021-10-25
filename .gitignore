@@ -3,17 +3,14 @@
 
 # production  打包文件
 /build
-#doc
-/_book
-/doc/_book
-/doc/node_modules
-/doc/.DS_Store
+#docops
+/docops/node_modules
 # misc 
 .DS_Store
 
-#example
-/example/miniprogram_npm
-/example/node_modules
-/example/.DS_Store
+#devops
+/devops/miniprogram_npm
+/devops/node_modules
+/devops/dist
 
 npm-debug.log*

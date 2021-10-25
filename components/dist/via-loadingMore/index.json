@@ -1,7 +1,1 @@
-{
-  "component": true,
-  "usingComponents": {
-    "via-loading":"../via-loading/index"
-  }
-  
-}
+{"component":true,"usingComponents":{"via-loading":"../via-loading/index"}}

@@ -1,0 +1,49 @@
+
+.via-mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+.via-pop-view {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+
+  .via-pop-cotent {
+    position: absolute;
+    z-index: 11;
+    opacity: 1;
+  }
+  .via-pop-position-top {
+    top: 0;
+  }
+
+  .via-pop-position-bottom {
+    bottom: 0;
+  }
+
+  .via-pop-position-left {
+    left: 0;
+  }
+
+  .via-pop-position-right {
+    right: 0;
+  }
+}
+
+.via-pop-position-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

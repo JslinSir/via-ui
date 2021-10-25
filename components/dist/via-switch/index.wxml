@@ -1,11 +1,7 @@
 
-<view class="via-switchBox" style="background-color:{{bgColor}};border-radius:{{radius}}rpx" wx:if="{{type==='info'}}">
+<view wx:if="{{type==='info'}}" class="via-switchBox" style="background-color:{{bgColor}};border-radius:{{radius}}rpx">
     <block wx:for="{{selectData}}" wx:key="unique">
-      <view 
-       bind:tap="handleSwitchChange"
-        class="via-switchItem {{selectId === item.id?index===0?'via-switchSelect0':'via-switchSelect1':''}}" 
-        style="width:{{width}}rpx;height:{{height}}rpx;line-height:{{height}}rpx;background-color:{{selectId === item.id?activeColor:''}};color:{{fontColor}};font-size:{{fontSize}}rpx;border-radius:{{radius}}rpx"
-        data-items="{{item}}">{{item.name}}</view>
+      <view id="switchitemid{{index}}" data-index="{{index}}" bind:tap="handleSwitchChange" class="via-switchItem" style="width:{{width}}rpx;height:{{height}}rpx;line-height:{{height}}rpx;background-color:{{selectId == item.id?activeColor:''}};color:{{selectId == item.id?fontActiveColor:'fontColor'}};font-size:{{fontSize}}rpx;border-radius:{{radius}}rpx" data-items="{{item}}">{{item.name}}</view>
     </block>
 </view>
 

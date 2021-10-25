@@ -1,0 +1,32 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .toast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 380rpx;
+        min-width: 150rpx;
+        text-align: center;
+        padding: 24rpx;
+        font-size: 32rpx;
+        color: #FFF;
+        background: rgba(0, 0, 0, 0.60);
+        border-radius: 18rpx;
+        transition: all 0.2s linear;
+        .toast-text-top {
+            margin-top: 20rpx;
+        }
+    }
+    
+}
+
+

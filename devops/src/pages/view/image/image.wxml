@@ -1,0 +1,47 @@
+<view class="header-title-cneter">Image</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+        <via-image loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png" src="https://img.zcool.cn/community/0188d360ebc7fe11013f47204ec3d8.jpg@1280w_1l_2o_100sh.jpg"
+            class-image="img-style" />
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        懒加载，带 懒加载默认图
+    </view>
+    <view class="intro-cotent">
+        <via-image lazyLoad loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png"
+            src="https://img.zcool.cn/community/0142416111e9c611013f472016913b.jpg@1280w_1l_2o_100sh.jpg"
+            class-image="img-style" />
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        加载失败
+    </view>
+    <view class="intro-cotent">
+        <via-image errorImgSize="200" lazyLoad loadingImg="http://iconfont.alicdn.com/t/ade6c02d-5c49-4085-82c6-bdcf565dbb80.png"
+        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc2.png"
+            class-image="img-style" />
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        开启预览
+    </view>
+    <view class="intro-cotent">
+        <via-image preView
+            src="https://img.zcool.cn/community/01df2d60ebc7fc11013f47204e08de.jpg@1280w_1l_2o_100sh.jpg"
+            class-image="img-style" />
+    </view>
+</view>

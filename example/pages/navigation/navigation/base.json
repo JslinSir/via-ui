@@ -1,7 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "navigationBarBackgroundColor": "#0a1d66",
-  "usingComponents": {
-    "via-navigation":"via-mp-ui/via-navigation/index"
-  }
-}

@@ -1,0 +1,18 @@
+<view class="collapse-view">
+    <!-- 折叠面板头部 -->
+    <view class="collapse-head class-collapse-head" bind:tap="handleToggleOpen">
+        <text class="collapse-head-title class-collapse-head-title">{{title}}</text>
+        <view class="collapse-icon {{open?'icon-rotate-animotion':'icon-rotate-animotion-reset'}}">
+            <via-icon name="unfold" />
+        </view>
+    </view>
+
+    <!-- 折叠面板内容 -->
+    <view class="collapse-content" wx:if="{{open}}" id="content">
+        <view>
+            <slot name="content"></slot>
+            {{content}}
+        </view>
+    </view>
+
+</view>

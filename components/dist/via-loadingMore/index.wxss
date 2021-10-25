@@ -1,11 +1,1 @@
-.loading-more {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .loading-more .loading-more-text {
-    font-size: 28rpx;
-    color: #666;
-    margin-left: 4px;
-  }
+.loading-more{display:flex;flex-direction:row;align-items:center;justify-content:center}.loading-more-text{font-size:28rpx;color:#666;margin-left:4px}

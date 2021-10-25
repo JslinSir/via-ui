@@ -1,0 +1,16 @@
+
+<view wx:if="{{type==='info'}}" class="via-switchBox" style="background-color:{{bgColor}};border-radius:{{radius}}rpx"  >
+    <block wx:for="{{selectData}}" wx:key="unique">
+      <view 
+        id="switchitemid{{index}}"
+        data-index="{{index}}"
+        bind:tap="handleSwitchChange"
+        class="via-switchItem" 
+        style="width:{{width}}rpx;height:{{height}}rpx;line-height:{{height}}rpx;background-color:{{selectId == item.id?activeColor:''}};color:{{selectId == item.id?fontActiveColor:'fontColor'}};font-size:{{fontSize}}rpx;border-radius:{{radius}}rpx"
+        data-items="{{item}}">{{item.name}}</view>
+    </block>
+</view>
+
+<view class="via-switchRadioBox {{radio?'via-jcend':'via-jcstart'}}" wx:if="{{type==='default'}}" style="width:{{width}}rpx;height:{{height}}rpx;background-color:{{radio?activeColor:bgColor}};'" bind:tap="handleRadioSwitch">
+  <view class="{{radio?'via-radio-select class-radio-select-style':'via-radio'}} class-radio-style" style="border: 1rpx solid {{radio?activeColor:bgColor}};width:{{radioSize}}rpx;height:{{radioSize}}rpx;"/>
+</view>

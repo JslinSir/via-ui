@@ -1,0 +1,47 @@
+@import '../style/utils.scss';
+
+.pop-bottom-view {
+  background-color: #fff;
+  width: 100vw;
+  height: 750rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.pop-centeer-view {
+  width: 530rpx;
+  height: 750rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.header-title-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 24rpx;
+  height: 100rpx;
+  .header-title {
+    font-weight: bold;
+    font-size: 32rpx;
+    color: #323232;
+  }
+
+.cancel-text {
+  font-size: 32rpx;
+  color: #323232;
+}
+
+.confirm-text {
+  font-size: 32rpx;
+  color: #1976D2;
+}
+}
+
+
+
+
+
+ 
+

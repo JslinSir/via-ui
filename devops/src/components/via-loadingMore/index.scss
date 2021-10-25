@@ -1,0 +1,12 @@
+.loading-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &-text {
+      font-size: 28rpx;
+      color: #666;
+      margin-left: 4px;
+    }
+  }
+ 

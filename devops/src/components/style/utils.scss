@@ -1,0 +1,158 @@
+
+
+// 1 border 
+
+@import "./them.scss";
+
+// 共享样式 
+@mixin hair-border {
+ border: 1rpx solid $border-color;
+ transform: scale(1);
+}
+
+@mixin hair-border-bottom {
+  border-bottom: 1rpx solid $border-color;
+  transform: scale(1);
+ }
+
+// 左边距
+@mixin ml($ml:10rpx) {
+  margin-left: $ml;
+}
+// 右边距
+@mixin mr($mr:10rpx) {
+  margin-right: $mr;
+}
+
+// 上边距
+@mixin mt($mt:10rpx) {
+  margin-top: $mt;
+}
+
+// 下边距
+@mixin mb($mb:10rpx) {
+  margin-bottom: $mb;
+}
+
+// 内左边距
+@mixin pl($pl:10rpx) {
+  padding-left: $pl;
+}
+// 右边距
+@mixin pr($pr:10rpx) {
+  padding-right: $pr;
+}
+
+// 上边距
+@mixin pt($pt:10rpx) {
+  padding-top: $pt;
+}
+
+// 下边距
+@mixin pb($pb:10rpx) {
+  padding-bottom: $pb;
+}
+
+// 常用类
+.ml10{
+  @include ml();
+}
+ 
+.ml20{
+  @include ml(20);
+}
+
+.ml30{
+  @include ml(30);
+}
+
+.mr10{
+  @include mr();
+}
+ 
+.mr20{
+  @include mr(20);
+}
+
+.mr30{
+  @include mr(30);
+}
+.mt10{
+  @include mt();
+}
+ 
+.mt20{
+  @include mt(20);
+}
+
+.mt30{
+  @include mt(30);
+}
+.mb10{
+  @include mt();
+}
+ 
+.mb20{
+  @include mt(20);
+}
+
+.mb30{
+  @include mt(30);
+}
+.pl10{
+  @include pl();
+}
+ 
+.pl20{
+  @include pl(20);
+}
+
+.pl30{
+  @include pl(30);
+}
+
+.pr10{
+  @include pr();
+}
+ 
+.pr20{
+  @include pr(20);
+}
+
+.pr30{
+  @include pr(30);
+}
+.pt10{
+  @include pt();
+}
+ 
+.pt20{
+  @include pt(20);
+}
+
+.pt30{
+  @include pt(30);
+}
+.pb10{
+  @include pt();
+}
+ 
+.pb20{
+  @include pt(20);
+}
+
+.pb30{
+  @include pt(30);
+}
+ 
+@supports (bottom: constant(safe-area-inset-bottom)) {
+  .phox-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+  .phox-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

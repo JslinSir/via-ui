@@ -1,0 +1,26 @@
+<via-popModal id="popModal" height="{{height}}" confirm cancelColor="{{cancelColor}}" confirmColor="{{confirmColor}}" maskClose="{{maskClose}}" bind:onConfirm="handleConfirm" bind:onClose="handleClose">
+	<scroll-view scroll-y style="height:{{height}}rpx;"  scroll-into-view="{{curentMothScrollInto}}" scroll-with-animation>
+	<view class="calendar-box" wx:for="{{calendarData}}" wx:key="unique" id="calendar_id_{{item.month}}">
+		<view class="header-date-title">{{item.year}}年{{item.month}}月</view>
+	<!-- 日期 星期 -->
+	<view class="calendar-week-view">
+		<view class="week-item"  wx:for="{{item.weeks}}" style="width:{{100/7}}vw;" wx:key="unique" wx:for-item="week" >{{week}}</view>
+	</view>
+
+	<!-- 日期，天数 -->
+	<view class="calendar-day-view">
+		<view class="calendar-days-item "  wx:for="{{item.days}}" wx:for-index="dindex" style="width:{{100/7}}vw;" wx:for-item="dayitem" wx:key="unique" data-day="{{dayitem.day}}" 
+		data-month="{{item.month}}" data-year="{{item.year}}" data-select="{{dayitem.select}}" data-index="{{dindex}}" bindtap="{{dayitem.day?'handleSelectDay':''}}">
+			<view class="dasy-item {{item.curentMonth==item.month && item.curentDay==dayitem.day?'active-default':''}} {{dayitem.select?'active':''}}" >{{dayitem.day}}</view>
+			<view class="tips" wx:if="{{item.curentMonth==item.month && item.curentDay==dayitem.day}}">今</view>
+			<view class="tips" wx:if="{{type==='range' && dayitem.select  && dayitem.tips}}">{{dayitem.tips}}</view>
+		</view>
+	</view>
+	<view class="calendar-monthgrey-show">{{item.month}}</view>
+</view>
+<view class="seat-block"></view>
+</scroll-view>
+
+</via-popModal>
+
+

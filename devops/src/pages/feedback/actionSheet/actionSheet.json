@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "via UI",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0a1d66",
+  "usingComponents": {
+    "via-actionSheet":"/components/via-actionSheet/index",
+    "via-button":"/components/via-button/index"
+  }
+}

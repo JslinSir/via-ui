@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "via-card":"/components/via-card/index"
+  }
+}

@@ -1,0 +1,36 @@
+<via-pop direction="{{direction}}" maskClose="{{maskClose}}" id="popid">
+	<block wx:if="{{direction==='center'}}">
+		<view class="pop-centeer-view class-pop-center-view" style="height:{{height}}rpx">
+			<view class="header-title-view">
+				<view />
+				<view class="header-title class-header-title">{{title}}</view>
+				<block wx:if="{{hasCloseIcon}}">
+					<via-icon name="close" size="40" color="#323232" catchtap="hide" />
+				</block>
+				<view wx:else></view>
+			</view>
+			<slot></slot>
+		</view>
+	</block>
+
+	<block wx:if="{{direction==='bottom'}}">
+		<view class="pop-bottom-view phox-bottom class-pop-bottom-view" style="height:{{height}}rpx">
+			<view class="header-title-view">
+				<block wx:if="{{confirm}}">
+					<view catchtap="hide" class="cancel-text" style="color:{{cancelColor}};font-size:{{texSize}}rpx;">{{cancelTex}}</view>
+					<view class="header-title class-header-title">{{title}}</view>
+					<view catchtap="{{confirmDisabledStatus?'':'handleConfirm'}}" class="confirm-text" style="color:{{confirmColor}};font-size:{{texSize}}rpx;opacity:{{confirmDisabledStatus?0.6:1}}">{{confirmTex}}</view>
+				</block>
+				<block wx:else>
+					<view />
+					<view class="header-title class-header-title">{{title}}</view>
+					<block wx:if="{{hasCloseIcon}}">
+						<via-icon name="close" size="40" color="#323232" catchtap="hide" />
+					</block>
+					<view wx:else></view>
+				</block>
+			</view>
+			<slot></slot>
+		</view>
+	</block>
+</via-pop>

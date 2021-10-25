@@ -1,0 +1,54 @@
+
+.collapse-view{
+  .collapse-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx;
+    background-color: #ffffff;
+    .collapse-head-title {
+      font-size: 28rpx;
+      color: #323232;
+      overflow: hidden;
+      display: -webkit-box;
+      word-break: break-all;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      text-overflow: ellipsis;
+    }
+    .collapse-icon {
+      min-width: 32rpx;
+      min-height: 32rpx;
+      margin-left: 10rpx;
+    }
+  }
+    
+  .collapse-content {
+    padding: 0 20rpx 20rpx 20rpx;
+    font-size: 28rpx;
+    color: #999;
+    background-color: #ffffff;
+    .content-animotion{
+      transition: height .3s ease-in-out;
+      overflow: hidden;
+    }
+  }
+  .content-full{
+    height: 100%;
+  }
+  .icon-rotate-animotion {
+    transform: rotate(-180deg);
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  
+  .icon-rotate-animotion-reset {
+    transform: rotate(0deg);
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+ 
+}
+  
+
+  
+ 

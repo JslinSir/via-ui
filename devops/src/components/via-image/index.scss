@@ -1,0 +1,19 @@
+ 
+ .image-view{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   .null-img{
+     width: 0;
+     height: 0;
+     opacity: 0;
+     position: absolute;
+     z-index: -100000;
+   }
+   .erro-img{
+     width: 100rpx;
+     height: 100rpx;
+   }
+ }

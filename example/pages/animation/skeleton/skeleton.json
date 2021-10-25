@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "via UI",
-  "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#0a1d66",
-  "usingComponents": {
-    "via-animotion-skeleton": "via-mp-ui/via-animotion-skeleton/index"
-  }
-}

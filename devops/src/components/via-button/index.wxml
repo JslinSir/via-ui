@@ -1,0 +1,26 @@
+<via-touchOpacity opacity="{{touchOpacity}}">
+	<view id="btn_id_components" bind:tap="handleBtnClick"
+		class="btn-content class-button {{status === 'disabled'?'btn-disabled':''}} class-button-disabled"
+		style="{{styleName}};opacity:{{status === 'loading'?0.6:1}};width:{{width?width:''}}rpx;height:{{height?height:''}}rpx;background:{{status === 'disabled'?'':btnColor?btnColor:''}};font-size:{{textSize?textSize:''}}rpx;border-radius:{{radius?radius:''}}rpx;color:{{textColor?textColor:''}};"
+		data-status="{{status}}">
+		<view class="btn-loading" wx:if="{{status === 'loading'}}">
+			<via-loading size="{{iconSize}}" bgColor="{{iconColor}}" loading />
+		</view>
+		<view class="btn-loading" wx:if="{{iconName || iconSrc}}">
+			<block>
+				<via-icon name="{{iconName}}" src="{{iconSrc}}" size="{{iconSize}}" color="{{iconColor}}" />
+			</block>
+		</view>
+		<!-- 按钮 loading 加载文案 -->
+		<text class="ml8" wx:if="{{status === 'loading' && loadingText}}">{{loadingText}}</text>
+		<!-- 按钮文案 -->
+		<text wx:if="{{status !== 'loading' && text}}">{{text}}</text>
+
+   <!-- 自定义 -->
+		<view class="ml8" wx:else >
+			<slot />
+		</view>
+	
+
+	</view>
+</via-touchOpacity>

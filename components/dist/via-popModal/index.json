@@ -1,7 +1,1 @@
-{
-  "component": true,
-  "usingComponents": {
-    "via-pop":"../via-pop/index",
-    "via-icon":"../via-icon/index"
-  }
-}
+{"component":true,"usingComponents":{"via-pop":"../via-pop/index","via-icon":"../via-icon/index"}}

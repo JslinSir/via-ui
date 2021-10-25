@@ -1,0 +1,8 @@
+
+
+
+
+
+<button bindtap="handleClick">显示</button>
+
+<via-pop  id="viaPop"  visible="{{visible}}"/>

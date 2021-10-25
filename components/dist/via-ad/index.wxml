@@ -5,11 +5,11 @@
 				<view class="ad-content class-ad-content">
 					<slot/>
 					<view class="close-icon top-close-icon" bind:tap="hide" wx:if="{{actionPosition=='top'}}">
-						<via-icon name="{{iconName}}" color="#fff" size="60" />
+						<via-icon name="{{iconName}}" color="#fff" size="60"/>
 					</view>
 				</view>
 				<view class="close-icon" bind:tap="hide" wx:if="{{actionPosition=='bottom'}}">
-					<via-icon name="{{iconName}}" color="#fff" size="60" />
+					<via-icon name="{{iconName}}" color="#fff" size="60"/>
 				</view>
 			</view>
 		</via-animotion-transition>

@@ -1,0 +1,32 @@
+<wxs module="touch">
+
+  var touchStart = function (e, ins) {
+    var curentid = e.currentTarget.id
+    var opacity = e.currentTarget.dataset.opacity
+    var component = ins.selectComponent("#" + curentid + "")
+    component.setStyle({
+      "opacity": opacity,
+    })
+
+  }
+
+  var touchEnd = function (e, ins) {
+    var curentid = e.currentTarget.id
+    var component = ins.selectComponent("#" + curentid + "")
+    component.setStyle({
+      "opacity": 1,
+    })
+
+
+  }
+
+  module.exports = {
+    touchStart: touchStart,
+    touchEnd: touchEnd
+  };
+
+</wxs>
+<view bindtap="handleClick" id="id_touchableOpacity" data-opacity="{{opacity}}" bind:touchstart="{{touch.touchStart}}"
+  bind:touchend="{{touch.touchEnd}}">
+  <slot />
+</view>

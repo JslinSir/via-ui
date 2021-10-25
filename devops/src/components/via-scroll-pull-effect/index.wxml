@@ -1,0 +1,30 @@
+
+<!-- 不参与滚动顶部固定内容，滚动高度将会减去此 自定义内容 -->
+<slot name="topView"> </slot>
+
+<!-- scroll -->
+<scroll-view 
+  scroll-y="true" 
+  refresher-enabled="{{true}}" 
+  refresher-threshold="{{100}}" 
+  refresher-background="#f6f6f6"
+  refresher-default-style="black" 
+  refresher-triggered="{{pullStatus}}" 
+  bindrefresherpulling="handlePull"
+  bindrefresherrefresh="handleRefresh" 
+  bindrefresherrestore="handleRestore" 
+  bindrefresherabort="handleAbort"
+  bindscrolltolower="handleScrollBottom"
+  class="_scroll-view" 
+  style="height:{{scrollHeight}}px;"
+  scroll-top="{{scrollTop}}"
+  scroll-with-animation
+>
+<slot ></slot>
+<slot name="loading"></slot>
+<slot name="empty"></slot>
+<slot name="error"></slot>
+
+<via-loading-more loading="{{loadingMore}}"  noMore="{{!loadingMore}}"/>
+ 
+</scroll-view>

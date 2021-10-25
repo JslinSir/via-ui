@@ -1,0 +1,11 @@
+<view class="message-view" id="message" wx:if="{{messageShow}}">
+	<slot/>
+	<view class="message">
+		<block wx:if="{{icon}}">
+				<via-icon name="{{icon}}" color="{{color[icon]}}" size="40" wx:if="{{icon!='loading'}}"/>
+			<via-loading type="light" wx:else />
+		</block>
+		<view class="content {{icon?'ml10':''}}">{{content}}</view>
+	</view>
+</view>
+

@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "吐司",
+          "pathName": "pages/feedback/toast/toast",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "弹窗",
+          "pathName": "pages/feedback/pop/pop",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pop",
+          "pathName": "pages/feedback/pop/pop",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/feedback/index/index",
+          "pathName": "pages/feedback/index/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

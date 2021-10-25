@@ -1,0 +1,38 @@
+<via-touchableOpacity opacity="{{touchOpacity}}">
+<view class="via-ui-cell class-cell-view" style="height:{{height?height:''}}rpx;width:{{width?width:''}}rpx;border-radius:{{radius?radius:''}}rpx" bind:tap="handleCellClick">
+	<view class="via-ui-cell-left-view">
+
+		<block>
+			<slot name="left" />
+			<view class="via-ui-cell-left-view-left-icon " wx:if="{{leftIconName || leftIconSrc}}">
+				<via-icon
+				 name="{{leftIconName}}"
+				 src="{{leftIconSrc}}"
+				 color="{{leftIconColor}}"
+				 size="{{leftIconSize}}"
+				/>
+			</view>
+			<view class="via-ui-cell-left-view-left-text" style="font-size:{{leftTextSize?leftTextSize:''}}rpx;color:{{leftTextColor?leftTextColor:''}};" wx:if="{{leftText}}">{{leftText}}</view>
+			<slot wx:else></slot>
+		</block>
+
+	</view>
+	<view class="via-ui-cell-right-view">
+		<block wx:if="{{rightText}}">
+			<view class="via-ui-cell-right-view-right-text" style="font-size:{{rightTextSize?rightTextSize:''}}rpx;color:{{rightTextColor?rightTextColor:''}};">{{rightText}}</view>
+		</block>
+		<block wx:if="{{rightIconName || rightIconSrc}}">
+			<via-icon
+			 name="{{rightIconName}}"
+			 src="{{rightIconSrc}}"
+			 color="{{rightIconColor}}"
+			 size="{{rightIconSize}}"
+			/>
+		</block>
+		<slot name="right" />
+
+	</view>
+
+</view>
+</via-touchableOpacity>
+

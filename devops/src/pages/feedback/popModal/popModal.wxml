@@ -1,0 +1,67 @@
+<view class="header-title-cneter">PopModal</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button text="默认底部弹出" data-direction="bottom" data-icon="true" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		从中间弹出
+	</view>
+	<view class="intro-cotent">
+		<via-button text="从中间弹出" data-direction="center" data-icon="true" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		设置无iocn
+	</view>
+	<view class="intro-cotent">
+		<via-button text="设置无iocn" data-direction="center" data-icon="" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		取消 确认形式
+	</view>
+	<view class="intro-cotent">
+		<via-button text="	取消 确认形式"  data-direction="bottom" data-icon="" bind:onClick="handleBtnClick3" />
+	</view>
+</view>
+
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义样式
+	</view>
+	<view class="intro-cotent">
+		<via-button text="自定义样式" data-direction="center" data-icon="true" bind:onClick="handleBtnClick2" />
+	</view>
+</view>
+
+<via-popModal  id="popModal3" direction="{{direction}}" bind:onConfirm="handleConfirm"  confirm>
+	<via-brand />
+</via-popModal>
+
+<via-popModal  id="popModal" direction="{{direction}}" hasCloseIcon="{{hasCloseIcon}}"  title="提示" >
+  <via-brand />
+</via-popModal>
+
+
+<via-popModal  id="popModal2" class-pop-center-view="class-pop-center-view" class-header-title="class-header-title" direction="{{direction}}" hasCloseIcon="{{hasCloseIcon}}"  title="自定义"/>

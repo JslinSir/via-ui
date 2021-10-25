@@ -1,7 +1,1 @@
-{
-  "component": true,
-  "usingComponents": {
-    "via-touchOpacity":"../via-touchableOpacity/index",
-    "loading":"../via-loading/index"
-  }
-}
+{"component":true,"usingComponents":{"via-touchOpacity":"../via-touchableOpacity/index","via-loading":"../via-loading/index"}}

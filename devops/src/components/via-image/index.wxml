@@ -1,0 +1,30 @@
+<view class="image-view">
+<!-- 图片请求 -->
+<image
+ wx:if="{{loading}}"
+ src="{{src}}"
+ class="null-img"
+ binderror="handleImgLoadError"
+ bindload="handleLoadSuccess"
+/>
+<!-- 图片请求成功展示图片 -->
+<image
+ wx:if="{{!loading && !error}}"
+ bindtap="handlePreview"
+ class="class-image"
+ src="{{src}}"
+ style="{{style}}"
+ mode="{{mode}}"
+ webp="{{webp}}"
+ show-menu-by-longpress="{{showMenuByLongpress}}"
+ lazy-load="{{lazyLoad}}"
+ binderror="handleImgLoadError"
+ bindload="handleLoadSuccess"
+/>
+<!-- 加载图 -->
+<image wx:if="{{loading && loadingImg}}" class="class-image" src="{{loadingImg}}" style="width:{{loadingImgSize}}rpx;height:{{loadingImgSize}}rpx;" />
+<!-- 错误图 -->
+<image wx:if="{{!loading && error && errorImg}}" src="{{errorImg}}"  class="class-image" style="width:{{errorImgSize}}rpx;height:{{errorImgSize}}rpx;"/>
+</view>
+
+

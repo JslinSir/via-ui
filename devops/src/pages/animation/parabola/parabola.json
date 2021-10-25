@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "via UI",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0a1d66",
+  "usingComponents": {
+    "via-animotion-parabola": "/components/via-animotion-parabola/index",
+    "via-button":"/components/via-button/index",
+    "via-icon":"/components/via-icon/index"
+  }
+}

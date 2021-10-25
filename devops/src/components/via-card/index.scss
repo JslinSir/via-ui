@@ -1,0 +1,25 @@
+ 
+
+ .container {
+  margin-bottom: 20rpx;
+  background: #fff;
+  padding: 0 20rpx;
+  overflow: hidden;
+  .header {
+    padding-top: 20rpx;
+    display: flex;
+    align-items: center;
+    &-title{
+      flex: 1;
+    }
+  }
+  .border {
+    border-bottom: 1rpx solid #f2f2f2;
+    padding-bottom: 20rpx;
+  }
+}
+
+ 
+
+
+ 

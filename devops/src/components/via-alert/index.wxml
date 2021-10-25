@@ -1,0 +1,36 @@
+<view class="modal" wx:if="{{alertConfirm}}">
+	<view
+	 class="modal-mask"
+	 style="opacity: {{opacity}};"
+	 wx:if="{{mask}}"
+	 catchtap="{{maskClosable? 'cannel': ''}}"
+	/>
+	<view class="modal-alert" wx:if="{{alertConfirm}}" style="opacity: {{opacity}};">
+		<view class="title" wx:if="{{title}}">{{title}}</view>
+		<view class="content" style="margin-top: {{title? 40: 80}}rpx;{{style}}">
+			<view wx:if="{{contentIsArray}}">
+				<view
+				 class="content-array"
+				 style="{{style}}"
+				 wx:for="{{content}}"
+				 wx:key="index"
+				>{{item}}
+				</view>
+			</view>
+			<block wx:else>{{content}}</block>
+			<slot name="alert" />
+			<slot name="confirm" />
+		</view>
+		<view class="bottom">
+			<view wx:if="{{cannel}}" class="cannel ripple cancelWeight" catchtap="cannel">{{cannelText}}</view>
+			<view
+			 wx:if="{{ok}}"
+			 class="sure ripple"
+			 style="color: {{okColor}}"
+			 catchtap="ok"
+			>{{okText}}
+			</view>
+		</view>
+	</view>
+</view>
+

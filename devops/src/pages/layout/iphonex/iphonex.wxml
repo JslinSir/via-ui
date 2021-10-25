@@ -1,0 +1,43 @@
+<view class="header-title-cneter">Cell</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        用法
+    </view>
+    <view class="intro-cotent">
+        <view class="select-view">
+            <view wx:for="{{config}}" wx:key="unique" class="select-item {{type===item.type ? 'active':''}} "
+                bindtap="handleclick" data-type="{{item.type}}">{{item.name}}</view>
+        </view>
+    </view>
+    <view class="intro-cotent">
+        <rich-text nodes="{{htmlSnip[type]}}"></rich-text>
+    </view>
+</view>
+
+
+<block wx:if="{{type==='base'}}">
+    <view class="fixed-bottom">
+        <view>以上是底部安全范围</view>
+        <via-iphonex-bottom-safe />
+    </view>
+</block>
+
+
+<block wx:if="{{type==='slot'}}">
+    <view class="fixed-bottom">
+        <via-iphonex-bottom-safe>
+            <view class="bottom-center">
+                <view>以上是底部安全范围</view>
+            </view>
+        </via-iphonex-bottom-safe>
+    </view>
+
+</block>
+
+<block wx:if="{{type==='color'}}">
+    <view class="fixed-bottom">
+        <view>以上是底部安全范围</view>
+        <via-iphonex-bottom-safe bg="rgba(10,29,102,0.1)" />
+    </view>
+</block>

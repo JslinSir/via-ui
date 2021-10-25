@@ -1,0 +1,18 @@
+ 
+<!-- 完整loading 高亮 -->
+<block wx:if="{{type==='default'}}">
+ <view wx:if="{{loading}}" class="via-loading" style="width:{{size}}rpx;height:{{size}}rpx;border:2px solid {{bgColor}};border-color:{{bgColor}};border-bottom-color:transparent;animation-duration:{{duration}}s;" />
+</block>
+<!-- 残缺 高亮 -->
+<block wx:if="{{type==='light'}}">
+	<view wx:if="{{loading}}" class="via-loading" style="width:{{size}}rpx;height:{{size}}rpx;border:2px solid {{bgColor}};border-bottom-color:{{lightColor}};animation-duration:{{duration}}s;" />
+</block>
+<!-- 移动样式 -->
+<block wx:if="{{type==='move' && loading}}">
+   <view class="indicator">
+      <view class="dot" style="animation: dotsloading-{{theme}} 0.85s infinite linear;"/>
+      <view class="dot" style="animation: dotsloading-{{theme}} 0.85s infinite linear; animation-delay: 0.25s;"/>
+      <view class="dot" style="animation: dotsloading-{{theme}} 0.85s infinite linear; animation-delay: 0.5s;"/>
+    </view>
+</block>
+
