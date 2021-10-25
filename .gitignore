@@ -7,7 +7,7 @@
 /docops/node_modules
 # misc 
 .DS_Store
-
+/components/.DS_Store
 #devops
 /devops/miniprogram_npm
 /devops/node_modules
