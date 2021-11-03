@@ -5,6 +5,7 @@
 /build
 #docops
 /docops/node_modules
+/docops/docs/.vuepress/dist
 # misc 
 .DS_Store
 /components/.DS_Store
