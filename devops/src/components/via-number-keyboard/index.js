@@ -96,6 +96,7 @@ Component({
      },
 
      handleConfirm(){
+       this.properties.vibrate && wx.vibrateShort()
        this.triggerEvent('onConfirm','')
      },
 
