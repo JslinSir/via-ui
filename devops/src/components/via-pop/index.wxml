@@ -1,7 +1,11 @@
-<view class="via-pop-view via-pop-position-{{direction==='center'? direction :''}}" id="popMask" style="z-index: {{zIndex}};" bindtap="handleClose"
+
+	<view class="via-pop-view via-pop-position-{{direction==='center'? direction :''}} {{hasMask?'':'nomask'}}" id="popMask" style="z-index: {{zIndex}};" bindtap="handleClose"
 	wx:if="{{status}}">
 	<view class="via-pop-cotent via-pop-position-{{direction !=='center'? direction :''}}" id="popCotent" style="z-index:{{zIndex+1}};" catchtap="fobidCotentClick">
 		<slot />
 	</view>
 </view>
+
+ 
+
 

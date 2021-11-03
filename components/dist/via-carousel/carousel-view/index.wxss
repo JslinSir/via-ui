@@ -1,0 +1,1 @@
+.swiper-cotent{display:flex;flex-direction:row;align-items:center;width:100vw;height:396rpx;overflow:hidden}.swiper-list{display:flex;flex-direction:row;align-items:center;height:296rpx}

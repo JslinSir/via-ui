@@ -1,0 +1,6 @@
+<view class="swiper-cotent">
+  <view class="swiper-list" bindtouchstart="swiperTouchstart" bindtouchmove="swiperTouchmove" bindtouchend="swiperTouchend" style="width: {{allWidth}}rpx;position: relative;left:{{leftX}}rpx;">
+       <slot/>
+
+  </view>
+</view>

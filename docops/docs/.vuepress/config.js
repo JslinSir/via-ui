@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Via UI',
     description: '一套精美，内容丰富的小程序原生组件库',
+    base:'/via-ui-doc/',
     themeConfig: {
       logo: '/logo.jpg',
       nav: [
@@ -76,6 +77,7 @@ module.exports = {
             '/feedback/PopModal/',
             '/feedback/ActionSheet/',
             '/feedback/Collapse/',
+            '/feedback/Carousel/',
            ],
         },
         {
@@ -93,7 +95,7 @@ module.exports = {
           children: [
             '/business/AD/',
             '/business/CountDown/',
-     
+            '/business/numberKeyboard/',
            ],
         }
       ]

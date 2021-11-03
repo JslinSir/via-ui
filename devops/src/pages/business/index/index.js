@@ -10,6 +10,10 @@ const config = [
     name: 'countDown  倒计时',
     nav: '../countDown/countDown'
   },
+  {
+    name: 'numberKeyboard  数字键盘',
+    nav: '../numberKeyboard/numberKeyboard'
+  },
   // {
   //   name: 'clipImage  图片裁切',
   //   nav: '../clipImage/clipImage'

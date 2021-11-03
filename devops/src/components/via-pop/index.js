@@ -2,7 +2,7 @@ import {
   runAnimotionFrame,
   clearAnimotion
 } from '../utils/animate'
-import * as frameConfig from './config'
+import * as frameConfig from '../utils/animateConfig'
 
 let _directionFrame = 'bottomFrame'
 Component({
@@ -15,7 +15,11 @@ Component({
       type: Boolean,
       value: true
     },
-   
+    // 是否有遮罩
+    hasMask:{
+      type: Boolean,
+      value: true
+    },
     // bottom top center,left right
     direction: {
       type: String,

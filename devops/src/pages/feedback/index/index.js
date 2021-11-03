@@ -34,6 +34,10 @@ const config = [
     nav: '../actionSheet/actionSheet'
   },
   {
+    name: 'Carousel  轮播',
+    nav: '../carousel/carousel'
+  },
+  {
     name: 'Collapse  折叠面板',
     nav: '../collapse/collapse'
   },

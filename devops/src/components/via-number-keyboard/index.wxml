@@ -1,0 +1,81 @@
+<wxs module="touch">
+  var touchStart = function (e, ins) {
+    var curentid = e.currentTarget.id
+    var component = ins.selectComponent("#" + curentid + "")
+    component.setStyle({
+      "background-color": "#ddd",
+    })
+
+  }
+
+  var touchEnd = function (e, ins) {
+    var curentid = e.currentTarget.id
+    var component = ins.selectComponent("#" + curentid + "")
+    component.setStyle({
+
+    })
+  }
+
+  module.exports = {
+    touchStart: touchStart,
+    touchEnd: touchEnd
+  };
+
+</wxs>
+ 
+ 
+  <view class="keyboard-cotent" id="keyboard"  >
+   <!-- 键盘标题 -->
+   <view class="keyboard-title" catchtap="hide">
+     <view class="title">{{title}}</view>
+     <via-icon name="unfold" size="26"/>
+   </view>
+    <!-- 默认无确认按钮 -->
+    <view class="keyboard-panel" wx:if="{{!confirmText}}">
+      <view id="keyboard-item-{{item}}-id" class="keyboard-item" wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="unique"
+        bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}" catchtap="handleKeyboardClick"
+        data-v="{{item}}">{{item}}</view>
+      <view id="keyboard-item-float-id" class="keyboard-item keyboard-sign" data-v="{{float?'.':''}}"
+        catchtap="{{float?'handleKeyboardClick':''}}" bind:touchstart="{{float?'touch.touchStart':''}}"
+        bind:touchend="{{float?'touch.touchEnd':''}}">{{float?'.':''}}
+      </view>
+      <view id="keyboard-item-0-id" class="keyboard-item" data-v="0" catchtap="handleKeyboardClick"
+        bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}">0</view>
+      <view id="keyboard-item-clear-id" class="keyboard-item keyboard-sign" catchtap="handleClear"
+        bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}">
+        <image class="clear-icon" src="./img/clear.png" />
+      </view>
+    </view>
+    <!-- 确认键盘 -->
+    <view class="keyboard-cotent-confirm" wx:else>
+      <view class="keyboard-panel">
+        <view id="keyboard-item-{{item}}-id" class="keyboard-item" wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="unique"
+          bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}" catchtap="handleKeyboardClick"
+          data-v="{{item}}">{{item}}</view>
+        <view class="keyboard-item keyboard-midle-sign" id="keyboard-item-0-id" data-v="0"
+          catchtap="handleKeyboardClick" bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}">0
+        </view>
+        <view id="keyboard-item-float-id" class="keyboard-item keyboard-sign" data-v="{{float?'.':''}}"
+          catchtap="{{float?'handleKeyboardClick':''}}" bind:touchstart="{{float?'touch.touchStart':''}}"
+          bind:touchend="{{float?'touch.touchEnd':''}}">{{float?'.':''}}</view>
+      </view>
+      <view class="right-option-view">
+        <view id="keyboard-item-clear-id" class="right-clear-view" catchtap="handleClear"
+          bind:touchstart="{{touch.touchStart}}" bind:touchend="{{touch.touchEnd}}">
+          <image class="clear-icon" src="./img/clear.png" />
+        </view>
+        <via-button
+         text="{{confirmText}}" 
+         bind:onClick="handleConfirm" 
+         class-button="confirm-button"
+         btnColor="{{confirmBg}}"
+         loading="{{confirmLoading}}"
+         disabled="{{configmDisabled}}"
+         class-button-disabled="configdisabled"
+          />
+      </view>
+    </view>
+    <via-iphonex-bottom-safe bg="#ededed" />
+  </view>
+
+ 
