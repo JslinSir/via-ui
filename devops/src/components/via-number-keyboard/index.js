@@ -1,9 +1,8 @@
 /**
  * 数字键盘
  */
-import {
+ import {
   runAnimotionFrame,
-  clearAnimotion
 } from '../utils/animate'
 import * as frameConfig from '../utils/animateConfig'
 Component({
@@ -57,30 +56,32 @@ Component({
   },
   methods:{
     async show(){
-      if(this.status == true){
 
-        return this.status
+      if(this.data.status == true){
+
+        return this.data.status
 
       }
-      await runAnimotionFrame(this, '#keyboard', frameConfig.bottomFrame.show,300)
-
-      this.status = true
+      this.setData({status:true},async()=>{
+        await runAnimotionFrame(this, '#keyboard', frameConfig.bottomFrame.show,300)
+      })
+     
       
      },
 
      async hide(){
 
-        if(!this.status){
+        if(!this.data.status){
 
-          return this.status
+          return this.data.status
 
         }
+        await runAnimotionFrame(this, '#keyboard', frameConfig.bottomFrame.hide,300)
 
-       await runAnimotionFrame(this, '#keyboard', frameConfig.bottomFrame.hide,300)
-
-       this.status = false
+        this.setData({status:false})
      
        this.triggerEvent('onClose',)
+       
      },
 
      handleKeyboardClick(e){
