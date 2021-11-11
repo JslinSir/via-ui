@@ -1,93 +1,104 @@
+ 
+ 
+ 
+
+
 Page({
   data: {
-    show:true,
-    show2:true,
-    show3:true,
-    show4:true,
-    show5:true,
-    show6:true,
-    show7:true,
-    show8:true
+   config:[{
+    title:'淡入',
+    type:'fadein',
+    duration:0.3
+   },{
+    title:'从底部淡入',
+    type:'fadeinFromBottom',
+    duration:0.3
+   },
+   {
+    title:'从顶部淡入',
+    type:'fadeinFromTop',
+    duration:0.3
+   },
+   {
+    title:'从左边淡入',
+    type:'fadeinFromLeft',
+    duration:0.3
+   },
+   {
+    title:'从右边淡入',
+    type:'fadeinFromRight',
+    duration:0.3
+   },
+   {
+    title:'缩放淡入',
+    type:'fadeinScale',
+    duration:0.3
+   },
+   {
+    title:'上下摆动淡入',
+    type:'fadeinSwingY',
+    duration:0.55
+   },
+   {
+    title:'左右摆动淡入',
+    type:'fadeinSwingX',
+    duration:0.55
+   },
+   {
+    title:'旋转90',
+    type:'rotate90',
+    duration:0.3
+   },
+   {
+    title:'旋转180',
+    type:'rotate180',
+    duration:0.3
+   },
+   {
+    title:'旋转360',
+    type:'rotate360',
+    duration:0.4
+   },
+   {
+    title:'抖动',
+    type:'shake',
+    duration:0.6,
+   },
+
+   {
+    title:'果冻动画',
+    type:'jello',
+    duration:1,
+   },
+
+   
+
+   
+ 
+  ],
+
+  curentIndex:null,
+
+  
+
   },
   onLoad(options) {
+
+    setTimeout(()=>{
+      this.setData({curentIndex:0})
+    },400)
 
   },
   onReady() {
 
   },
-  
-  handleClickFadein(){
-    this.setData({show:false})
-    setTimeout(()=>{
-      this.setData({show:true})
-    },1000)
-  
+
+
+  handleClick(e){
+
+    const { index } = e.currentTarget.dataset
+    this.setData({curentIndex:index})
+    
   },
-
-  handleClickFadein2(){
-    this.setData({show2:false})
-    setTimeout(()=>{
-      this.setData({show2:true})
-    },1000)
-  
-  },
-
-  handleClickFadein3(){
-    this.setData({show3:false})
-    setTimeout(()=>{
-      this.setData({show3:true})
-    },1000)
-  
-  },
-
-  handleClickFadein4(){
-    this.setData({show4:false})
-    setTimeout(()=>{
-      this.setData({show4:true})
-    },1000)
-  
-  },
-
-  handleClickFadein5(){
-    this.setData({show5:false})
-    setTimeout(()=>{
-      this.setData({show5:true})
-    },1000)
-  
-  },
-
-
-  handleClickFadein6(){
-    this.setData({show6:false})
-    setTimeout(()=>{
-      this.setData({show6:true})
-    },1000)
-  
-  },
-
-  handleClickFadein7(){
-    this.setData({show7:false})
-    setTimeout(()=>{
-      this.setData({show7:true})
-    },1000)
-  
-  },
-
-
-  handleClickFadein8(){
-    this.setData({show8:false})
-    setTimeout(()=>{
-      this.setData({show8:true})
-    },1000)
-  
-  },
-
-
-  handleClickFadeOut(){
-    this.setData({transition:''})
-    setTimeout(()=>{
-      this.setData({transition:'fadeout'})
-    },1000)
-  
-  },
+   
 });

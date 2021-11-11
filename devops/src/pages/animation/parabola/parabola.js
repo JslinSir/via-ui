@@ -23,6 +23,14 @@ Page({
     styleX: '',
     styleY: '',
     curent:'',
+    curentIndex:0,
+    config:[{
+      title:'右抛物线',
+      type:'right'
+    },{
+      title:'左抛物线',
+      type:'left'
+    }],
   },
 
 
@@ -36,6 +44,11 @@ Page({
   async getStartRef(index) {
     const result = await getRect(this, `#button${index}`)
     return result
+  },
+
+  handleSwitch(e){
+    const { index } = e.currentTarget.dataset
+    this.setData({curentIndex:index})
   },
 
   async handleClick(e) {

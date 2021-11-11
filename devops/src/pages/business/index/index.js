@@ -18,14 +18,14 @@ const config = [
   //   name: 'clipImage  图片裁切',
   //   nav: '../clipImage/clipImage'
   // },
-  {
-    name: 'ProductCard 商品卡片',
-    nav: ''
-  },
-  {
-    name: 'Poster 海报',
-    nav: ''
-  },
+  // {
+  //   name: 'ProductCard 商品卡片',
+  //   nav: ''
+  // },
+  // {
+  //   name: 'Poster 海报',
+  //   nav: ''
+  // },
   
 ]
 Page({

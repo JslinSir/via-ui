@@ -41,6 +41,12 @@
           "pathName": "pages/business/numberKeyboard/numberKeyboard",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "抛物线",
+          "pathName": "pages/animation/parabola/parabola",
+          "query": "",
+          "scene": null
         }
       ]
     }

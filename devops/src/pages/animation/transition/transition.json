@@ -3,6 +3,7 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-transition":"/components/via-animotion-transition/index"
+    "via-transition":"/components/via-animotion-transition/index",
+    "via-tag":"/components/via-tag/index"
   }
 }

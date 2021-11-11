@@ -24,7 +24,7 @@
 </wxs>
  
  
-  <view class="keyboard-cotent" id="keyboard">
+  <view class="keyboard-cotent {{status?'visible':'hidden'}}" id="keyboard">
    
    <view class="keyboard-title" catchtap="hide">
      <view class="title">{{title}}</view>

@@ -1,1 +1,1 @@
-.ball-box{position:fixed;z-index:9999999;transition:all .4s linear;opacity:0}.ball-box .ball{transition:all .4s cubic-bezier(0, -0.54, 1, 0.3)}
+.ball-box{position:fixed;z-index:9999999;transition:all .4s linear;opacity:0}

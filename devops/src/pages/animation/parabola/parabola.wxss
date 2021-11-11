@@ -6,6 +6,14 @@
 
 }
 
+.item-left{
+  justify-content: flex-start;
+}
+
+.item-right{
+  justify-content: flex-end;
+}
+
 .fuirt {
     margin-right: 20rpx;
 }
@@ -17,6 +25,28 @@
     bottom: 120rpx;
 }
 
+
+.cart-position-left{
+    position: fixed;
+    left: 60rpx;
+    bottom: 120rpx;
+}
+
+.tags-view{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30rpx;
+}
+.tag-item{
+    margin-left: 20rpx;
+    margin-bottom: 10rpx;
+}
+.select{
+    background-color: #0a1d66 !important;
+    color: #fff !important;
+}
  
 
 

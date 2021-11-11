@@ -83,7 +83,7 @@
 
 
 /* 缩放渐入 */
-@keyframes fade-in-scale {
+@keyframes via-fade-in-scale {
   0% {
     opacity: 0;
     transform-origin: center center center;
@@ -103,7 +103,7 @@
 }
 
 /* 上下摆动渐入 */
-@keyframes fade-in-swing-y {
+@keyframes via-fade-in-swing-y {
 
   0% {
     transform: translateY(100%);
@@ -164,9 +164,8 @@
   }
 }
 
-
-/* 从左边  左右摆动渐入 */
-@keyframes fade-in-swing-left-x {
+/*左右摆动渐入 */
+@keyframes via-fade-in-swing-x {
 
   0% {
     transform: translateX(-100%);
@@ -195,9 +194,125 @@
 
   }
 }
+
+
+/* 从左边  左右摆动渐入 */
+@keyframes via-fade-in-swing-left-x {
+
+  0% {
+    transform: translateX(-100%);
+    transform-origin: 0 0;
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+    transform: translateX(10px);
+  }
+
+  70% {
+
+    transform: translateX(-10px);
+  }
+  90% {
+
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+    transform-origin: 0 0;
+
+  }
+}
+
+
+/* 抖动 */
+@keyframes via-shake {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+/* 果冻抖动 */
+@keyframes via-jello {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+/* 旋转 90度 */
+
+@keyframes via-rotate-90 {
+  0% {
+ 
+    transform: rotate(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(90deg)
+  }
+}
+
 /* 旋转 180度 */
 
-@keyframes rotate-180 {
+@keyframes via-rotate-180 {
   0% {
  
     transform: rotate(0);
@@ -211,7 +326,7 @@
 
 /* 旋转 360度 */
 
-@keyframes rotate-360 {
+@keyframes via-rotate-360 {
   0% {
  
     transform: rotate(0);

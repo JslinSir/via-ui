@@ -1,8 +1,9 @@
 /**
  * 数字键盘
  */
- import {
+import {
   runAnimotionFrame,
+  clearAnimotion
 } from '../utils/animate'
 import * as frameConfig from '../utils/animateConfig'
 Component({

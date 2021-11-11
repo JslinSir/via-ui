@@ -6,9 +6,18 @@
 		基本用法
 	</view>
 	<view class="intro-cotent">
+
+		<view class="tags-view">
+		  <view class="tag-item" wx:for="{{config}}" wx:key="unique" >
+				<via-tag text="{{item.title}}" data-type="{{item.type}}" data-index="{{index}}" class-tags="{{curentIndex==index?'select':''}}"  bindtap="handleSwitch"/>
+			</view>
+		
+		</view>
+
+
 		<block wx:for="{{fruit}}" wx:key="unique">
-			<view class="item" bind:tap="handleClick" data-index="{{index}}"  id="button{{index}}">
-				<text class="fuirt">{{item}}</text>
+			<view class="item {{curentIndex==0?'item-left':'item-right'}}" bind:tap="handleClick" data-index="{{index}}"  >
+				<text class="fuirt" id="button{{index}}">{{item}}</text>
 				<via-button
 				 width="80"
 				 height="40"
@@ -22,7 +31,7 @@
 	</view>
 </view>
 
-<view class="cart-position-right">
+<view class="{{curentIndex==0?'cart-position-right':'cart-position-left'}}">
 	<via-icon color="red" size="60" name="cart"  id="cardID"/>
 </view>
 
@@ -31,6 +40,8 @@
   <text style="width:60rpx;height:60rpx;">{{curent}}</text>
 </via-animotion-parabola>
  
+
+
 
 
  

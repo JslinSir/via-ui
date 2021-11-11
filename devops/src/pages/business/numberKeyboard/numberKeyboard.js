@@ -51,6 +51,7 @@ Page({
   },
 
   handleInputClickSetTitle(){
+    console.log('设置标题')
     this.setData({float:false,confirmText:null,title:'安全键盘'},()=>{
       this.selectComponent('#via-number-keyboard').show()
     })

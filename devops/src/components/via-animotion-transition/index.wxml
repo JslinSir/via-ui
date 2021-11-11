@@ -1,4 +1,6 @@
-<view class="via-block via-transition-{{transition}}">
+<view 
+ class="via-block" 
+ style="animation-name:{{config[name]}};animation-duration:{{duration}}s;animation-timing-function:{{timingFunction}};animation-iteration-count:{{iterationCount}};">
 	<slot/>
 </view>
 
