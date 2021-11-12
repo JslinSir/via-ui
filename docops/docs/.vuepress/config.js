@@ -96,6 +96,8 @@ module.exports = {
             '/business/AD/',
             '/business/CountDown/',
             '/business/numberKeyboard/',
+            '/business/watermark/',
+            
            ],
         }
       ]

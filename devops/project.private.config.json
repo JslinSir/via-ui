@@ -43,8 +43,8 @@
           "scene": null
         },
         {
-          "name": "抛物线",
-          "pathName": "pages/animation/parabola/parabola",
+          "name": "水印",
+          "pathName": "pages/business/watermark/watermark",
           "query": "",
           "scene": null
         }

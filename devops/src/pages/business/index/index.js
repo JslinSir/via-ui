@@ -14,6 +14,10 @@ const config = [
     name: 'numberKeyboard  数字键盘',
     nav: '../numberKeyboard/numberKeyboard'
   },
+  {
+    name: 'watermark  水印',
+    nav: '../watermark/watermark'
+  },
   // {
   //   name: 'clipImage  图片裁切',
   //   nav: '../clipImage/clipImage'

@@ -41,6 +41,7 @@
     "pages/business/ad/ad",
     "pages/business/countDown/countDown",
     "pages/business/numberKeyboard/numberKeyboard",
+    "pages/business/watermark/watermark",
     "pages/feedback/actionSheet/actionSheet",
     "pages/form/radio/radio",
     "pages/form/search/search",

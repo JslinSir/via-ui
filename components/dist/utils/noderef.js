@@ -1,1 +1,1 @@
-function getRect(e,t,c=!1){return new Promise(((n,r)=>{const l=e.createSelectorQuery();(c?l.selectAll(t):l.select(t)).boundingClientRect((e=>{if(!e)return r("找不到元素");n(e)})).exec()}))}export{getRect};
+function getRect(e,t,c=!1){return new Promise(((r,n)=>{const i=e.createSelectorQuery();(c?i.selectAll(t):i.select(t)).boundingClientRect((e=>{if(!e)return n("找不到元素");r(e)})).exec()}))}function getFields(e,t,c={node:!0,size:!0}){return new Promise(((r,n)=>{e.createSelectorQuery().select(t).fields(c).exec((e=>e[0]?r(e):n("找不到元素")))}))}export{getRect,getFields};

@@ -2,6 +2,8 @@
   * 旋转木马,父容器
   */
 
+ import { rpxToPx } from '../../utils/base'
+
 Component({
   /**
    * 组件的初始数据
@@ -52,7 +54,6 @@ Component({
 
 
   attached(){
-    this.caculateRatio()
     // 初始化 滑动距离
     this.translateDistance = 0
 
@@ -67,28 +68,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
-    /**
-     * 计算分辨率
-     * 以6s为基础
-     * 设计稿 宽 750rpx 375px 
-     */
-    caculateRatio(){
-      const { screenWidth } = wx.getSystemInfoSync()
-      const rate = screenWidth/375
-      this.rate = rate
-
-    },
-
-    /**
-     * 计算当前设备 px 值
-     * @param {*} pxVal 
-     */
-    caculateCurentDevicePx(pxVal){
-      const _6sVal = pxVal/2
-      const curentVal = _6sVal*this.rate
-      return curentVal
-    },
 
     // 算出总滑动的长度
     calculateSwiperTotalWidth(){
@@ -160,7 +139,7 @@ Component({
     if (times < 500 && Math.abs(distance) > 10) {
       let curIndex = this.curIndex;
 
-      let x0 = ( this.caculateCurentDevicePx(this.data.swiperItemWidth )),x1 = this.translateDistance,x = 0;
+      let x0 = ( rpxToPx(this.data.swiperItemWidth )),x1 = this.translateDistance,x = 0;
        
       if ( distance > 0) {
        
