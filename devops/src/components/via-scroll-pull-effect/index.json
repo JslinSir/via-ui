@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "via-loading-more":"../via-loadingMore/index"
+    "via-loading-more":"../via-loading-more/index"
   }
 }

@@ -51,6 +51,7 @@ module.exports = {
             '/form/Switch/',
             '/form/Radio/',
             '/form/DatePicker/',
+            '/form/DatePickerRange/',
             '/form/Calendar/',
 
            ],

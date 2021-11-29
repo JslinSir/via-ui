@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-carouselText": "/components/via-carouselText/index"
+    "via-carousel-text": "/components/via-carousel-text/index"
   }
 }

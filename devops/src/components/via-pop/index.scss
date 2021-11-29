@@ -1,11 +1,11 @@
-
+@import "../style/base.scss";
 .via-mask{
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: $z-index-mask;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
 }
@@ -18,7 +18,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: $z-index-mask;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
 

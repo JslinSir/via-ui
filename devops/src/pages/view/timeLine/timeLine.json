@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-timeLine": "/components/via-timeLine/index"
+    "via-time-line": "/components/via-time-line/index"
   }
 }

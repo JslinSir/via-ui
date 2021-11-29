@@ -6,7 +6,7 @@
     color: #323232;
     background: #f6f6f6;
     border-radius: 10rpx;
-    line-height: 60rpx;
+    box-sizing: border-box;
     padding: 4rpx;
     .via-switchItem {
         width: 150rpx;
@@ -75,7 +75,7 @@
     width: 100rpx;
     height: 60rpx;
     border-radius: 60rpx;
-    border: 1rpx solid #f6f6f6;
+    border: 2rpx solid #f6f6f6;
     background-color: palegreen;
 }
 
@@ -86,7 +86,7 @@
     width: 56rpx;
     border-radius: 50%;
     background-color: #fff;
-    border: 1rpx solid #f6f6f6;
+    border: 2rpx solid #f6f6f6;
     animation: via-changeLeftOpacity 0.3s linear 1;
 }
 
@@ -95,7 +95,7 @@
     width: 56rpx;
     border-radius: 50%;
     background-color: #fff;
-    border: 1rpx solid #f6f6f6;
+    border: 2rpx solid #f6f6f6;
     animation: via-changeRightOpacity 0.3s linear 1;
 
 }

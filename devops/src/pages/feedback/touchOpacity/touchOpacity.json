@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-touchableOpacity":"/components/via-touchableOpacity/index"
+    "via-touchable-opacity":"/components/via-touchable-opacity/index"
   }
 }

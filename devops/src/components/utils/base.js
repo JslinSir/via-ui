@@ -1,4 +1,15 @@
 
+/**
+ * 创建从0 到 n 的数组
+ * @param {*} size 
+ */
+export const createArray = size => size ? [...Array(size).keys()] : []
+
+/**
+ * 补零
+ * @param {*} val 
+ */
+export const unitZero = val => val > 9 ? val : `0${val}`
 
 
 /**

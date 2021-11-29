@@ -1,1 +1,1 @@
-export const caculateRatio=()=>{const{screenWidth:t}=wx.getSystemInfoSync();return t/375};export const rpxToPx=t=>{const o=t/2,c=caculateRatio();return Math.round(o*c)};
+export const createArray=t=>t?[...Array(t).keys()]:[];export const unitZero=t=>t>9?t:`0${t}`;export const caculateRatio=()=>{const{screenWidth:t}=wx.getSystemInfoSync();return t/375};export const rpxToPx=t=>{const r=t/2,e=caculateRatio();return Math.round(r*e)};

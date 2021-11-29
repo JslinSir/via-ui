@@ -18,9 +18,15 @@ const config = [
     nav: '../datePicker/datePicker'
   },
   {
+    name: 'dateRangePicker 日期范围选择器',
+    nav: '../dateRangePicker/dateRangePicker'
+  },
+  {
     name: 'Calendar 日历',
     nav: '../calendar/calendar'
   },
+
+  
   // {
   //   name: 'Editor 编辑器',
   //   nav: '../editor/editor'

@@ -41,3 +41,19 @@ export const config = [
         icon:'busi',
     },
 ]
+
+
+
+export const tabs = [
+    {
+        name:'组件库',
+        icon:'/img/nav/home.png',
+        iconSelect:'/img/nav/homeselect.png'
+    },
+   
+    {
+        name:'关于',
+        icon:'/img/nav/my.png',
+        iconSelect:'/img/nav/myselect.png',
+    }  
+ ]

@@ -3,7 +3,7 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-datePicker":"/components/via-datePicker/index",
+    "via-date-picker":"/components/via-date-picker/index",
     "via-button":"/components/via-button/index"
   }
 }

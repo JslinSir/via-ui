@@ -55,5 +55,5 @@
 	</view>
 </via-ad>
 
-<via-navTab tab="{{tabs}}" curentTab="{{curentIndex}}"  bind:onChange="handleTabChange" />
+<via-nav-tab tab="{{tabs}}" curentTab="{{curentIndex}}"  bind:onChange="handleTabChange" />
 

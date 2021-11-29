@@ -4,15 +4,15 @@
 ### 示例代码
 * 基本使用
 ```
-    <via-timeLine  dataSource="{{dataSource}}"/>
+    <via-time-line  dataSource="{{dataSource}}"/>
 ```
 * 设置选中 current
 ```
-<via-timeLine  dataSource="{{dataSource}}" current="2"/>
+<via-time-line  dataSource="{{dataSource}}" current="2"/>
 ```
 * 自定义选中色
 ```
- <via-timeLine  dataSource="{{dataSource}}" current="2" activeColor="#0188FF"  activeBorderColor="#e8f3fe"/>
+ <via-time-line   dataSource="{{dataSource}}" current="2" activeColor="#0188FF"  activeBorderColor="#e8f3fe"/>
 ```
  
 

@@ -1,10 +1,10 @@
+@import "../style/base.scss";
 .via-tags {
     display: inline-block;
     font-size: 22rpx;
     color: #323232;
     background: #fff;
-    border: 0.5px solid #0a1d66;
-    transform: scale(1);
+    border: 2rpx solid $them-color;
     border-radius: 8rpx;
     padding: 2rpx 8rpx;
 }

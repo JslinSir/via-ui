@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-countDown":"/components/via-countDown/index"
+    "via-countdown":"/components/via-countdown/index"
   }
 }

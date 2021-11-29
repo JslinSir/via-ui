@@ -7,7 +7,7 @@
   
 ```
 wxml:
-<via-countDown  date="2022-01-01"/>
+<via-countdown  date="2022-01-01"/>
  
 
 ```

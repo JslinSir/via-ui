@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-navTab":"/components/via-navTab/index"
+    "via-nav-tab":"/components/via-nav-tab/index"
   }
 }

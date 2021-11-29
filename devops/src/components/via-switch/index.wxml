@@ -12,5 +12,5 @@
 </view>
 
 <view class="via-switchRadioBox {{radio?'via-jcend':'via-jcstart'}}" wx:if="{{type==='default'}}" style="width:{{width}}rpx;height:{{height}}rpx;background-color:{{radio?activeColor:bgColor}};'" bind:tap="handleRadioSwitch">
-  <view class="{{radio?'via-radio-select class-radio-select-style':'via-radio'}} class-radio-style" style="border: 1rpx solid {{radio?activeColor:bgColor}};width:{{radioSize}}rpx;height:{{radioSize}}rpx;"/>
+  <view class="{{radio?'via-radio-select class-radio-select-style':'via-radio'}} class-radio-style" style="border: 2rpx solid {{radio?activeColor:bgColor}};width:{{radioSize}}rpx;height:{{radioSize}}rpx;"/>
 </view>

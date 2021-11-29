@@ -1,4 +1,3 @@
-
 <view class="header-title-cneter">DatePicker</view>
 
 <view class="intro">
@@ -7,9 +6,52 @@
 		基本用法
 	</view>
 	<view class="intro-cotent">
-	   <view  style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
-    	<via-button text="显示日期选择器"   bind:onClick="handleBtnClick" />
+		<view style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+		<via-button text="显示日期选择器" bind:onClick="handleBtnClick" />
+	</view>
+</view>
 
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		时间选择器
+	</view>
+	<view class="intro-cotent">
+		<view style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+		<via-button text="时间选择器" bind:onClick="handleBtnClick" data-mode="time" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		日期时间选择器
+	</view>
+	<view class="intro-cotent">
+		<view style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+		<via-button text="日期时间选择器" bind:onClick="handleBtnClick" data-mode="dateTime" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义显示日期格式
+	</view>
+	<view class="intro-cotent">
+		<view style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+		<via-button text="自定义格式化日期显示" bind:onClick="handleBtnClick" data-dateformate="." />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		关闭单位显示
+	</view>
+	<view class="intro-cotent">
+		<view style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+		<via-button text="关闭单位显示" bind:onClick="handleBtnClick" data-dateformate="." data-showUnit="0" />
 	</view>
 </view>
 
@@ -17,16 +59,14 @@
 <view class="intro">
 	<view class="intro-titel">
 		<view class="title-radio" />
-		自定义 范围 颜色等
+		设置标题
 	</view>
 	<view class="intro-cotent">
- 
-    	<via-button text="自定义"   bind:onClick="handleBtnClick2" />
-
+		<view style="margin-bottom:30rpx;">当前选中的日期为：{{selectValue}}</view>
+		<via-button text="设置标题" bind:onClick="handleBtnClick" data-title="选择日期" />
 	</view>
 </view>
 
 
-	<via-datePicker id="datepicker1"  bind:onChange="handleChange" value="{{selectValue}}"  bind:onConfirm="handleConfirm"  />
 
-	<via-datePicker id="datepicker2" beginRange="3" endRange="2"  title="请选择日期" class-header-title="title" confirmColor="red" cancelColor="#999" />
+<via-date-picker id="datepicker" mode="{{mode}}" bind:onChange="handleChange" title="{{title}}" showUnitText="{{showUnitText}}" bind:onConfirm="handleConfirm" dateTextFormatChart="{{dateformate?dateformate:'-'}}" />

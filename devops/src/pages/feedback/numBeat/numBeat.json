@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-numBeat":"/components/via-numBeat/index"
+    "via-num-beat":"/components/via-num-beat/index"
   }
 }

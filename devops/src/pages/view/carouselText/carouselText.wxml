@@ -7,7 +7,7 @@
         基本用法
     </view>
     <view class="intro-cotent">
-       <via-carouselText speed="3" text="恭喜你获得了VIP权利，尊享VIP权利"/>
+       <via-carousel-text speed="3" text="恭喜你获得了VIP权利，尊享VIP权利"/>
     </view>
 </view>
 
@@ -17,6 +17,6 @@
         竖向滚动
     </view>
     <view class="intro-cotent">
-       <via-carouselText speed="3" text="{{text}}" direction="column"/>
+       <via-carousel-text speed="3" text="{{text}}" direction="column"/>
     </view>
 </view>

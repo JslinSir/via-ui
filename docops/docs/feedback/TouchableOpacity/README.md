@@ -6,13 +6,13 @@
 * 基本使用
   
 ```
-<via-touchableOpacity> 点我 不透明 默认0.6 </via-touchableOpacity>
+<via-touchable-opacity> 点我 不透明 默认0.6 </via-touchable-opacity>
 ```
 
 * 设置 opacity
   
 ```
-<via-touchableOpacity opacity="1"> 点我 不透明 1 </via-touchableOpacity>
+<via-touchable-opacity opacity="1"> 点我 不透明 1 </via-touchable-opacity>
 ```
 
 ### 属性

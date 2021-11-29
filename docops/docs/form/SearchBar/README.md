@@ -5,17 +5,17 @@
 ### 示例代码
 * 基本使用
 ```
-<via-searchBar />
+<via-search-bar />
 ```
 
 * 禁用
 ```
-<via-searchBar  placeholder="请输入会员名称"  disabled/>
+<via-search-bar  placeholder="请输入会员名称"  disabled/>
 ```
 
 * 搜索词滚动
 ```
-<via-searchBar  searchText="" carousel carouselText="{{carouselText}}"/>
+<via-search-bar  searchText="" carousel carouselText="{{carouselText}}"/>
 ```
 
 * 自定义
@@ -25,7 +25,7 @@
 
 * 自定义 
 ```
-<via-searchBar placeholder="请输入" value="{{value}}" width="400" searchText="取消" bind:onChange="handleChange"/>
+<via-search-bar placeholder="请输入" value="{{value}}" width="400" searchText="取消" bind:onChange="handleChange"/>
 ```
  
  

@@ -3,7 +3,7 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-popModal":"/components/via-popModal/index",
+    "via-pop-modal":"/components/via-pop-modal/index",
     "via-button":"/components/via-button/index",
     "via-brand":"/pages/components/via-brand/index"
   }

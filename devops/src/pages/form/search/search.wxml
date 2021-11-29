@@ -6,7 +6,7 @@
 		基本用法
 	</view>
 	<view class="intro-cotent">
-		<via-searchBar  bind:onClickSearchText="handleClickSearchText"/>
+		<via-search-bar  bind:onClickSearchText="handleClickSearchText"/>
 
 	</view>
 </view>
@@ -18,7 +18,7 @@
 		禁用
 	</view>
 	<view class="intro-cotent">
-		<via-searchBar  placeholder="请输入会员名称"  disabled/>
+		<via-search-bar  placeholder="请输入会员名称"  disabled/>
 
 	</view>
 </view>
@@ -29,7 +29,7 @@
 		搜索词滚动
 	</view>
 	<view class="intro-cotent">
-		<via-searchBar  searchText="" carousel carouselText="{{carouselText}}"/>
+		<via-search-bar  searchText="" carousel carouselText="{{carouselText}}"/>
 
 	</view>
 </view>
@@ -40,7 +40,7 @@
 		自定义
 	</view>
 	<view class="intro-cotent">
-		<via-searchBar placeholder="请输入" value="{{value}}" width="400" searchText="取消" bind:onChange="handleChange"/>
+		<via-search-bar placeholder="请输入" value="{{value}}" width="400" searchText="取消" bind:onChange="handleChange"/>
 
 	</view>
 </view>

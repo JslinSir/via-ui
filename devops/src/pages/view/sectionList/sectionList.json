@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-sectionList": "/components/via-sectionList/index"
+    "via-section-list": "/components/via-section-list/index"
   }
 }

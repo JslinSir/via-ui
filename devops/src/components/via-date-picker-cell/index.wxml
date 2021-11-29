@@ -1,0 +1,73 @@
+<wxs module="_">
+  var isUnitZero = function (val, isUnitZero) {
+    var str = val
+    if (val > 9) {
+      str = val
+    } else {
+      str = '0' + val
+    }
+    return str
+  }
+  module.exports = {
+    isUnitZero: isUnitZero,
+  }
+</wxs>
+
+<picker-view class="item-box" indicator-style="height:42px" value="{{selectedValue}}" bindchange="pickerChange" bindpickstart="pickerChangeStart" bindpickend="pickerChangeEnd">
+      <block wx:if="{{mode==='date' || mode==='dateTime'}}">
+      <!-- 年 -->
+      <picker-view-column>
+        <view class='item' wx:for="{{years}}" wx:key="item">
+          <text class="num">{{_.isUnitZero(item,isUnitZero)}}</text>
+          <text class="cell" decode wx:if="{{showUnitText}}">年</text>
+        </view>
+      </picker-view-column>
+      <!-- 月 -->
+      <picker-view-column>
+        <view class='item' wx:for="{{months}}" wx:key="item">
+          <view class="num">{{_.isUnitZero(item,isUnitZero)}}</view>
+          <view class="cell" decode wx:if="{{showUnitText}}">月</view>
+        </view>
+      </picker-view-column>
+      <!-- 日 -->
+      <picker-view-column>
+        <view class='item' wx:for="{{days}}" wx:key="item">
+          <view class="num">{{_.isUnitZero(item,isUnitZero)}}</view>
+          <view class="cell" decode wx:if="{{showUnitText}}">日</view>
+        </view>
+      </picker-view-column>
+      </block>
+      <block wx:if="{{mode==='time' || mode==='dateTime'}}">
+        <!-- 时 -->
+        <picker-view-column>
+          <view class='item' wx:for="{{hour}}" wx:key="item">
+            <view class="num">{{_.isUnitZero(item,isUnitZero)}}</view>
+            <view class="cell" decode wx:if="{{showUnitText}}">时</view>
+          </view>
+        </picker-view-column>
+        <!-- 分 -->
+        <picker-view-column>
+          <view class='item' wx:for="{{min}}" wx:key="item">
+            <view class="num">{{_.isUnitZero(item,isUnitZero)}}</view>
+            <view class="cell" decode wx:if="{{showUnitText}}">分</view>
+          </view>
+        </picker-view-column>
+        <!-- 秒 -->
+        <picker-view-column>
+          <view class='item' wx:for="{{second}}" wx:key="item">
+            <view class="num">{{_.isUnitZero(item,isUnitZero)}}</view>
+            <view class="cell" decode wx:if="{{showUnitText}}">秒</view>
+          </view>
+        </picker-view-column>
+      </block>
+
+
+</picker-view>
+
+<!-- 底部按钮 -->
+<view class="btn-bottom ">
+      <view class="btn" bindtap="handleReset" style="color:{{resetColor}};">重置</view>
+      <view class="line"></view>
+      <view class="btn activ {{forbidden?'forbidden':''}}" bindtap="{{forbidden?'':'handleConfirm'}}" style="color:{{confirmColor}};">确认</view>
+</view>
+

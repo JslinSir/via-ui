@@ -47,6 +47,18 @@
           "pathName": "pages/business/watermark/watermark",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "日期选择器",
+          "pathName": "pages/form/datePicker/datePicker",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "日期范围选择器",
+          "pathName": "pages/form/dateRangePicker/dateRangePicker",
+          "query": "",
+          "scene": null
         }
       ]
     }

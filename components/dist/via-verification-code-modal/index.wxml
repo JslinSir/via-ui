@@ -1,0 +1,22 @@
+ <mp-pop-modal id="pop-modal" direction="center" zIndex="10">
+  
+  <view class="code-modal" wx:if="{{status}}">
+   <view class="title">请填写手机短信验证码</view>
+   <view class="phone-des">已发送到手机号：138****8688</view>
+
+   <view class="input-box">
+   <view class="line-view">
+    <view class="line-item" wx:for="{{[1,2,3,4,5,6]}}" wx:key="unique">
+    
+    <view wx:if="{{codes[index]}}">{{codes[index]}}</view>
+    
+    <view class="line" wx:else/>
+    </view>
+   </view>
+    <input class="input" focus style="{{inputStyle}}" maxlength="6" type="number" bindfocus="handleFocus" bindblur="blur" bindinput="handleInput"/>
+   </view>
+   <view class="hair-line"></view>
+   <view class="cut-dow">50s后重新获取验证码</view>
+  </view>
+
+ </mp-pop-modal>>

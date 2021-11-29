@@ -6,7 +6,7 @@
 		基本用法
 	</view>
 	<view class="intro-cotent">
-     <via-numBeat nums="1028.56"/>
+     <via-num-beat nums="1028.56"/>
 	</view>
 </view>
 
@@ -16,7 +16,7 @@
 		自定义频率，跳动次数
 	</view>
 	<view class="intro-cotent">
-		<via-numBeat nums="1028.56"  rate="50" total="20"/>
+		<via-num-beat nums="1028.56"  rate="50" total="20"/>
 	</view>
 </view>
 

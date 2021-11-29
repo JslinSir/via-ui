@@ -6,18 +6,18 @@
 * 基本使用
   
 ```
-<via-navTab tab="{{tabs}}"  type="icon" />
+<via-nav-tab tab="{{tabs}}"   />
 ```
 
 * 带 红点
  
 ```
-<via-navTab tab="{{tabs2}}" type="icon"  />
+<via-nav-tab tab="{{tabs2}}" />
 ```
 * 显示消息值
  
 ```
-<via-navTab tab="{{tabs2}}" type="icon"  />
+<via-nav-tab tab="{{tabs2}}"  />
 ```
  
  
@@ -27,8 +27,7 @@
 ### 属性
 | 属性 | 说明 | 类型 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| tab | tab数据源 | Array | [ ] | 数据源格式：{name,  key, icon, iconSelect, val} 如果设置红点类型，val为空即可， 如果显示消息类型，val 需填充 值 字符串类型  |
-| type | 底部图标类型 | String | icon img | icon:当前组件库中的icon img:自定义图 |
+| tab | tab数据源 | Array | [ ] | 数据源格式：{name,  key, icon, iconSelect val} 如果设置红点类型，val为空即可， 如果显示消息类型，val 需填充 值 字符串类型  |
 | isNav | 是否是底部导航类型 | Boolean| true |  | 
 | height | 导航切换栏高 | Number| 100 rpx |  | 
 | bgColor | 背景色 | String| rgba(255, 255, 255, 0.97) |  | 

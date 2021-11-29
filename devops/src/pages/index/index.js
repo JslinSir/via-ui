@@ -13,7 +13,7 @@
  * 工具类 util  公用的wxs 库
  * TODO: 公共wxs 工具，navigationBar
  */
-import { config } from './config'
+import { config,tabs } from './config'
 Page({
   data: {
     pullStatus: false,
@@ -21,19 +21,7 @@ Page({
     showLoading: false,
     configData: config,
     status:false,
-    tabs: [
-      {
-          name:'组件库',
-          icon:'home',
-          iconSelect:'homefill'
-      },
-     
-      {
-          name:'关于',
-          icon:'emoji',
-          iconSelect:'emojifill',
-      }  
-   ],
+    tabs,
    tabControl: { '0': true },
   curentIndex:0,
   },

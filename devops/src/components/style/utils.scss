@@ -2,18 +2,28 @@
 
 // 1 border 
 
-@import "./them.scss";
+@import "./base.scss";
 
 // 共享样式 
 @mixin hair-border {
- border: 1rpx solid $border-color;
- transform: scale(1);
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: 0 solid $border-color;
+    border-bottom-width: 1px;
+  }
 }
 
-@mixin hair-border-bottom {
-  border-bottom: 1rpx solid $border-color;
-  transform: scale(1);
- }
+ 
 
 // 左边距
 @mixin ml($ml:10rpx) {

@@ -1,0 +1,46 @@
+@import '../style/utils.scss';
+.bottom-action {
+  width: 100vw;
+  min-height: 300rpx;
+  background-color: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  .action-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100rpx;
+    font-size: 32rpx;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2rpx solid #f4f4f4;
+  }
+  .action-item {
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32rpx;
+    color: #323232;
+    border-bottom: 2rpx solid #f4f4f4;
+  }
+  .action-item:last-child{
+    border-bottom: none;
+  }
+  .line-seat{
+    width: 100vw;
+    height: 16rpx;
+    background-color: #f7f7f7;
+  }
+}
+
+
+
+
+ 
+
+
+
+ 

@@ -1,1 +1,1 @@
-.via-tags{display:inline-block;font-size:22rpx;color:#323232;background:#fff;border:.5px solid #0a1d66;transform:scale(1);border-radius:8rpx;padding:2rpx 8rpx}
+.via-tags{display:inline-block;font-size:22rpx;color:#323232;background:#fff;border:2rpx solid #0a1d66;border-radius:8rpx;padding:2rpx 8rpx}

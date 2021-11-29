@@ -5,19 +5,19 @@
 ### 示例代码
 * 基本使用
 ```
-  <via-loadingMore  />
+  <via-loading-more  />
 ```
 * 自定义文案
 ```
-<via-loadingMore  loadingText="客官别急，努力加载中..."/>
+<via-loading-more  loadingText="客官别急，努力加载中..."/>
 ```
 * loading:false noMore:true 没有更多
 ```
-<via-loadingMore noMore  loading="{{false}}"  />
+<via-loading-more  noMore  loading="{{false}}"  />
 ```
 * noMore:true  自定义文案
 ```
- <via-loadingMore noMore  loading="{{false}}"   noMoreText="- 我是有底线的 -"/>
+ <via-loading-more  noMore  loading="{{false}}"   noMoreText="- 我是有底线的 -"/>
 ```
 
 

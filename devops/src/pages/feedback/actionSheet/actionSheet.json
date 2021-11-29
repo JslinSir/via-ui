@@ -3,7 +3,7 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-actionSheet":"/components/via-actionSheet/index",
+    "via-action-sheet":"/components/via-action-sheet/index",
     "via-button":"/components/via-button/index"
   }
 }

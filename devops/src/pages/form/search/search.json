@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-searchBar":"/components/via-searchBar/index"
+    "via-search-bar":"/components/via-search-bar/index"
   }
 }

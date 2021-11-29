@@ -46,6 +46,7 @@
     "pages/form/radio/radio",
     "pages/form/search/search",
     "pages/form/datePicker/datePicker",
+    "pages/form/dateRangePicker/dateRangePicker",
     "pages/form/editor/editor",
     "pages/navigation/navTab/navTab",
     "pages/feedback/collapse/collapse",

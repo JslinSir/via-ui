@@ -5,7 +5,7 @@
 		基本用法
 	</view>
 	<view class="intro-cotent">
-		<via-navTab tab="{{tabs}}"  type="icon" isNav="{{false}}"/>
+		<via-nav-tab tab="{{tabs}}"  type="icon" isNav="{{false}}"/>
 	</view>
 </view>
 <view class="intro">
@@ -14,7 +14,7 @@
 		关闭动画，设置颜色
 	</view>
 	<view class="intro-cotent">
-		<via-navTab tab="{{tabs}}" animotion="{{false}}"  color="#000" activeColor="red" type="icon"  fontColor="#ccc" fontSelectColor="red"  isNav="{{false}}" />
+		<via-nav-tab tab="{{tabs}}" animotion="{{false}}"  color="#000" activeColor="red" type="icon"  fontColor="#ccc" fontSelectColor="red"  isNav="{{false}}" />
 	</view>
 </view>
 <view class="intro">
@@ -23,7 +23,7 @@
 		带 红点
 	</view>
 	<view class="intro-cotent">
-		<via-navTab tab="{{tabs2}}" type="icon"  isNav="{{false}}"/>
+		<via-nav-tab tab="{{tabs2}}" type="icon"  isNav="{{false}}"/>
 	</view>
 </view>
 
@@ -33,7 +33,7 @@
 		显示消息值
 	</view>
 	<view class="intro-cotent">
-		<via-navTab tab="{{tabs3}}" type="icon"  isNav="{{false}}"/>
+		<via-nav-tab tab="{{tabs3}}" type="icon"  isNav="{{false}}"/>
 	</view>
 </view>
 <view class="intro">
@@ -42,7 +42,7 @@
 		自定义图片icon
 	</view>
 	<view class="intro-cotent">
-		<via-navTab tab="{{tabs4}}" type="img"  isNav="{{false}}"/>
+		<via-nav-tab tab="{{tabs4}}" type="img"  isNav="{{false}}"/>
 	</view>
 </view>
-<via-navTab tab="{{tabs}}"  type="icon"/>
+<via-nav-tab tab="{{tabs}}"  type="icon"/>

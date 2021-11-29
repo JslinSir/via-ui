@@ -1,6 +1,6 @@
 {
   "name": "via-mp-ui",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "miniprogram": "dist",
   "description": "一个简单 易用的小程序原生组件库 Via UI",
   "main": "index.js",

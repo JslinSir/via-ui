@@ -18,5 +18,5 @@
 | src | 远程图标 | String | '' |   | |
 
 
- <iframe frameborder=0 scrolling=no width=100% height=4400 src="../../icon/icon.html">
+ <iframe frameborder=0 scrolling=no width=100% height=1400 src="../../icon/icon.html">
  </iframe>

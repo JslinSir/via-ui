@@ -9,7 +9,6 @@ Page({
 
   handleClick(e) {
     const { position, icon } = e.currentTarget.dataset
-    // debugger
     this.setData({ iconPosition: position, icon })
     this.ad.show()
   },

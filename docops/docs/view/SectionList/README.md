@@ -5,7 +5,7 @@
 ### 示例代码
 * 基本使用
 ```
-<via-sectionList  scrollHeight="{{scrollHeight}}"  dataSource="{{dataSource}}"/>
+<via-section-list  scrollHeight="{{scrollHeight}}"  dataSource="{{dataSource}}"/>
 ```
  
  

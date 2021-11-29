@@ -5,11 +5,11 @@
 ### 示例代码
 * 基本使用
 ```
-<via-carouselText speed="3" text="恭喜你获得了VIP权利，尊享VIP权利"/>
+<via-carousel-text speed="3" text="恭喜你获得了VIP权利，尊享VIP权利"/>
 ```
 * 竖向滚动
 ```
- <via-carouselText speed="3" text="{{text}}" direction="column"/>
+ <via-carousel-text speed="3" text="{{text}}" direction="column"/>
 ```
  
 

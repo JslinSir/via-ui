@@ -111,8 +111,8 @@
   font-size: 16px;
   line-height: 1.5;
   overflow: auto;
-  padding: 10px 10px 80px 10px;
-  border: 1px solid #ececec;
+  padding: 20rpx 20rpx 160px 20rpx;
+  border: 2rpx solid #ececec;
 }
 .toolbar {
   box-sizing: border-box;
@@ -227,12 +227,12 @@
 }
 .cancel-btn{
   background-color: #fff !important;
-  border: 1rpx solid #fafafa;
+  border: 2rpx solid #fafafa;
   color: #323232 !important;
 }
 .save-btn{
   margin-left: 20rpx;
-  border:1rpx solid transparent;
+  border:2rpx solid transparent;
 }
  
 @keyframes fadein {

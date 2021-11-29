@@ -55,13 +55,13 @@
 	</view>
 </view>
 
-<via-popModal  id="popModal3" direction="{{direction}}" bind:onConfirm="handleConfirm"  confirm>
+<via-pop-modal  id="popModal3" direction="{{direction}}" bind:onConfirm="handleConfirm"  confirm>
 	<via-brand />
-</via-popModal>
+</via-pop-modal>
 
-<via-popModal  id="popModal" direction="{{direction}}" hasCloseIcon="{{hasCloseIcon}}"  title="提示" >
+<via-pop-modal  id="popModal" direction="{{direction}}" hasCloseIcon="{{hasCloseIcon}}"  title="提示" >
   <via-brand />
-</via-popModal>
+</via-pop-modal>
 
 
-<via-popModal  id="popModal2" class-pop-center-view="class-pop-center-view" class-header-title="class-header-title" direction="{{direction}}" hasCloseIcon="{{hasCloseIcon}}"  title="自定义"/>
+<via-pop-modal  id="popModal2" class-pop-center-view="class-pop-center-view" class-header-title="class-header-title" direction="{{direction}}" hasCloseIcon="{{hasCloseIcon}}"  title="自定义"/>

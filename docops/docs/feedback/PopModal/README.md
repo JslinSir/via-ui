@@ -7,9 +7,9 @@
   
 ```
 wxml：
-<via-popModal  id="popModal3" direction="bottom" bind:confirm="handleConfirm"  confirm>
+<via-pop-modal  id="popModal3" direction="bottom" bind:confirm="handleConfirm"  confirm>
   自定义内容
-</via-popModal>
+</via-pop-modal>
 js:
    this.$popModal = this.selectComponent('#popModal')
    this.$popModal.show()

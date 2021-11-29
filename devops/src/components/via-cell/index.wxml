@@ -1,4 +1,4 @@
-<via-touchableOpacity opacity="{{touchOpacity}}">
+<via-touchable-opacity opacity="{{touchOpacity}}">
 <view class="via-ui-cell class-cell-view" style="height:{{height?height:''}}rpx;width:{{width?width:''}}rpx;border-radius:{{radius?radius:''}}rpx" bind:tap="handleCellClick">
 	<view class="via-ui-cell-left-view">
 
@@ -34,5 +34,5 @@
 	</view>
 
 </view>
-</via-touchableOpacity>
+</via-touchable-opacity>
 

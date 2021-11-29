@@ -43,7 +43,7 @@
 	</via-card>
 </view>
 
-<view class="intro">
+<!-- <view class="intro">
 	<via-card title="规范">
 		<view class="intro-cotent">
 			<text>适配：尺寸统一使用：rpx。</text>
@@ -52,7 +52,7 @@
 			<text>关于遮罩层级的一个说明：导航 层级为9  mask 层级要>= 10 。</text>
 		</view>
 	</via-card>
-</view>
+</view> -->
 
 <view class="intro">
 	<via-card title="Via UI 由来">

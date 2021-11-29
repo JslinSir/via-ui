@@ -3,6 +3,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#0a1d66",
   "usingComponents": {
-    "via-loadingMore": "/components/via-loadingMore/index"
+    "via-loading-more": "/components/via-loading-more/index"
   }
 }

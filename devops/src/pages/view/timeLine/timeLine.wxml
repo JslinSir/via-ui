@@ -5,7 +5,7 @@
         基本用法
     </view>
     <view class="intro-cotent">
-        <via-timeLine  dataSource="{{dataSource}}"/>
+        <via-time-line  dataSource="{{dataSource}}"/>
     </view>
 </view>
 
@@ -16,7 +16,7 @@
         设置选中 current
     </view>
     <view class="intro-cotent">
-        <via-timeLine  dataSource="{{dataSource}}" current="2"/>
+        <via-time-line  dataSource="{{dataSource}}" current="2"/>
     </view>
 </view>
 
@@ -27,7 +27,7 @@
         自定义选中色
     </view>
     <view class="intro-cotent">
-        <via-timeLine  dataSource="{{dataSource}}" current="2" activeColor="#0188FF"  activeBorderColor="#e8f3fe"/>
+        <via-time-line  dataSource="{{dataSource}}" current="2" activeColor="#0188FF"  activeBorderColor="#e8f3fe"/>
     </view>
 </view>
 

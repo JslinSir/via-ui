@@ -7,7 +7,7 @@
   
 ```
 wxml：
-<via-actionSheet id="actionSheet"  actionData="{{actionData}}" bind:onClick="handleActionClick" bind:onClose="handleClose"/>
+<via-action-sheet id="actionSheet"  actionData="{{actionData}}" bind:onClick="handleActionClick" bind:onClose="handleClose"/>
 
 ```
 

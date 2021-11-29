@@ -1,4 +1,5 @@
 
+@import "../style/base.scss";
 .calendar-box{
   position: relative;
   display: flex;
@@ -56,11 +57,11 @@
     .active{
       border-radius: 50%;
       color:#fff;
-      background-color: #0a1d66;
+      background-color: $them-color;
     }
     .active-default{
       border-radius: 50%;
-      border:1rpx solid #0a1d66;
+      border:2rpx solid $them-color;
     }
   }
 }
@@ -72,7 +73,7 @@
 
 
 .active-row{
-  background-color: #0a1d66;
+  background-color: $them-color;
 }
 .active-row:first-child{
   border-top-left-radius: 50%;
@@ -84,7 +85,7 @@
 }
 .calendar-select{
   position: absolute;
-  background-color: #0a1d66;
+  background-color: $them-color;
   width: 48rpx;
   height: 48rpx;
   line-height: 48rpx;
@@ -116,7 +117,7 @@
 .tips{
   position: absolute;
   margin-top: 4rpx;
-  color: #0a1d66;
+  color: $them-color;
   font-size: 20rpx;
   bottom:-15rpx;
 }

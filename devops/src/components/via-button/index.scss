@@ -1,3 +1,4 @@
+@import "../style/base.scss";
 .btn-content {
   display: flex;
   flex-direction: row;
@@ -11,9 +12,8 @@
   padding: 0 24rpx;
   border-radius: 44rpx;
   color: #fff;
-  border: 1rpx solid transparent;
-  transform: scale(1);
-  background-color: #0a1d66;
+  border: 2rpx solid transparent;
+  background-color:$them-color;
   box-sizing: border-box;
 }
   

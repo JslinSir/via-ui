@@ -1,1 +1,0 @@
-.picker-view-box{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}.picker-view-box .item-box{width:100vw;height:80%;text-align:center}.picker-view-box .item-box .item{display:flex;flex:1;align-items:center;justify-content:center;height:42px;font-size:15px;color:#000}

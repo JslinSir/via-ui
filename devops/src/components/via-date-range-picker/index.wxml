@@ -1,0 +1,62 @@
+<wxs module="_">
+  var formate = function (val) {
+    var ar = []
+   if(val){
+    ar = val.split(' ')
+   }
+    return ar
+  }
+  module.exports = {
+    formate: formate,
+  }
+</wxs>
+
+<via-pop
+ id="pop-modal"
+ maskClose="{{maskClose}}"
+>
+
+ <view class="cotent-picker">
+    <view class="header">
+    <block wx:for="{{[0,1]}}" wx:key="unique">
+      <view class="range-item" bindtap="handleSelectDate" data-index="{{index}}">
+        <view class="title" style="color:{{titleColor}};" wx:if="{{rangeTitle[0]}}">{{rangeTitle[0]}}</view>
+      <view class="curent" style="color:{{curenIndex==index ? activeColor : noActiveColor}};" >
+        <block wx:if="{{selectPickerText[index]}}">
+          <view>{{_.formate(selectPickerText[index])[0]}}</view>
+          <view>{{_.formate(selectPickerText[index])[1]}}</view>
+        </block>
+        <block wx:else>
+         <view class="plasholder">请选择</view>
+        </block>
+      </view>
+      <view class="line" style="background-color:{{activeColor}};" wx:if="{{curenIndex==index}}"/>
+      </view>
+      <view class="space-line" wx:if="{{index==0}}"></view>
+    </block>
+    </view>
+ 
+    <view class="date-picker-view">
+    <via-date-picker-cell 
+     id="date-picker-cell-id"
+     mode="{{mode}}"
+     confirmColor="{{confirmColor}}"
+     autoClose="{{autoClose}}"
+     dateTextFormatChart="{{dateTextFormatChart}}"
+     dateValFormatChart="{{dateValFormatChart}}"
+     timeTextFormatChart="{{timeTextFormatChart}}"
+     timeValFormatChart="{{timeValFormatChart}}"
+     value="{{rangeValue[curenIndex]}}"
+     beginRange="{{beginRange}}"
+     endRange="{{endRange}}"
+     showUnitText="{{showUnitText}}"
+     isUnitZero="{{isUnitZero}}"
+     bind:onChange="handleDateChange"
+     bind:onConfirm="handleConfirm"
+     bind:onRest="handleReset"
+     />
+    </view>
+    
+  </view>
+</via-pop>
+
