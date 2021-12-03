@@ -16,6 +16,7 @@ Page({
       title:title?title:'',
       mode:mode?mode:'date'
     },()=>{
+      this.$datePicker.handleReset()
       this.$datePicker.show()
     })
     

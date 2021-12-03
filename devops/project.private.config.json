@@ -59,6 +59,12 @@
           "pathName": "pages/form/dateRangePicker/dateRangePicker",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "验证码组件",
+          "pathName": "pages/business/verificationCodeModal/verificationCodeModal",
+          "query": "",
+          "scene": null
         }
       ]
     }

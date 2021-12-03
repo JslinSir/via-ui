@@ -18,6 +18,10 @@ const config = [
     name: 'watermark  水印',
     nav: '../watermark/watermark'
   },
+  {
+    name: 'verificationCodeModal  验证码弹窗',
+    nav: '../verificationCodeModal/verificationCodeModal'
+  },
   // {
   //   name: 'clipImage  图片裁切',
   //   nav: '../clipImage/clipImage'

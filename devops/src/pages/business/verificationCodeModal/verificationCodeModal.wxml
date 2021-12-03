@@ -1,0 +1,50 @@
+<view class="header-title-cneter">verificationCodeModal</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法  
+	</view>
+	<view class="intro-cotent" bindtap="handleClick">
+      点击获取验证码  输入值：{{val}}
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 自定义位数 4  时间10s
+	</view>
+	<view class="intro-cotent" bindtap="handleClick2">
+     点击输入浮点数 值：{{value}}
+	</view>
+</view>
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+
+
+<via-verification-code-modal 
+phone="150****1111"
+id="via-verification-code-modal" 
+bind:onRightInput="handleRightInput"
+bind:onReFresh="handleRefresh"
+/>
+ 
+
+<via-verification-code-modal 
+phone="150****1111"
+time="10"
+msglen="4"
+id="via-verification-code-modal2" 
+bind:onRightInput="handleRightInput"
+bind:onReFresh="handleRefresh2"
+/>
