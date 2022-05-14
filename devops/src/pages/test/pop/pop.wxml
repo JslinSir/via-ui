@@ -5,4 +5,6 @@
 
 <button bindtap="handleClick">显示</button>
 
+<image  style="width:120rpx;height:120rpx" src="{{selectSvg}}"/>
+
 <via-pop  id="viaPop"  visible="{{visible}}"/>

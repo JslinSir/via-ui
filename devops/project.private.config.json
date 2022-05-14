@@ -65,6 +65,12 @@
           "pathName": "pages/business/verificationCodeModal/verificationCodeModal",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/test/pop/pop",
+          "query": "",
+          "scene": null
         }
       ]
     }

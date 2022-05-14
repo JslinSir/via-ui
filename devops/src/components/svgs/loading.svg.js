@@ -1,5 +1,7 @@
+import { svgToBase64 } from '../utils/base'
+
 export const loading = (color = '#ddd') => {
-    const svgXml = `<svg xmlns="http://www.w3.org/2000/svg" 
+  const svgXml = `<svg xmlns="http://www.w3.org/2000/svg" 
     width="100%" 
     height="100%" 
     viewBox="24 24 48 48">
@@ -9,7 +11,7 @@ export const loading = (color = '#ddd') => {
     <animate attributeName="stroke-dashoffset" values="0px;-15px;-125px" dur="1400ms" repeatCount="indefinite"></animate>
     </circle>
     </svg>`
-    return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgXml)}`
+  return svgToBase64(svgXml)
 }
 
 export default loading
