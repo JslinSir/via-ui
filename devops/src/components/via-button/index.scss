@@ -1,4 +1,5 @@
 @import "../style/base.scss";
+@import "../style/flex.scss";
 .btn-content {
   display: flex;
   flex-direction: row;
@@ -16,11 +17,13 @@
   background-color:$them-color;
   box-sizing: border-box;
 }
-  
  
-.ml8{
-  margin-left: 8rpx;
+.btn-icon{
+  line-height: 1;
+  margin-right: 8rpx;
 }
+ 
+
 
  
 

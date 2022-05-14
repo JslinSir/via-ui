@@ -1,5 +1,5 @@
-<view class="modal"  wx:if="{{toastShow}}">
-	<view class="toast" style="opacity: {{opacity}};">
+<view class="toast-modal"  wx:if="{{toastShow}}">
+	<view id="toast" class="toast"  >
 		<slot></slot>
 		<block wx:if="{{toastIcon==='loading'}}">
 			 <via-loading size="30" type="{{loadingType}}" theme="white"/>

@@ -1,4 +1,6 @@
 
+import LoadingSvg from '../svgs/loading.svg'
+
 Component({
   /**
    * 组件的属性列表
@@ -35,7 +37,7 @@ Component({
   },
   
   attached(){
-    
+    this.setData({LoadingSvg:LoadingSvg(this.properties.bgColor)})
   },
 
   methods: {

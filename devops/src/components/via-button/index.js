@@ -10,6 +10,10 @@ Component({
       type: Boolean,
       value: false,
     },
+    loadingType:{
+      type: String,
+      value: 'svg',
+    },
     loadingText:{//loading 加载文案
       type: String,
       value: ''
