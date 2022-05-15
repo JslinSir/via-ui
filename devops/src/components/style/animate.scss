@@ -85,19 +85,15 @@
 /* 缩放渐入 */
 @keyframes via-fade-in-scale {
   0% {
-    opacity: 0;
     transform-origin: center center center;
     transform: scale(0.8,0.8)
   }
 
   50% {
-    opacity: 0.5;
     transform: scale(1.1,1.1)
   }
 
   100% {
-    opacity: 1;
- 
     transform: scale(1,1)
   }
 }

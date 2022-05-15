@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "via-animotion-transition":"../via-animotion-transition/index"
+  }
 }
