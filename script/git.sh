@@ -11,6 +11,8 @@ then
   git add -A
   git commit -am "build: compile $VERSION"
   git push origin alpha
+  git tag -a $VERSION -m "$VERSION release"
+  git push origin $VERSION
   git push origin refs/tags/v$VERSION
 fi
 
