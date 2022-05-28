@@ -1,0 +1,7 @@
+
+.toast-brand{
+  font-size: 28rpx;
+  color: #fff;
+  opacity: 0.85;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,57 @@
+<view class="header-title-cneter">Ad</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button class="btn"   data-position="bottom" data-icon="roundclose" bindtap="handleClick">默认</via-button>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		关闭按钮显示上方
+	</view>
+	<view class="intro-cotent">
+		<via-button class="btn"  data-position="top" data-icon="roundclose" bindtap="handleClick">关闭按钮显示上方</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 设置关闭icon
+	</view>
+	<view class="intro-cotent">
+		<via-button class="btn"   data-position="top" data-icon="close" bindtap="handleClick">设置关闭icon</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 全屏广告
+	</view>
+	<view class="intro-cotent">
+		<via-button class="btn"   data-position="top" data-icon="close" bindtap="handleClick2">开启全屏广告</via-button>
+	</view>
+</view>
+
+<via-ad id="adId" actionPosition="{{iconPosition}}" iconName="{{icon}}">
+    <image class="ad" src="./ad.png" />
+</via-ad>
+
+
+<via-ad id="adIdFull" type="full" >
+    <view class="ad-full-view">
+         <image class="adfull" src="./working.png" />
+         <view class="logo-view">
+             <view  class="logo-text">via UI</view>
+         </view>
+    </view>
+   
+</via-ad>

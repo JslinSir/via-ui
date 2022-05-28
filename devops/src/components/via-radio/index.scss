@@ -1,3 +1,4 @@
+@import "../style/animate.scss";
 .radio{
   width: 40rpx;
   height: 40rpx;
@@ -16,4 +17,9 @@
   background: #1976D2;
   opacity: 1;
   transition: all 0.3s ease-in-out;
+}
+
+.action-animotion{
+  animation: via-fade-in-scale  0.3s cubic-bezier(.12,.4,.29,1.46) ;
+ 
 }

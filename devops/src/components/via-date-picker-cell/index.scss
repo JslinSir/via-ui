@@ -61,6 +61,6 @@
   }
 
   .activ {
-    color: $them-color;
+    color: var(--theme-color,$theme-color);
   }
 }

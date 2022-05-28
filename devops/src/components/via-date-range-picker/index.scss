@@ -42,7 +42,7 @@
       align-content: center;
       justify-content: center;
       font-size: 36rpx;
-      color: $them-color;
+      color: var(--theme-color,$theme-color);
       margin-top: 10rpx;
     }
 
@@ -56,7 +56,7 @@
       width: 60rpx;
       height: 6rpx;
       border-radius: 6rpx;
-      background-color: $them-color;
+      background-color: var(--theme-color,$theme-color);
     }
   }
 

@@ -35,3 +35,6 @@ export const rpxToPx = (pxVal) => {
     const devicePxVal = Math.round(_6sVal * rate)  
     return devicePxVal 
 }
+
+
+export const svgToBase64 = svgXml =>  `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgXml)}`

@@ -1,0 +1,17 @@
+<view class="header-title-cneter">Watermark</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-watermark markStr="Via UI">
+			<image class="img" src="./test.png" />
+		</via-watermark>
+	</view>
+</view>
+<via-watermark markStr="水印文案">
+			<image class="img2" src="./test.png" />
+</via-watermark>
+ 

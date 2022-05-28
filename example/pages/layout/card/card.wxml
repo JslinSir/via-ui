@@ -1,0 +1,66 @@
+<view class="header-title-cneter">Card</view>
+<view class="intro">
+  <view class="intro-titel">
+    <view class="title-radio" />
+    基本用法
+  </view>
+  <view class="intro-cotent">
+    <via-card title="卡片标题">
+      <view class="content">默认插槽内容</view>
+    </via-card>
+  </view>
+</view>
+<view class="intro">
+  <view class="intro-titel">
+    <view class="title-radio" />
+    禁用边框和圆角
+  </view>
+  <view class="intro-cotent">
+
+    <via-card title="卡片标题" dis-header-border radius="0">
+      <view class="content">默认插槽内容</view>
+    </via-card>
+  </view>
+</view>
+
+<view class="intro">
+  <view class="intro-titel">
+    <view class="title-radio" />
+    禁用头部
+  </view>
+  <view class="intro-cotent">
+    <via-card title="卡片标题" dis-header>
+      <view class="content">默认插槽</view>
+    </via-card>
+  </view>
+</view>
+
+<view class="intro">
+  <view class="intro-titel">
+    <view class="title-radio" />
+    自定义标题
+  </view>
+  <view class="intro-cotent">
+    <via-card  >
+      <view slot="title">标题插槽</view>
+      <view slot="extra" style="color:#666">查看更多</view>
+      <view class="content">默认插槽</view>
+    </via-card>
+  </view>
+</view>
+
+
+<view class="intro">
+  <view class="intro-titel">
+    <view class="title-radio" />
+    自定义容器样式
+  </view>
+  <view class="intro-cotent">
+
+    <via-card title="卡片标题" class-container="card-container" class-header="card-header" class-content="card-content">
+      <view class="content">默认插槽内容</view>
+      <view class="content">默认插槽内容</view>
+      <view class="content">默认插槽内容</view>
+    </via-card>
+  </view>
+</view>

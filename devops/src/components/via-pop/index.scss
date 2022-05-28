@@ -8,6 +8,7 @@
   z-index: $z-index-mask;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
+  transition: all 0.3s;
 }
 .nomask{
   background-color: transparent !important;
@@ -21,13 +22,16 @@
   z-index: $z-index-mask;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
-
+  transition-timing-function: ease;
+  animation: ease both;
 }
 
   .via-pop-cotent {
     position: absolute;
     z-index: 11;
     opacity: 1;
+    transition-timing-function: ease;
+    animation: ease both;
   }
   .via-pop-position-top {
     top: 0;

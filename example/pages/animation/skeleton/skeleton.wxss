@@ -1,0 +1,25 @@
+page{
+    background-color: #ffffff;
+}
+.self-view{
+    display: flex;
+    flex-direction: column;
+}
+
+.self{
+    width: 200rpx;
+    height: 40rpx;
+    border-radius: 30rpx;
+}
+.self2{
+    width: 300rpx;
+    height: 40rpx;
+    border-radius: 30rpx;
+    margin-top: 20rpx;
+}
+.self3{
+    width: 500rpx;
+    height: 40rpx;
+    border-radius: 30rpx;
+    margin-top: 20rpx;
+}

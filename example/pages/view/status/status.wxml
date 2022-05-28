@@ -1,0 +1,36 @@
+<view class="header-title-cneter">Status</view>
+<view class="intro" wx:for="{{data}}" wx:key="unique">
+    <view class="intro-titel">
+        <view class="title-radio" />
+         {{item.name}}
+    </view>
+    <view class="intro-cotent">
+        <via-status  errorType="{{item.type}}"/>
+    </view>
+</view>
+
+<view class="intro"  >
+    <view class="intro-titel">
+        <view class="title-radio" />
+         加载远程图片
+    </view>
+    <view class="intro-cotent">
+        <via-status  errorText="加载到🐔太空了~"  src="http://iconfont.alicdn.com/t/1feb8597-b17d-453d-8faf-e1f90a77d85f.png"/>
+    </view>
+</view>
+
+
+<view class="intro"  >
+    <view class="intro-titel">
+        <view class="title-radio" />
+         全屏展示
+    </view>
+    <view class="intro-cotent">
+        <via-cell bind:onClick="handleToFull">全屏展示</via-cell>
+        <!-- <via-status  full/> -->
+    </view>
+</view>
+
+ 
+ 
+ 

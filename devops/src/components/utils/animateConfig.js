@@ -23,22 +23,26 @@ export const maskFrame = {
 export const centerFrame = {
 
   show: [{
-      scale: [0, 0],
-      easing: 'ease-in-out'
+      scale3d: [0, 0, 0],
+      opacity: 0,
+      easing: 'ease'
     },
     {
-      scale: [1, 1],
-      easing: 'ease-in-out'
+      scale3d: [1, 1, 1],
+      opacity: 1,
+      easing: 'ease'
     },
   ],
 
   hide: [{
-      scale: [1, 1],
-      easing: 'ease-in-out'
+      scale3d: [1, 1, 1],
+      opacity: 1,
+      easing: 'ease'
     },
     {
-      scale: [0.0],
-      easing: 'ease-in-out'
+      scale3d: [0, 0, 0],
+      opacity: 0,
+      easing: 'ease'
     },
   ]
 
@@ -82,26 +86,22 @@ export const topFrame = {
 export const bottomFrame = {
 
   show: [{
-      translateY: '100%',
-      opacity: 1,
-      easing: 'ease-in-out'
+      translate3d: [0, '100%', 0],
+      easing: 'ease'
     },
     {
-      translateY: '0',
-      opacity: 1,
-      easing: 'ease-in-out'
+      translate3d: [0, '0', 0],
+      easing: 'ease'
     },
   ],
 
   hide: [{
-      translateY: '0',
-      opacity: 1,
-      easing: 'ease-in-out'
+      translate3d: [0, 0, 0],
+      easing: 'ease'
     },
     {
-      translateY: '100%',
-      opacity: 1,
-      easing: 'ease-in-out'
+      translate3d: [0, '100%', 0],
+      easing: 'ease'
     },
   ]
 
@@ -114,26 +114,24 @@ export const bottomFrame = {
 export const leftFrame = {
 
   show: [{
-      translateX: '-100%',
-      opacity: 1,
-      easing: 'ease-in-out'
+      translate3d: ['-100%', 0, 0],
+      easing: 'ease'
     },
     {
-      translateX: '0',
-      opacity: 1,
-      easing: 'ease-in-out'
+      translate3d: [0, 0, 0],
+      easing: 'ease'
     },
   ],
 
   hide: [{
-      translateX: '0',
+      translate3d: [0, 0, 0],
       opacity: 1,
-      easing: 'ease-in-out'
+      easing: 'ease'
     },
     {
-      translateX: '-100%',
+      translate3d: ['-100%', 0, 0],
       opacity: 1,
-      easing: 'ease-in-out'
+      easing: 'ease'
     },
   ]
 
@@ -146,26 +144,26 @@ export const leftFrame = {
 export const rightFrame = {
 
   show: [{
-      translateX: '100%',
+      translate3d: ['100%', 0, 0],
       opacity: 1,
-      easing: 'ease-in-out'
+      easing: 'ease'
     },
     {
-      translateX: '0',
+      translate3d: [0, 0, 0],
       opacity: 1,
       easing: 'ease-in-out'
     },
   ],
 
   hide: [{
-      translateX: '0',
+      translate3d: [0, 0, 0],
       opacity: 1,
-      easing: 'ease-in-out'
+      easing: 'ease'
     },
     {
-      translateX: '100%',
+      translate3d: ['100%', 0, 0],
       opacity: 1,
-      easing: 'ease-in-out'
+      easing: 'ease'
     },
   ]
 

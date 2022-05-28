@@ -1,0 +1,81 @@
+.tips-hearder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #0a1d66;
+  height: 120rpx;
+  padding: 30rpx 24rpx;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  box-shadow: 0 4rpx 30rpx 0rpx rgba(9,27,75,0.6);
+}
+.author{
+  color: #fff;
+  font-size: 24rpx;
+  opacity: 0.8;
+  margin-top: 8rpx;
+}
+
+.header{
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 30rpx;
+}
+
+.title{
+  font-size: 36rpx;
+  color:#0a1d66
+}
+.des{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.intro{
+  margin: 30rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #323232;
+}
+
+.intro-cotent{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 0;
+}
+.intro-cotent-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+text{
+  line-height: 40rpx;
+}
+.link-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.link{
+  margin-left: 20rpx;
+  color: #0188FF;
+}
+.call-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 300rpx;
+}
+.call-me{
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  width: 300rpx;
+  height: 300rpx;
+}

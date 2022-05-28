@@ -1,0 +1,12 @@
+<view class="header-title-cneter">Icon</view>
+<view class="cotent-center">
+<view class="icon-show-box">
+	<view class="icon-show-items"  wx:for="{{iconNames}}" wx:key="unique">
+		<via-icon name="{{item}}" color="#0a1d66"  size="32"/>
+        <text class="icon-name">{{item}}</text>
+	</view>
+
+</view>
+
+</view>
+

@@ -1,0 +1,63 @@
+
+<view class="header-title-cneter">Navigation</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button text="基本用法" data-type="base" bind:onClick="handleClick"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义导航图标色，背景
+	</view>
+	<view class="intro-cotent">
+		<via-button text="自定义导航图标色，背景" bind:onClick="handleClick" data-type="color"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		开启收藏提示
+	</view>
+	<view class="intro-cotent">
+		<via-button text="开启收藏提示" data-type="tip"   bind:onClick="handleClick"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		开启收藏提示 4s后自动关闭
+	</view>
+	<view class="intro-cotent">
+		<via-button text="开启收藏提示 4s后自动关闭" data-type="close"   bind:onClick="handleClick"/>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	  渐变
+	</view>
+	<view class="intro-cotent">
+		<via-button text="渐变" data-type="change"   bind:onClick="handleClick"/>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+	   获取导航节点信息
+	</view>
+	<view class="intro-cotent">
+		<via-button text="获取导航节点信息" data-type="ref"   bind:onClick="handleClick"/>
+	</view>
+</view>

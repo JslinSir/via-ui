@@ -1,0 +1,19 @@
+
+.swiper-card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 470rpx;
+    height: 296rpx;
+    border-radius: 30rpx;
+    background-color: #ddd;
+    color: #fff;
+    font-size: 32rpx;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-swiper{
+    box-shadow: 0 2rpx 30rpx 0 rgba(240,80,34,0.3);
+    border: 4rpx solid #ddd;
+}

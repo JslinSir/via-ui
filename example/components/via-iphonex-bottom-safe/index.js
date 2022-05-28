@@ -1,0 +1,1 @@
+Component({properties:{bg:{type:String,value:""}}});

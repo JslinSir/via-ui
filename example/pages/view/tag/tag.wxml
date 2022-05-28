@@ -1,0 +1,30 @@
+<view class="header-title-cneter">Tag</view>
+<view class="intro"  >
+    <view class="intro-titel"  >
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+        <via-tag  text="标签1"/>
+    </view>
+</view>
+
+<view class="intro"  >
+    <view class="intro-titel"  >
+        <view class="title-radio" />
+        自定义
+    </view>
+    <view class="intro-cotent" >
+        <via-tag  bgColor="rgba(255,81,0,0.05)" fontSize="24" fontColor="#FF5100" borderColor="transparent" >自定义</via-tag>
+    </view>
+</view>
+
+<view class="intro"  >
+    <view class="intro-titel"  >
+        <view class="title-radio" />
+        自定义 样式
+    </view>
+    <view class="intro-cotent"  >
+        <via-tag class-tags="tags"  bgColor="#fff" borderColor="#0188FF" fontColor="#0188FF" >自定义样式</via-tag>
+    </view>
+</view>

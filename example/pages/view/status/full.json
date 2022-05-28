@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "全屏展示",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0a1d66",
+  "usingComponents": {
+    "via-status": "/components/via-status/index"
+  }
+}

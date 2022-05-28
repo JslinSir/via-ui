@@ -1,0 +1,1 @@
+.ball-box{position:fixed;z-index:9999999;transition:all .4s linear;opacity:0}

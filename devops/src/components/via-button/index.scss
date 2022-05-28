@@ -1,4 +1,5 @@
 @import "../style/base.scss";
+@import "../style/flex.scss";
 .btn-content {
   display: flex;
   flex-direction: row;
@@ -13,14 +14,16 @@
   border-radius: 44rpx;
   color: #fff;
   border: 2rpx solid transparent;
-  background-color:$them-color;
+  background-color:var(--theme-color,$theme-color);
   box-sizing: border-box;
 }
-  
  
-.ml8{
-  margin-left: 8rpx;
+.btn-icon{
+  line-height: 1;
+  margin-right: 8rpx;
 }
+ 
+
 
  
 

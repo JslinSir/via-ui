@@ -1,0 +1,30 @@
+<view class="header-title-cneter">Transition</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		过度类型
+	</view>
+	<view class="intro-cotent" >
+	  <view class="tags-view">
+		  <view class="tag-item" wx:for="{{config}}" wx:key="unique" >
+				<via-tag text="{{item.title}}" data-type="{{item.type}}" data-index="{{index}}" class-tags="{{curentIndex==index?'select':''}}"  bindtap="handleClick"/>
+			</view>
+		
+		</view>
+	</view>
+
+
+	<view class="intro-cotent"  wx:if="{{curentIndex!=null}}">
+		<via-transition name="{{config[curentIndex].type}}" duration="{{config[curentIndex].duration}}">
+
+			<view class="block">{{config[curentIndex].title}}</view>
+
+		</via-transition>
+	</view>
+
+
+
+
+
+</view>

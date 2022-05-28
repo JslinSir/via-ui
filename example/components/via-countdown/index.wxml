@@ -1,0 +1,16 @@
+<view class="count-down-view class-down-style">
+	<view class="count-text class-day-style" wx:if="{{isShowDay && day}}">{{day}}天</view>
+	<view class="row">
+		<view class="count-text class-time-style">{{hou}}</view>
+		<view class="u-style class-u-style">{{hu}}</view>
+	</view>
+	<view class="row">
+		<view class="count-text class-time-style">{{min}}</view>
+		<view class="u-style class-u-style">{{mu}}</view>
+	</view>
+	<view class="row">
+		<view class="count-text class-time-style">{{sec}}</view>
+		<view class="u-style class-u-style">{{su}}</view>
+	</view>
+</view>
+

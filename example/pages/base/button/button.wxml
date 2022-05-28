@@ -1,0 +1,65 @@
+<view class="header-title-cneter">Button</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button>按钮</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		加载
+	</view>
+	<view class="intro-cotent">
+		<via-button loading loadingText="加载中..."></via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		禁用
+	</view>
+	<view class="intro-cotent">
+		<via-button disabled>按钮禁用</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义 宽高，圆角，文字大小，loading
+	</view>
+	<view class="intro-cotent">
+		<via-button width="260" height="80" textSize="24" radius="10" iconSize="20" iconColor="#eee" loading>自定义大小按钮
+		</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义 通过 externalClasses 样式更改
+	</view>
+	<view class="intro-cotent">
+		<via-button class-button="style-btn">externalClasses 自定义按钮 </via-button>
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义 图标
+	</view>
+	<view class="intro-cotent">
+		<via-button iconName="forward"> 自定义 图标按钮 </via-button>
+	</view>
+</view>
+
+ 

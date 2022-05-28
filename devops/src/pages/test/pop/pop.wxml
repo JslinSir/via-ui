@@ -5,4 +5,5 @@
 
 <button bindtap="handleClick">显示</button>
 
-<via-pop  id="viaPop"  visible="{{visible}}"/>
+ 
+ <view class="pop-cotent" wx:if="{{visible}}"></view>

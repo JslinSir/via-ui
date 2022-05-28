@@ -1,0 +1,17 @@
+<view class="header-title-cneter">Calendar</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+	<via-button  text="唤起日历" bind:onClick="handleOption"/>
+	</view>
+	<view class="intro-cotent">
+   选中的日期：<block wx:for="{{data}}" wx:key="unique">{{item}},</block>
+	</view>
+</view>
+
+
+<via-calendar id="calendar" bind:onConfirm="handleConfirm"/>

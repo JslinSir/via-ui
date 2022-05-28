@@ -1,0 +1,18 @@
+
+
+<via-pop id="pop-modal" maskClose="{{maskClose}}">
+
+ <view class="cotent-picker">
+    <view class="header">
+      <view class="title" style="color:{{titleColor}};" wx:if="{{title}}">{{title}}</view>
+      <view class="curent" style="color:{{activeColor}};">{{selectPickerText}}</view>
+      <view class="line" style="background-color:{{activeColor}};"/>
+    </view>
+ 
+    <view class="date-picker-view">
+      <via-date-picker-cell id="date-picker-cell-id" mode="{{mode}}" autoClose="{{autoClose}}" dateTextFormatChart="{{dateTextFormatChart}}" dateValFormatChart="{{dateValFormatChart}}" timeTextFormatChart="{{timeTextFormatChart}}" timeValFormatChart="{{timeValFormatChart}}" value="{{value}}" beginRange="{{beginRange}}" endRange="{{endRange}}" showUnitText="{{showUnitText}}" isUnitZero="{{isUnitZero}}" bind:onChange="handleDateChange" bind:onConfirm="handleConfirm" bind:onRest="handleReset"/>
+    </view>
+    
+  </view>
+</via-pop>
+

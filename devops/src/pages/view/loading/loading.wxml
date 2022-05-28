@@ -33,6 +33,16 @@
 <view class="intro">
 	<view class="intro-titel">
 		<view class="title-radio" />
+		SVG样式loading
+	</view>
+	<view class="intro-cotent">
+		<via-loading type="svg" bgColor="#04b578" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
 		自定义颜色
 	</view>
 	<view class="intro-cotent">

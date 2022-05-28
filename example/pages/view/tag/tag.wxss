@@ -1,0 +1,6 @@
+ 
+ .tags{
+     padding: 10rpx 20rpx !important;
+     border-radius: 100rpx !important;
+     font-size: 28rpx !important;
+ }

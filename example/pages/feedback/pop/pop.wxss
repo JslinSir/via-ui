@@ -1,0 +1,5 @@
+.pop-view{
+    width: 100vw;
+    height: 600rpx;
+    background-color: #fff;
+}

@@ -1,0 +1,30 @@
+<view class="header-title-cneter">Mask</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-button text="点击显示" bind:onClick="handleBtnClick" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		点击需手动关闭
+	</view>
+	<view class="intro-cotent">
+		<via-button text="点击手动关闭" bind:onClick="handleBtnClick2" />
+	</view>
+</view>
+
+<via-mask id="maskId" />
+<via-mask id="maskId2" clickClose="{{false}}">
+    <view style="margin-top:100rpx;margin-left:50%" >
+        	<via-button text="关闭" width="300"  bind:onClick="handleBtnClose" />
+    </view>
+
+</via-mask>
+

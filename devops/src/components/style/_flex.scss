@@ -1,0 +1,26 @@
+.flex,
+.flex-r, 
+.flex-c,
+.flex-r-c
+{
+  display: flex;
+}
+.flex-r{
+  flex-direction: row;
+}
+.flex-r-c
+{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.flex-c{
+  flex-direction: column;
+}
+
+.flex-c-c{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

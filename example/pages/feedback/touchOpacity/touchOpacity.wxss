@@ -1,0 +1,4 @@
+/* example/pages/feedback/touchOpacity/touchOpacity.wxss */
+page{
+    background-color: #fff;
+}

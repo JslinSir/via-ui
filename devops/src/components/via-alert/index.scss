@@ -29,11 +29,8 @@
          display: -webkit-box;
          display: -webkit-flex;
          display: flex;
-
          flex-direction: column;
-
          align-items: center;
-
          justify-content: space-between;
          position: absolute;
          width: 540rpx;
@@ -41,8 +38,9 @@
          border-radius: 24rpx;
          z-index: 99;
          font-size: 32rpx;
-
          transition: all 0.2s linear;
+         animation: via-fade-in-scale 0.3s ease both ;
+
  }
 
  .modal-alert .content,
@@ -130,9 +128,24 @@
  }
 
  .ripple:active:after {
-
          transform: scale(0, 0);
          opacity: 0.3;
-
          transition: 0s;
  }
+
+
+ /* 缩放渐入 */
+@keyframes via-fade-in-scale {
+        0% {
+          transform-origin: center center center;
+          transform: scale(0.8,0.8)
+        }
+      
+        50% {
+          transform: scale(1.1,1.1)
+        }
+      
+        100% {
+          transform: scale(1,1)
+        }
+      }

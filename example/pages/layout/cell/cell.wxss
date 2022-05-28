@@ -1,0 +1,16 @@
+.custom-cell-view {
+    width: 500rpx !important;
+    height: 88rpx !important;
+    border-radius: 30rpx !important;
+    background-color: #4caf50 !important;
+}
+
+.custom-left-view{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.text-custom{
+    font-size: 24rpx;
+    color:#ccc;
+}

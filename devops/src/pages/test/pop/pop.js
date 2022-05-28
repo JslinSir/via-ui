@@ -1,3 +1,6 @@
+
+import selectSvg from '../../../components/svgs/select.svg.js'
+
 Page({
   /**
    * 页面的初始数据
@@ -8,7 +11,7 @@ Page({
 
   onLoad(){
 
-  
+    this.setData({selectSvg:selectSvg()})
 
   },
 

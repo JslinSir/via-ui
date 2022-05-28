@@ -1,0 +1,23 @@
+<view class="header-title-cneter">Radio</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-radio   />
+
+	</view>
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 自定义 大小颜色
+	</view>
+	<view class="intro-cotent">
+		<via-radio  actionColor="#FF2332" radioSize="60"  action bind:onClick="handleClick"/>
+	</view>
+</view>

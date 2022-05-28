@@ -1,13 +1,17 @@
 {
   "name": "via-mp-ui",
-  "version": "0.0.15",
+  "version": "0.0.13",
   "miniprogram": "dist",
   "description": "一个简单 易用的小程序原生组件库 Via UI",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "patch": "npm version patch",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "unpublish": "npm unpublish via-mp-ui",
+    "version": "npm view via-mp-ui version",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major"
   },
   "repository": {
     "type": "git",

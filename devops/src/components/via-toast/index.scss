@@ -1,8 +1,9 @@
-.modal {
+@import "../style/base.scss";
+.toast-modal {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: $z-index-toast;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +23,7 @@
         background: rgba(0, 0, 0, 0.60);
         border-radius: 18rpx;
         transition: all 0.2s linear;
+        opacity: 0;
         .toast-text-top {
             margin-top: 20rpx;
         }
