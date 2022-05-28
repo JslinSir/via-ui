@@ -1,0 +1,13 @@
+page {}
+
+.img {
+    width: 600rpx;
+    height: 600rpx;
+    border-radius: 24rpx;
+}
+
+.img2 {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 24rpx;
+}

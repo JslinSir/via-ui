@@ -1,0 +1,1 @@
+Component({externalClasses:["class-tags"],properties:{text:String,fontSize:Number,fontColor:String,bgColor:String,radius:Number,borderColor:String},methods:{handleClick(){this.triggerEvent("onClick",this.data.text)}}});

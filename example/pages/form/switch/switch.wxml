@@ -1,0 +1,52 @@
+<view class="header-title-cneter">Switch</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-switch selectData="{{selectData}}" />
+
+	</view>
+
+</view>
+
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义大小
+	</view>
+	<view class="intro-cotent">
+		<via-switch selectData="{{selectData}}" activeColor="yellow" width="200" height="120" radioSize="120" />
+
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		info 类型
+	</view>
+	<view class="intro-cotent">
+		<via-switch selectData="{{selectData}}" type="info" />
+	</view>
+
+	<view class="intro-cotent">
+		<via-switch selectData="{{selectData2}}" type="info" />
+	</view>
+
+
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		info 类型 设置背景色 字体大小宽度 圆角
+	</view>
+	<view class="intro-cotent">
+		<via-switch selectData="{{selectData}}" width="180" height="80" fontSize="30" fontActiveColor="#04BE02" fontColor="#323232" activeColor="#fff"
+			bgColor="#fafafa" radius="80" boxRadius="80" type="info" />
+	</view>
+</view>

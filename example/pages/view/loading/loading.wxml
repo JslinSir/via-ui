@@ -1,0 +1,55 @@
+<view class="header-title-cneter">Loading</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法
+	</view>
+	<view class="intro-cotent">
+		<via-loading/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		高亮
+	</view>
+	<view class="intro-cotent">
+		<via-loading type="light" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		微信下拉刷新移动样式loading
+	</view>
+	<view class="intro-cotent">
+		<via-loading type="move"/>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义颜色
+	</view>
+	<view class="intro-cotent">
+		<via-loading bgColor="red" />
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		自定义大小
+	</view>
+	<view class="intro-cotent">
+		<via-loading
+		 type="light"
+		 size="36"
+		/>
+	</view>
+</view>
+

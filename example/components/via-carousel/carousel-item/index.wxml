@@ -1,0 +1,3 @@
+<view class="swiper-item" animation="{{active? animationToLarge : animationToSmall}}" style="transform: scale({{active ? 1 : scale}});">
+  <slot/>
+</view>

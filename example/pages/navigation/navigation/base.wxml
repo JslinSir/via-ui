@@ -1,0 +1,21 @@
+<via-navigation  title="基本用法"  wx:if="{{type==='base'}}"/>
+<via-navigation  title="自定义导航图标色背景" iconColor="#fff" bg="#000" titleColor="#fff" wx:if="{{type==='color'}}"/>
+<via-navigation  title="开启收藏提示" tip wx:if="{{type==='tip'}}"/>
+<via-navigation  title="开启收藏提示自动关闭" tip tipsAutoDisTime="4"  wx:if="{{type==='close'}}"/>
+
+<via-navigation  title="滚动渐变" id="navigation"  opacity="0"   wx:if="{{type==='change'}}" />
+
+<via-navigation  title="获取导航节点信息" id="navigation2" wx:if="{{type==='ref'}}" />
+
+
+<view class="intro" wx:if="{{type==='change'}}">
+	 
+	<view class="intro-cotent changeCotent" wx:for="{{[1,2,3,4,5,6,7,8,9,11,12,12,123]}}" wx:key="unique" >
+		 <view class="change">Via UI</view>
+	</view>
+</view>
+
+
+<view class="intro" wx:if="{{type==='ref'}}">
+	  <view  style="font-size:24rpx;">{{text}}</view>
+</view>

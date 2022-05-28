@@ -1,0 +1,7 @@
+<block wx:if="{{status}}">
+	<view id="ball-box" class="ball-box">
+		<view id="ball" class="ball">
+			<slot/>
+		</view>
+	</view>
+</block>

@@ -1,0 +1,7 @@
+/* example/pages/feedback/loading/loading.wxss */
+page{
+    background-color: #fff;
+}
+
+
+

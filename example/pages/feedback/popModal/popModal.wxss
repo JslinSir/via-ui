@@ -1,0 +1,8 @@
+.class-pop-center-view{
+    width: 540rpx !important;
+    height: 300rpx !important;
+    border-radius: 24rpx !important;
+}
+.class-header-title{
+    color: #FF5100 !important;
+}

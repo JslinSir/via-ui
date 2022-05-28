@@ -1,0 +1,5 @@
+ 
+<image wx:if="{{src}}" style="width:{{size}}rpx;height:{{size}}rpx;" src="{{src}}"/>
+<view wx:else class="iconfont via-{{name}}" style="font-size:{{size}}rpx;color:{{color}};"/>
+ 
+

@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#0a1d66",
+  "usingComponents": {
+    "via-navigation":"/components/via-navigation/index"
+  }
+}

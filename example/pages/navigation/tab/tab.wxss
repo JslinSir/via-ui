@@ -1,0 +1,21 @@
+
+.bottom-line{
+    width: 40rpx !important;
+    height: 4rpx !important;
+    background-color: #FFCA03 !important;
+    border-radius: 100px 100px 0 0 !important;
+}
+
+
+.bottom-line-self{
+    width: 40rpx !important;
+    height: 4rpx !important;
+    background-color: #FFCA03 !important;
+    border-radius: 100px 100px 0 0 !important; 
+}
+
+.active-tab{
+   color: #000 !important;
+   font-weight: bold !important;
+ 
+}

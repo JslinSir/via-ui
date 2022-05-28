@@ -1,0 +1,15 @@
+.content {
+  padding: 20rpx 0;
+}
+
+.card-container {
+ 
+}
+
+.card-header {
+  color: #000;
+}
+
+.card-content {
+  color: #666666;
+}

@@ -1,0 +1,4 @@
+<view class="relative">
+ <slot/>
+  <canvas type="2d" id="whater-marker-cavas" class="whater-marker-cavas"/> 
+</view>

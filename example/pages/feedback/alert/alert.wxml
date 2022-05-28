@@ -1,0 +1,33 @@
+<view class="header-title-cneter">Alert</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法 alert
+	</view>
+	<view class="intro-cotent">
+		<via-button   bindtap="alert" >alert</via-button>
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		confirm
+	</view>
+	<view class="intro-cotent">
+		<via-button  bindtap="confirm">confirm</via-button>
+	</view>
+</view>
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		alertIsArray
+	</view>
+	<view class="intro-cotent">
+		<via-button   bindtap="alertIsArray">alertIsArray</via-button>
+	</view>
+</view>
+
+<via-alert id="alert" />
+

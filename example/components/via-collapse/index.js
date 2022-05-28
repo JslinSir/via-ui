@@ -1,0 +1,1 @@
+Component({externalClasses:["class-collapse-head","class-collapse-head-title"],options:{multipleSlots:!0},properties:{title:{type:String,value:""},content:{type:String,value:""},open:{type:Boolean,value:!1}},data:{},methods:{handleToggleOpen(){const{open:e}=this.data;this.setData({open:!e},(()=>{}))}}});

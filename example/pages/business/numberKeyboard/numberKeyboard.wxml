@@ -1,0 +1,91 @@
+<view class="header-title-cneter">NumberKeyboard</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法  
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClick">
+     点击输入 值：{{value}}
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 开启小数点
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClickFloat">
+     点击输入浮点数 值：{{value}}
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		 开启确认按钮
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClickConfirm">
+     点击输入 值：{{value}}
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		  自定义确认按钮颜色
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClickConfirmColor">
+     点击开启确认按钮颜色 值：{{value}}
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		  设置 确认按钮loading
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClickConfirmColorLoading">
+     点击设置loading 值：{{value}}
+	</view>
+</view>
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		  确认按钮禁用
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClickConfirmDisabled">
+     点击禁用 值：{{value}}
+	</view>
+</view>
+ 
+
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		  自定义键盘title
+	</view>
+	<view class="intro-cotent" bindtap="handleInputClickSetTitle">
+     点击设置title
+	</view>
+</view>
+
+ 
+ <view class="slot"></view>
+
+ 
+
+
+<via-number-keyboard 
+title="{{title}}"
+id="via-number-keyboard" 
+bind:onInput="handleInput" 
+bind:onDelete="handleDelete"
+bind:onConfirm="handleConfirm"
+confirmText="{{confirmText}}"
+confirmBg="{{confirmBg}}"
+confirmLoading="{{loading}}"
+configmDisabled="{{configmDisabled}}"
+float="{{float}}"/>
+ 

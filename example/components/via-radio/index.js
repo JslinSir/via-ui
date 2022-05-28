@@ -1,0 +1,1 @@
+Component({properties:{radioSize:{type:Number,value:40},action:{type:Boolean,value:!1},actionColor:{type:String,value:"#0a1d66"}},data:{},methods:{handleClick(){const{action:t}=this.data;this.setData({action:!t},(()=>{this.triggerEvent("onClick",!t)}))}}});

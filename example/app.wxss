@@ -1,0 +1,73 @@
+/**app.wxss**/
+
+page{
+    background-color: #f6f6f6;
+}
+
+/* components index */
+.header-title{
+    background-color: #0a1d66;
+    font-size: 32rpx;
+    color: #fff;
+    height: 80rpx;
+    padding: 30rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .components-content{
+    margin: 0 30rpx;
+  }
+  .components-content-item{
+  
+   margin-top: 30rpx;
+ 
+  }
+
+
+
+/* components detail */
+.header-title-cneter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32rpx;
+    color: #0a1d66;
+    position: relative;
+    padding-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+ 
+.header-title-cneter::after {
+    position: absolute;
+    content: '';
+    width: 30rpx;
+    height: 4rpx;
+    bottom: -4rpx;
+    background-color: #000;
+}
+
+/* components intro */
+
+.intro{
+    padding: 30rpx;
+  }
+  .intro-titel{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 32rpx;
+      color:#0a1d66;
+  }
+  .title-radio{
+      margin-right: 10rpx;
+      width: 16rpx;
+      height: 16rpx;
+      border:4rpx solid #0a1d66;
+      border-radius: 50%;
+  }
+  
+  .intro-cotent{
+     padding: 30rpx 30rpx 0 30rpx;
+  }

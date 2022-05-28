@@ -4,7 +4,7 @@
     font-size: 22rpx;
     color: #323232;
     background: #fff;
-    border: 2rpx solid $them-color;
+    border: 2rpx solid var(--theme-color,$theme-color);
     border-radius: 8rpx;
     padding: 2rpx 8rpx;
 }

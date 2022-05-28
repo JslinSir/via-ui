@@ -1,0 +1,17 @@
+<view class="header-title-cneter">Skeleton</view>
+ 
+<view class="intro">
+	<view class="intro-titel">
+		<view class="title-radio" />
+		基本用法 自定义 class-skeleton-view  写入骨架屏样式
+	</view>
+	<view class="intro-cotent">
+		<view class="self-view">
+			<via-animotion-skeleton class-skeleton-view="self" />
+			<via-animotion-skeleton class-skeleton-view="self2" />
+			<via-animotion-skeleton class-skeleton-view="self3" />
+
+		</view>
+	</view>
+</view>
+

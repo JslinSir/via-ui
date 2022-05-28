@@ -1,0 +1,1 @@
+Component({properties:{loadingText:{type:String,value:"加载中..."},loading:{type:Boolean,value:!0},noMore:{type:Boolean,value:!1},noMoreText:{type:String,value:"没有更多啦~"}},data:{},methods:{}});

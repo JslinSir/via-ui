@@ -1,0 +1,1 @@
+.container{margin-bottom:20rpx;background:#fff;padding:0 20rpx;overflow:hidden}.container .header{padding-top:20rpx;display:flex;align-items:center}.container .header-title{flex:1}.container .border{border-bottom:2rpx solid #f2f2f2;padding-bottom:20rpx}

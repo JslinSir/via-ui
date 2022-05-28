@@ -1,0 +1,21 @@
+.change{
+    width: 100%;
+    height: 300rpx;
+    background-color: #0a1d66;
+    border-radius: 20rpx;
+    margin-bottom: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    flex-wrap: wrap;
+    padding: 30rpx;
+}
+
+.changeCotent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}

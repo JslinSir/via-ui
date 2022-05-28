@@ -1,0 +1,1 @@
+Component({options:{virtualHost:!0},properties:{opacity:{type:Number,value:.6}},data:{},methods:{handleClick(){this.triggerEvent("onClick")}}});

@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/business/verificationCodeModal/verificationCodeModal",
+          "pathName": "pages/business/verificationCodeModal/verificationCodeModal",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

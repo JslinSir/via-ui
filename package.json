@@ -1,0 +1,38 @@
+{
+  "name": "via-ui-project",
+  "version": "1.0.0",
+  "description": "via-ui",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "push": "node ./script/push.js",
+    "release": "sh ./script/git.sh"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JslinSir/via-ui.git"
+  },
+  "author": "jslin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JslinSir/via-ui/issues"
+  },
+  "homepage": "https://github.com/JslinSir/via-ui#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jsonminify": "^1.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "inquirer": "^8.2.4",
+    "ora": "^5.4.1"
+  }
+}

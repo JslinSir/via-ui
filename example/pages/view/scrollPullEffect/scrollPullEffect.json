@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "via UI",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0a1d66",
+  "usingComponents": {
+    "via-scroll-pull-effect": "/components/via-scroll-pull-effect/index"
+  }
+}

@@ -1,0 +1,59 @@
+<block wx:if="{{status}}">
+	<view class="scroll-contain" wx:if="{{tabControl['0']}}" hidden="{{curentIndex != 0}}">
+		<view class="tips-hearder">
+			<text>via UI</text>
+			<text class="author">- @by senLin -</text>
+		</view>
+		<scroll-view
+		 scroll-y="true"
+		 refresher-enabled="{{true}}"
+		 refresher-threshold="{{100}}"
+		 refresher-background="#f6f6f6"
+		 refresher-default-style="none"
+		 refresher-triggered="{{pullStatus}}"
+		 bindrefresherpulling="handlePull"
+		 bindrefresherrefresh="handleRefresh"
+		 bindrefresherrestore="handleRestore"
+		 bindrefresherabort="handleAbort"
+		 class="scro-view"
+		 style="height:{{scrollHeight}}px;"
+		>
+			<view class="refresher" wx:if="{{pullStatus}}">
+				<text class="freshloading {{showLoading?'freshloading-run':''}}">via UI</text>
+			</view>
+			<view class="container">
+				<view class="gride-view">
+					<view
+					 class="gride-item "
+					 bind:tap="handleToComponentsIndex"
+					 data-router="{{item.router}}"
+					 wx:for="{{configData}}"
+					 wx:key="unique"
+					>
+						<image class="color-squre" src="./img/{{item.icon}}.png"></image>
+						<view class="icon-name">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+			<view class="copyright">- 你所看到的 是我用心呈现的 -</view>
+		</scroll-view>
+
+	</view>
+
+	<view wx:if="{{tabControl['1']}}" hidden="{{curentIndex != 1}}">
+		<about/>
+	</view>
+
+</block>
+
+<via-ad id="adIdFull" type="full" bind:onClose="handleAdClose">
+	<view class="ad-full-view">
+		<image class="adfull" src="/pages/business/ad/working.png" />
+		<view class="logo-view">
+			<view class="logo-text">via UI</view>
+		</view>
+	</view>
+</via-ad>
+
+<via-nav-tab tab="{{tabs}}" curentTab="{{curentIndex}}"  bind:onChange="handleTabChange" />
+

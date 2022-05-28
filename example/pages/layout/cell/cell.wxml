@@ -1,0 +1,96 @@
+<view class="header-title-cneter">Cell</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent">
+        <via-cell leftText="订单列表" rightIconName='' />
+    </view>
+</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        左边带icon
+    </view>
+    <view class="intro-cotent">
+        <via-cell leftText="订单列表" leftIconName="calendar" rightIconName='' />
+    </view>
+</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        右边带icon
+    </view>
+    <view class="intro-cotent">
+        <via-cell leftIconName="my" rightIconName="right">我的</via-cell>
+    </view>
+</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        右边带文案
+    </view>
+    <view class="intro-cotent">
+        <via-cell leftIconName="my" rightText="查看更多" rightIconName="right">我的</via-cell>
+    </view>
+</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        自定义 cell 宽高，圆角
+    </view>
+    <view class="intro-cotent">
+        <via-cell height="60" width="420" radius="30" leftText="我的" leftIconName="my" rightText="查看更多" rightIconName="right" />
+    </view>
+</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        通过 externalClasses 自定义 cell
+    </view>
+    <view class="intro-cotent">
+        <via-cell class-cell-view="custom-cell-view" leftText="我的" leftIconName="my" rightText="查看更多" rightIconName="right" />
+    </view>
+</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        左侧slot自定义
+    </view>
+    <view class="intro-cotent">
+        <via-cell rightText="查看更多" rightIconName="right">
+            <view slot="left" class="custom-left-view">
+                <text class="text-custom">进度名称：审核中</text>
+                <text class="text-custom">时间：2021-03-21</text>
+            </view>
+        </via-cell>
+    </view>
+</view>
+
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        右侧slot自定义
+    </view>
+    <view class="intro-cotent">
+        <via-cell leftText="审核详情" rightIconName="">
+            <view slot="right" class="custom-left-view" >
+                <text class="text-custom">进度名称：待审核</text>
+                <text class="text-custom">时间：2021-03-21</text>
+            </view>
+        </via-cell>
+    </view>
+</view>
+
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        不带透明度
+    </view>
+    <view class="intro-cotent">
+        <via-cell leftText="审核详情" touchOpacity="1">
+        </via-cell>
+    </view>
+</view>

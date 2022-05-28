@@ -14,7 +14,7 @@
   border-radius: 44rpx;
   color: #fff;
   border: 2rpx solid transparent;
-  background-color:$them-color;
+  background-color:var(--theme-color,$theme-color);
   box-sizing: border-box;
 }
  

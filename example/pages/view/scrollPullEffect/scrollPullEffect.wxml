@@ -1,0 +1,27 @@
+<view class="header-title-cneter">ScrollPullEffect</view>
+<view class="intro">
+    <view class="intro-titel">
+        <view class="title-radio" />
+        基本用法
+    </view>
+    <view class="intro-cotent ">
+      <via-scroll-pull-effect 
+       id="via-scroll-pull-effect-id" 
+       bind:onPullDown="handlePullDown"
+       bind:onPullUp="handlePullUp"
+       height="500"
+       >
+      
+        <view class="item-card"  wx:for="{{list}}" wx:key="unique">
+           {{index+1}}
+        </view>
+       
+      </via-scroll-pull-effect>
+    </view>
+</view>
+
+ 
+
+ 
+
+ 

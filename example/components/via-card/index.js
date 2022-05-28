@@ -1,0 +1,1 @@
+Component({options:{multipleSlots:!0},externalClasses:["class-container","class-header","class-content"],properties:{radius:{type:Number,value:20},disHeaderBorder:{type:Boolean,value:!1},disHeader:{type:Boolean,value:!1},title:{type:String,value:""}},data:{},methods:{}});
