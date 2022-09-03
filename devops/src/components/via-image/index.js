@@ -1,56 +1,11 @@
 
-
+import { ImageDefaultProps } from './props'
 Component({
   externalClasses: ["class-image"],
   /**
    * 组件的属性列表
    */
-  properties: {
-    style: {
-      type: String,
-      value: ''
-    },
-    src: {
-      type: String,
-      value: ''
-    },
-    mode: {
-      type: String,
-      value: 'scaleToFill'
-    },
-    webp: {
-      type: Boolean,
-      value: false
-    },
-    lazyLoad: {
-      type: Boolean,
-      value: false
-    },
-    showMenuByLongpress: {
-      type: Boolean,
-      value: false
-    },
-    preView: {
-      type: Boolean,
-      value: false
-    },
-    errorImg: {
-      type: String,
-      value: '../via-status/img/imgError.png'
-    },
-    errorImgSize:{
-      type:Number,
-      value:100
-    },
-    loadingImg: {
-      type: String,
-      value: ''
-    },
-    loadingImgSize:{
-      type:Number,
-      value:''
-    },
-  },
+  properties: ImageDefaultProps,
 
   /**
    * 组件的初始数据

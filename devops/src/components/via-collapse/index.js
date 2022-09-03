@@ -1,3 +1,4 @@
+import { CollapseDefaultProps } from './props'
 
 Component({
   externalClasses: ["class-collapse-head","class-collapse-head-title"],
@@ -8,20 +9,7 @@ Component({
   /**
    * 组件的属性列表
    */
-  properties: {
-    title:{
-      type:String,
-      value:''
-    },
-    content:{
-      type:String,
-      value:''
-    },
-    open:{
-      type:Boolean,
-      value:false
-    }
-  },
+  properties: CollapseDefaultProps,
 
   /**
    * 组件的初始数据

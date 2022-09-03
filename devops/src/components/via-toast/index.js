@@ -1,13 +1,8 @@
 import { runAnimotionFrame } from '../utils/animate'
 import * as frameConfig from '../utils/animateConfig'
+import { ToastDefaultProps } from './props'
 Component({
-  properties: {
-    toastSrc: String,
-    loadingType: {
-      type: String, //default, ,move
-      value: 'svg'
-    }
-  },
+  properties: ToastDefaultProps,
   data: {
     toastShow: false,
     opacity: 0,

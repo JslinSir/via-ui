@@ -15,6 +15,7 @@ const TIMEENUM = {
   MM: 1,
   SS: 2
 }
+import { DatePickerCellDefaultProps } from './props'
 import datepicker from './behavior'
 import {
   unitZero,
@@ -35,9 +36,7 @@ Component({
   options: {
 
   },
-  properties: {
-
-  },
+  properties: DatePickerCellDefaultProps,
 
   /**
    * 组件的初始数据

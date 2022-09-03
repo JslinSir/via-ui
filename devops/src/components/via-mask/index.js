@@ -1,22 +1,9 @@
-// components/mask/index.js
+import { MaskDefaultProps } from './props'
 Component({
   /**
    * 组件的属性列表
    */
-  properties: {
-    visible: {
-      type: Boolean,
-      value: false
-    },
-    zIndex: {
-      type: Number,
-      value: 10
-    },
-    clickClose: {  //点击关闭
-      type: Boolean,
-      value: true
-    },
-  },
+  properties: MaskDefaultProps,
 
   data: {
 

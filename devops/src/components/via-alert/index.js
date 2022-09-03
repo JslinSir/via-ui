@@ -2,10 +2,12 @@
  * 模态对话框
  * @description: 支持alert ， confirm  
  */
+import { AlertDefaultProps } from './props'
  Component({
    options: {
      multipleSlots: true
    },
+   properties:AlertDefaultProps,
  
    /**
     * 组件的初始数据

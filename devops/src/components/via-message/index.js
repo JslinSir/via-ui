@@ -1,5 +1,5 @@
 import { runAnimotionFrame, } from '../utils/animate'
-
+import { MessageDefaultProps } from './props'
 const ANIMATE_CONFIG = {
   show: [
     { opacity: 0, translateY: '-100%' },
@@ -12,6 +12,7 @@ const ANIMATE_CONFIG = {
 }
 
 Component({
+  properties:MessageDefaultProps,
   data: {
     messageShow: false,
     icon: 'check',

@@ -1,3 +1,4 @@
+import { DatePickerDefaultProps } from './props'
 import datepicker from '../via-date-picker-cell/behavior'
 
 Component({
@@ -7,12 +8,7 @@ Component({
   },
   externalClasses: [],
 
-  properties: {
-    //标题
-    title: String,
-
-
-  },
+  properties: DatePickerDefaultProps,
 
 
   /**

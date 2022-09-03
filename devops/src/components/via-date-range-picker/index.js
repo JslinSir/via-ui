@@ -1,5 +1,5 @@
 import datepicker from '../via-date-picker-cell/behavior'
-
+import { DateRangePickerDefaultProps } from './props'
 Component({
   behaviors: [datepicker],
   options: {
@@ -7,20 +7,8 @@ Component({
   },
   externalClasses: [],
 
-  properties: {
-    //标题
-    rangeTitle:{
-      type:Array,
-      value:null
-    },
-    // 未选中tab 文字颜色
-    noActiveColor:{
-      type: String,
-      value: '#323232'
-    },
-  },
+  properties: DateRangePickerDefaultProps,
 
- 
 
   /**
    * 组件的初始数据

@@ -1,13 +1,9 @@
+import { TouchableOpacityDefaultProps } from './props'
 Component({
   options: {
     virtualHost: true
   },
-  properties: {
-    opacity:{
-      type:Number,
-      value:0.6
-    }
-  },
+  properties: TouchableOpacityDefaultProps,
 
   /**
    * 组件的初始数据

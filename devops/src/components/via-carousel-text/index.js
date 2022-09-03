@@ -1,24 +1,9 @@
+
+import { CarouselTextDefaultProps } from './props'
 let clumnStatus = {}
 Component({
   externalClasses: ["class-scroll-text","class-swiper-container","class-hot-item"],
-  properties: {
-    speed: {
-      type: Number,
-      value: 3
-    },
-    direction: {
-      type: String,
-      value: 'row'
-    },
-    height:{
-      type: Number,
-      value: 60 
-    },
-    text: {
-      type: String | Array,
-      value: ''
-    }
-  },
+  properties: CarouselTextDefaultProps,
   observers: {
     text(v) {
       if (v) {

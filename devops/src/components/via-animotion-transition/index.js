@@ -1,3 +1,5 @@
+import { AnimotionTransitionDefaultProps } from './props'
+
 // 动画映射关系
 const _in = 'via-fade-in'
 const config = {
@@ -20,29 +22,7 @@ const config = {
 
 // 过度动画
 Component({
-  properties: {
-    // 过度名称
-    name:{
-      type:String,
-      value:'fadein'
-    },
-    // 过度时间·
-    duration:{
-      type:Number,
-      value:0.3
-    },
-    // 过度动画
-    timingFunction:{
-      type:String,
-      value:'ease-in-out'
-    },
-    // 动画执行次数
-    iterationCount:{
-      type:Number,
-      value:1
-    },
-    
-  },
+  properties: AnimotionTransitionDefaultProps,
   data: {
     config
   },

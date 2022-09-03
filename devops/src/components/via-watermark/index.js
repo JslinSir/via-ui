@@ -1,7 +1,7 @@
 /**
  * 简单的水印组件
  */
-
+import { WatermarkDefaultProps } from './props'
 import {
   getFields
 } from '../utils/noderef'
@@ -10,31 +10,7 @@ import {
 } from '../utils/base'
 
 Component({
-  properties: {
-    // 水印文字 建议文字最多为8个汉字
-    markStr: {
-      type: String,
-      value: ''
-    },
-
-    // 水印字体大小  rpx单位
-    fontSize: {
-      type: Number,
-      value: 32
-    },
-
-  // 间隔宽度 rpx
-    spaceWidth:{
-      type: Number,
-      value: 300
-    },
-    // 间隔高度 
-    spaceHeight:{
-      type: Number,
-      value: 180
-    },
-
-  },
+  properties: WatermarkDefaultProps,
 
   /**
    * 组件的初始数据
@@ -71,7 +47,7 @@ Component({
       const dpr = wx.getSystemInfoSync().pixelRatio
       // 字体属性
       const _fontSize = rpxToPx(fontSize) * dpr
-   
+
       const _fontAtr = `normal ${_fontSize}px sans-serif`
       // 长度截取
       const _markStr = markStr.substring(0, 8)
@@ -86,9 +62,9 @@ Component({
       //设置文字的旋转角度，角度为45°； 
       ctx.rotate(45 * Math.PI / 180)
 
-      const _spaceHeight = rpxToPx(spaceHeight)*dpr
+      const _spaceHeight = rpxToPx(spaceHeight) * dpr
 
-      const _spaceWidth = rpxToPx(spaceWidth)*dpr
+      const _spaceWidth = rpxToPx(spaceWidth) * dpr
 
       //对斜对角线以左部分进行文字的填充
       for (let j = 1; j < 20; j++) { //用for循环达到重复输出文字的效果，这个for循环代表纵向循环
@@ -99,7 +75,7 @@ Component({
         for (let i = 1; i < 20; i++) { //这个for循环代表横向循环，
 
           //文本 x坐标位置  y坐标位置 需要绘制的最大宽度
-          this.darwText(ctx, _markStr, _fontAtr,  _spaceWidth * i, _spaceHeight * j)
+          this.darwText(ctx, _markStr, _fontAtr, _spaceWidth * i, _spaceHeight * j)
 
 
         }

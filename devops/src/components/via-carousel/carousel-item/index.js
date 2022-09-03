@@ -1,13 +1,13 @@
  /**
   * 旋转木马，子容器
   */
-
+import { CarouselItemDefaultProps } from './props'
 Component({
   externalClasses: ["class-active"],
   /**
    * 组件的初始数据
    */
-  properties:{ },
+  properties:CarouselItemDefaultProps,
   data: {
     // 是否选中
     active:false,

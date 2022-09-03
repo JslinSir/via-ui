@@ -1,23 +1,10 @@
-
+import { TabDefaultProps } from './props'
 Component({
   externalClasses: ["class-tab","class-active-tab","class-line"],
   /**
    * 组件的属性列表
    */
-  properties: {
-    tabs: { //title,key
-      type: Array,
-      value: []
-    },
-    selectColor:{
-      type: String,
-      value: ""
-    },
-    activeTab:{ //当前激活Tab索引
-      type: Number,
-      value: 0
-    },
-  },
+  properties: TabDefaultProps,
   observers: {
     activeTab(index) {
       this.setData({curentIndex:index})

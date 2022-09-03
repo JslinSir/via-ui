@@ -2,7 +2,7 @@
  * 抛物线动画
  * 实现原理：两个块，垂直抛物线移动的 小球包裹在 水平移动的块中
  */
-
+import { AnimotionParabolaDefaultProps } from './props'
 // 抛物线动画  
 import {
   runAnimotionFrame,
@@ -17,10 +17,7 @@ const TIME_RATE = 0.0012
 
 
 Component({
-  properties: {
-    start: Object, //起点位置 {x:0,y:0}
-    end: Object, //终点位置 {x:0,y:0}
-  },
+  properties: AnimotionParabolaDefaultProps,
   data: {
     styleX: '',
     styleY: '',

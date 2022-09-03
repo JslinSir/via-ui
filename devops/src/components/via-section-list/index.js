@@ -2,12 +2,9 @@
  * 待完善滚动时 ，右边单词也跟随滚动
  */
 import { getRect } from '../utils/noderef'
-
+import { SectionListDefaultProps } from './props'
 Component({
-  properties: {
-    scrollHeight: Number,
-    dataSource: Array, //数据源格式 [{"id": "31359","name": "深圳市","index": "S"}] 
-  },
+  properties: SectionListDefaultProps,
   data: {
     cityLetter: [],
     cityList: [],

@@ -1,7 +1,8 @@
 {
   "description": "项目配置文件",
   "packOptions": {
-    "ignore": []
+    "ignore": [],
+    "include": []
   },
   "miniprogramRoot": "dist/",
   "setting": {
@@ -46,10 +47,6 @@
   "libVersion": "2.15.0",
   "appid": "wx362314b4bb8a81fc",
   "projectname": "via-mp-components",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
@@ -66,5 +63,10 @@
     "miniprogram": {
       "list": []
     }
+  },
+  "srcMiniprogramRoot": "dist/",
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }
