@@ -17,9 +17,9 @@ Component({
     messageShow: false,
     icon: 'check',
     color: {
-      roundcheckfill: '#87d068',
-      roundclosefill: '#f50',
-      infofill: '#fa8c16'
+      check: '#87d068',
+      close: '#f50',
+      warn: '#fa8c16'
     }
   },
 
@@ -31,17 +31,17 @@ Component({
       this._message(content, time, null)
     },
     success(content, time = 1500) {
-      this._message(content, time, 'roundcheckfill')
+      this._message(content, time, 'check')
     },
     error(content, time = 1500) {
-      this._message(content, time, 'roundclosefill')
+      this._message(content, time, 'close')
     },
 
     loading(content, time = 1500) {
       this._message(content, time, 'loading')
     },
     warn(content, time = 1500) {
-      this._message(content, time, 'infofill')
+      this._message(content, time, 'warn')
     },
 
     _message(content, time, icon) {

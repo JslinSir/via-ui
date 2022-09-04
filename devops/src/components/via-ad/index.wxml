@@ -19,6 +19,6 @@
 	<view class="full-cotent">
 		<slot/>
 	</view>
-    <view class="close-btn" style="{{actionPosition}}:60rpx;" catch:tap="handleClose">{{countDown}}s跳过</view>
+    <view class="close-btn" style="{{actionPosition}}':60rpx;'" catch:tap="handleClose">{{countDown}}s跳过</view>
 </block>
 
