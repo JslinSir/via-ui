@@ -34,7 +34,7 @@ Component({
     hide() {
       this.$pop.hide()
       setTimeout(() => {
-        this.$dateCell.handleRest()
+        this.$dateCell.handleReset()
       }, 100)
     },
 
