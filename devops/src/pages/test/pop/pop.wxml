@@ -1,9 +1,0 @@
-
-
-
-
-
-<button bindtap="handleClick">显示</button>
-
- 
- <view class="pop-cotent" wx:if="{{visible}}"></view>

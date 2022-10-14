@@ -57,7 +57,7 @@
     "pages/navigation/navigation/base",
     "pages/feedback/message/message",
     "pages/webview/webview",
-    "pages/test/pop/pop"
+    "pages/test/svgtest/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

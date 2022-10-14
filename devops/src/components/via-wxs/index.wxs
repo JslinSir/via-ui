@@ -21,7 +21,6 @@ var handleStringWhitSpace = function(orderno) {
   var handleDateToChinese = function(str){
     var reg = getRegExp('(\d{4}).(\d{1,2}).(\d{1,2})','g');
     var _str =  (str||'').replace(reg, '$1年$2月$3');  
-    console.log(_str)
     return _str
   }
 
