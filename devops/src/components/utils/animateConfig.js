@@ -12,10 +12,14 @@ export const maskFrame = {
       opacity: 1,
     },
     {
-      opacity: 0,
+      opacity: 0.9,
+      backgroundColor:'rgba(0,0,0,0)'
     },
-  ]
-
+    {
+      opacity: 0,
+      backgroundColor:'transparent'
+    },
+  ],
 }
 /**
  * 中间弹窗帧动画

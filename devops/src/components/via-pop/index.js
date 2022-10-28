@@ -75,7 +75,7 @@ Component({
      * 弹窗展示
      */
     async _popShow() {
-      await runAnimotionFrame(this,'#popCotent',frameConfig[_directionFrame].show)
+      await runAnimotionFrame(this, '#popCotent', frameConfig[_directionFrame].show)
       this._lock = true
     },
 
@@ -83,10 +83,13 @@ Component({
      * 弹窗关闭
      */
     async _popHide() {
-      await runAnimotionFrame(this,'#popCotent',frameConfig[_directionFrame].hide)
+      await Promise.all([
+        runAnimotionFrame(this, '#popMask', frameConfig.maskFrame.hide),
+        runAnimotionFrame(this, '#popCotent', frameConfig[_directionFrame].hide),
+      ])
       this._maskHide()
     },
 
-    fobidCotentClick() {}
+    fobidCotentClick() { }
   }
 })
