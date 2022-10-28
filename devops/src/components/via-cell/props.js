@@ -57,7 +57,7 @@ export const CellDefaultProps = {
   },
   rightIconName: {
     type: String,
-    value: 'right'
+    value: 'arrowRightIcon'
   },
   rightIconColor: {
     type: String,

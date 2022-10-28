@@ -1,6 +1,6 @@
 <view class="wrapper" style="height:{{height}}rpx;width:{{width}}rpx;">
 	<view class="bg" style="border-radius:{{radius}}rpx">
-		<via-icon class="icon-search" name="search" wx:if="{{showSearchIcon}}" />
+		<via-icon class="icon-search" name="searchIcon" wx:if="{{showSearchIcon}}" />
 		<view wx:if="{{carousel}}" class="carousel-view">
 			<via-carousel-text speed="2" height="40"  text="{{carouselText}}" direction="column" class-hot-item="scroll-text"/>
 		</view>

@@ -13,7 +13,7 @@ export const AdDefaultProps = {
     },
     iconName: {
         type: String,
-        value: 'roundclose'
+        value: 'closeRoundIcon'
     },
     // 倒计时位置
     actionPosition: {

@@ -1,6 +1,6 @@
 import { svgToBase64 } from '../utils/base'
 import { checkIcon } from './check.svg'
-import { closeIcon } from './close.svg'
+import { closeIcon,closeRoundIcon } from './close.svg'
 import { arrowIcon,arrowRightIcon,arrowDownIcon,arrowLeftIcon,arrowUpIcon } from './arrow.svg'
 import { deleteIcon } from './delete.svg'
 import { editIcon } from './edit.svg'
@@ -14,10 +14,15 @@ import { locationIcon } from './location.svg'
 import { noticeIcon } from './notice.svg'
 import { addIcon } from './add.svg'
 import { waringIcon } from './waring.svg'
+import { mineIcon } from './mine.svg'
+import { homeIcon } from './home.svg'
+import { cartIcon } from './cart.svg'
 
-const CONFIGS = {
+
+export const CONFIGS = {
   checkIcon,
   closeIcon,
+  closeRoundIcon,
   arrowIcon,
   arrowDownIcon,
   arrowLeftIcon,
@@ -35,6 +40,9 @@ const CONFIGS = {
   noticeIcon,
   addIcon,
   waringIcon,
+  mineIcon,
+  homeIcon,
+  cartIcon,
 }
 
 const getIconStr = (icon,color) => CONFIGS[icon] ? CONFIGS[icon](color) : console.error('Via  UI 不存在',icon,'的icon')

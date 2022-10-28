@@ -12,10 +12,10 @@
       <view class="mp-navigation-nav-back-view {{backHome && round ?'mp-navigation-round' :''}}" catchtap="navigateBack" wx:if="{{showIcon}}">
         <view class="mp-navigation-{{backHome? 'home': 'default'}}-icon " >
           <block wx:if="{{backHome}}">
-            <via-icon  name="home" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
+            <via-icon  name="homeIcon" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
           </block>
           <block wx:else>
-             <via-icon  name="back" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
+             <via-icon  name="arrowLeftIcon" size="{{iconSize}}" src="{{iconSrc?iconSrc:''}}" color="{{iconColor}}"/>
           </block>
           
         </view>

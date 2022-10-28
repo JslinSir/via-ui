@@ -7,7 +7,7 @@ Component({
     toastShow: false,
     opacity: 0,
     // 图标
-    toastIcon: 'check'
+    toastIcon: 'checkIcon'
   },
 
   /**
@@ -18,17 +18,17 @@ Component({
       this._toast(content, time, null)
     },
     success(content, time = 1500) {
-      this._toast(content, time, 'check')
+      this._toast(content, time, 'checkIcon')
     }, 
     error(content, time = 1500) {
-      this._toast(content, time, 'close')
+      this._toast(content, time, 'closeIcon')
     },
 
     loading(content, time = 1500) {
       this._toast(content, time, 'loading')
     },
     warn(content, time = 1500) {
-      this._toast(content, time, 'info')
+      this._toast(content, time, 'waringIcon')
     },
 
     async _toast(content, time, toastIcon) {

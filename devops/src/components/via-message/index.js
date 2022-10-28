@@ -15,11 +15,11 @@ Component({
   properties:MessageDefaultProps,
   data: {
     messageShow: false,
-    icon: 'check',
-    color: {
-      check: '#87d068',
-      close: '#f50',
-      warn: '#fa8c16'
+    icon: 'checkIcon',
+    colors: {
+      checkIcon: '#87d068',
+      closeIcon: '#f50',
+      waringIcon: '#fa8c16'
     }
   },
 
@@ -31,17 +31,17 @@ Component({
       this._message(content, time, null)
     },
     success(content, time = 1500) {
-      this._message(content, time, 'check')
+      this._message(content, time, 'checkIcon')
     },
     error(content, time = 1500) {
-      this._message(content, time, 'close')
+      this._message(content, time, 'closeIcon')
     },
 
     loading(content, time = 1500) {
       this._message(content, time, 'loading')
     },
     warn(content, time = 1500) {
-      this._message(content, time, 'warn')
+      this._message(content, time, 'waringIcon')
     },
 
     _message(content, time, icon) {
@@ -57,11 +57,11 @@ Component({
       }
       this.setData({ messageShow: true, content, icon }, async () => {
         await runAnimotionFrame(this, '#message', ANIMATE_CONFIG.show, 300)
-        this.timeoutID = setTimeout(() => this.messageHIdeAnimotion(), time)
+        this.timeoutID = setTimeout(() => this.messageHideAnimotion(), time)
       })
     },
 
-    async messageHIdeAnimotion() {
+    async messageHideAnimotion() {
       await runAnimotionFrame(this, '#message', ANIMATE_CONFIG.hide, 300)
       this.setData({ messageShow: false }, () => {
         this.triggerEvent('onClose', '')

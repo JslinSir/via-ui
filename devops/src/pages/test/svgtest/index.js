@@ -8,7 +8,7 @@ Page({
   },
 
   onLoad: function (options) {
-    this.setData({svg: getSvg('waringIcon','#d81e06')})
+    this.setData({svg: getSvg('homeIcon','#d81e06')})
   },
  
 })

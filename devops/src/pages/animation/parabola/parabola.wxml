@@ -20,7 +20,7 @@
 				<text class="fuirt" id="button{{index}}">{{item}}</text>
 				<via-button
 				 width="80"
-				 height="40"
+				 height="44"
 				 radius="10"
 				 textSize="24"
 				 text="添加"
@@ -32,7 +32,7 @@
 </view>
 
 <view class="{{curentIndex==0?'cart-position-right':'cart-position-left'}}">
-	<via-icon color="red" size="60" name="cart"  id="cardID"/>
+	<via-icon color="red" size="60" name="cartIcon"  id="cardID"/>
 </view>
 
 <!-- 抛物线动画 -->
